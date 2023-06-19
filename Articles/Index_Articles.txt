@@ -1,0 +1,15 @@
+==================
+Index_Articles.txt
+This text file contains the records of the articles that is currently up. ES_Articles.html will use this file to generate the article list.
+To add a record, follow the format for one line: Article Name%&Article Author%&Article Category%&Date Published%&URL of the article file
+Scanning starts at line 7. 
+==================
+Why dark mode is superior%&Jemma Regalados%&Opinion%&28 May 2023%&Article_URL_1.html
+15 reasons why this website is made using unconventional methods%&Padilla Padua%& Website Updates%& 29 May 2023%&Article_URL_2.html
+There's a slight chance this will get taken down after a year%&Christopher Ramos%&Gossip%&30 May 2023%&Article_URL_3.html
+There's a slight chance this will get taken down after a year%&Christopher Ramos%&Gossip%&30 May 2023%&Article_URL_3.html
+There's a slight chance this will get taken down after a year%&Christopher Ramos%&Gossip%&30 May 2023%&Article_URL_3.html
+There's a slight chance this will get taken down after a year%&Christopher Ramos%&Gossip%&30 May 2023%&Article_URL_3.html
+There's a slight chance this will get taken down after a year%&Christopher Ramos%&Gossip%&30 May 2023%&Article_URL_3.html
+There's a slight chance this will get taken down after a year%&Christopher Ramos%&Gossip%&30 May 2023%&Article_URL_3.html
+There's a slight chance this will get taken down after a year%&Christopher Ramos%&Gossip%&30 May 2023%&Article_URL_3.html

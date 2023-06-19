@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Test_Page</title>
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_UI.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Article.css" />
+    <!-- <link rel="stylesheet" href="Scripts/ES_Stylesheet.css"> -->
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Animations.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Reference.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_BranchNavigation.css" />
+    <link
+      rel="icon" type="image/png" href="Assets/Icons/ContentByElmerF.png" sizes="96x96"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+  </head>
+  <script src="Scripts/ES_Javascript.js"></script>
+  <script src="Scripts/ES_Javascript_UI.js"></script>
+  <script src="Scripts/ES_Javascript_BranchNavigation.js"></script>
+  <body id="pageElement_Body" onload="Load_Template('Template_UI'), BranchNavigation_Generate_List()">
+    <div class="Main_Content_Container">
+      <h1 class="Branch_Title">
+        Articles
+      </h1>
+      <div class="Branch_Navigation_Search">
+        <h4 class="Branch_Navigation_Search_Section_Title">
+          Search by title
+        </h4>
+        <div></div>
+        <h4 class="Branch_Navigation_Search_Section_Title">
+          Filter by
+        </h4>
+        <div></div>
+        <input class="Branch_Navigation_Search_Input" placeholder="Search by title"></input>
+        <img class="Branch_Navigation_Search_Button" src="Assets/Icons/icon_search.png"/>
+        <div class="Branch_Navigation_Search_Dropdown">
+          Categories
+        </div>
+        <div class="Branch_Navigation_Search_Dropdown">
+          Authors
+        </div>
+      </div>
+      <div class="Branch_Navigation" data-id="Type_List" id="Branch_Navigation">
+        <div class="Branch_Navigation_Item">
+          <h2 class="Branch_Navigation_Item_Title">
+            Test Article
+          </h2>
+          <div class="Branch_Navigation_Item_Details">
+            <p class="Branch_Navigation_Item_Details_Text">
+              Author: Elmer Felisilda
+            </p>
+            <p class="Branch_Navigation_Item_Details_Text">
+              Category: Test
+            </p>
+            <p class="Branch_Navigation_Item_Details_Text">
+              Date published: 27 May 2023
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

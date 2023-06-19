@@ -1,0 +1,108 @@
+.Home_Welcome{
+    width: 100%;
+    background-color: #264653;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home_Welcome_Subtitle{
+    font-family: Hansief;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 30;
+}
+
+.Home_Welcome_Title{
+    font-family: Hansief;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 60;
+}
+
+.Home_Latest{
+    width: calc(100% - 20%);
+    height: 500px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.Home_Latest_Title{
+    font-family: Hansief;
+    color: #264653;
+    margin: 0;
+    text-transform: uppercase;
+    padding-left: 10%;
+}
+
+.Home_Latest_Item{
+    max-width: 450px;
+    max-height: 350px;
+    min-width: 150px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    /* background-color: #264653; */
+    cursor: pointer;
+    margin-right: 50px;
+    transition: var(--Element-Transition-Delay);
+}
+
+.Home_Latest_Item:hover{
+    transform: scale(1.02);
+    box-shadow: var(--Element-BoxShadow);
+}
+
+.Home_Latest_Item:hover > .Home_Latest_Item_Title{
+    opacity: 100%;
+}
+
+
+.Home_Latest_Item:hover > .Home_Latest_Item_Thumbnail{
+    background-size: 110%;
+}
+
+.Home_Latest_Item_Thumbnail{
+    /* max-width: 600px; */
+    max-height: 350px;
+    min-width: 150px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-position: center;
+    background-attachment:scroll;
+    background-size: 100%;
+    /* position: relative; */
+    z-index: 1;
+    transition: var(--Element-Transition-Delay);
+}
+
+.Home_Latest_Item_Title{
+    z-index: 2;
+    /* position: absolute; */
+    background-color: #264653;
+    padding: 10px;
+    opacity: 0%;
+    transition: var(--Element-Transition-Delay);
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.Home_Latest_Item_Title_Text{
+    font-family: Raleway;
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-wrap: unset;
+}
