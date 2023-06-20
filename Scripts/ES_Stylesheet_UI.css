@@ -72,7 +72,7 @@ a{
 	align-items: center;
 	position: fixed;
 	user-select: none;
-	z-index: 1;
+	z-index: 50;
 }
 
 .UI_Header_Hamburger{
@@ -332,4 +332,32 @@ a{
 /* Selection color */
 ::selection{
 	background-color: var(--Accent-Color);
+}
+
+.ComingSoon{
+	position: absolute;
+	width: 100%; 
+	height: calc(100% - 50px);
+	top: 50px;
+	background-color: #264653;
+	z-index: 49;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.ComingSoon_Title{
+	font-family: Hansief;
+	color: white;
+	text-transform: uppercase;
+	font-size: 55;
+	margin: 0;
+}
+
+.ComingSoon_Subtitle{
+	font-family: Raleway;
+	color: white;
+	text-transform: uppercase;
+	margin: 0;
 }
