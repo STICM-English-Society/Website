@@ -336,8 +336,8 @@ a{
 
 .ComingSoon{
 	position: absolute;
-	width: 100%; 
-	height: calc(100% - 50px);
+	width: calc(100% - 40px); 
+	height: calc(100% - 50px - 40px);
 	top: 50px;
 	background-color: #264653;
 	z-index: 49;
@@ -345,6 +345,11 @@ a{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 20px;
+}
+
+.ComingSoon_Icon{
+	width: 150px;
 }
 
 .ComingSoon_Title{
@@ -353,6 +358,7 @@ a{
 	text-transform: uppercase;
 	font-size: 55;
 	margin: 0;
+	text-align: center;
 }
 
 .ComingSoon_Subtitle{
@@ -360,4 +366,5 @@ a{
 	color: white;
 	text-transform: uppercase;
 	margin: 0;
+	text-align: center;
 }
