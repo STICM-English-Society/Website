@@ -75,3 +75,36 @@ function toast_Popup_Animate(toast_ID){
     toast_Element.style.animationFillMode = "forwards";
   }, 3000);
 }
+
+function Subwindows_Open(ID){
+  document.getElementById("pageElement_Subwindows").style.opacity = "100%";
+  document.getElementById("pageElement_Subwindows").style.display = "flex";
+  document.getElementById("pageElement_Subwindows").style.opacity = "100%";
+  var subwindowElement = document.getElementById("subwindow_"+ID);
+  subwindowElement.style.display = "block";
+  subwindowElement.style.animationFillMode = "forwards";
+  subwindowElement.style.animationName = "opening_Subwindow";
+  subwindowElement.style.animationDuration = "0.3s";
+  subwindow_activeSubwindow = ID;
+  if (ID == "ImageView"){
+    subwindowElement.style.display = "grid";
+  }
+}
+
+function Subwindows_Close(ID){
+  var subwindowElement = document.getElementById("subwindow_" + ID);
+  subwindowElement.style.animationName = "closing_Subwindow";
+  subwindowElement.style.animationDuration = "0.3s";
+  subwindowElement.style.animationFillMode = "forwards";
+
+  setTimeout(function() {
+    subwindowElement.style.opacity = "0";
+  }, 0);
+
+  setTimeout(function() {
+    subwindowElement.style.display = "none";
+    document.getElementById("pageElement_Subwindows").style.display = "none";
+  }, 300);
+
+  subwindow_activeSubwindow = "none";
+}

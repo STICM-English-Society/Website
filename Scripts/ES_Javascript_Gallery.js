@@ -1,0 +1,93 @@
+var Gallery_Album_Name;
+var Gallery_Album_Description;
+var Gallery_Album_Information = [];
+var Gallery_Album_RawData;
+var Gallery_Album_ImageLinks = [];
+var Gallery_Album_ImageLinks_Separated = [];
+
+function Gallery_Generate_Information(){
+    const request = new XMLHttpRequest();
+    request.open("GET", "Gallery/ES_Template_Photos/Index_ES_Template_Photos.txt", false);
+    request.send();
+    Gallery_Album_RawData = request.responseText.split("\n");
+    Gallery_Album_Name = Gallery_Album_RawData[1];
+    Gallery_Album_Description = Gallery_Album_RawData[2];
+    var LineCounter = 4;
+    while (Gallery_Album_RawData[LineCounter] != "#>\r") {
+        Gallery_Album_Information.push(Gallery_Album_RawData[LineCounter].replace("\r", ""));
+        //console.log(Gallery_Album_Information);
+        LineCounter++;
+    }
+
+    document.getElementById("Gallery_Album_Title").innerHTML = Gallery_Album_Name;
+    document.getElementById("Gallery_Album_ImageView_Title").innerHTML = Gallery_Album_Name;
+    document.getElementById("Gallery_Album_Description").innerHTML = Gallery_Album_Description;
+
+    var Gallery_Album_Information_Separated = [];
+    for (a = 0; a != Gallery_Album_Information.length; a++){
+        Gallery_Album_Information_Separated.push(Gallery_Album_Information[a].split("%&")[0]);
+        Gallery_Album_Information_Separated.push(Gallery_Album_Information[a].split("%&")[1]);
+    }
+    //console.log(Gallery_Album_Information_Separated);
+    var b = 0;
+    for (a = 0; a != Gallery_Album_Information_Separated.length; a += 2){
+        b++;
+        var Gallery_Album_Information_Item = document.createElement('div');
+        Gallery_Album_Information_Item.classList.add("Gallery_Information_Item");
+        Gallery_Album_Information_Item.setAttribute("id", "Gallery_Album_Information_" + b);
+        document.getElementById("Gallery_Album_Information").appendChild(Gallery_Album_Information_Item);
+
+        var Gallery_Album_Information_Item_Title = document.createElement('p');
+        Gallery_Album_Information_Item_Title.classList.add("Gallery_Information_Item_Title");
+        Gallery_Album_Information_Item_Title.innerHTML = Gallery_Album_Information_Separated[a];
+        document.getElementById("Gallery_Album_Information_" + b).appendChild(Gallery_Album_Information_Item_Title);
+        
+        var Gallery_Album_Information_Item_Title = document.createElement('p');
+        Gallery_Album_Information_Item_Title.classList.add("Gallery_Information_Item_Value");
+        Gallery_Album_Information_Item_Title.innerHTML = Gallery_Album_Information_Separated[a + 1];
+        document.getElementById("Gallery_Album_Information_" + b).appendChild(Gallery_Album_Information_Item_Title);
+    }
+
+    var LineCounter = 8;
+    while (Gallery_Album_RawData[LineCounter] != undefined) {
+        Gallery_Album_ImageLinks.push(Gallery_Album_RawData[LineCounter].replace("\r", ""));
+        //console.log(Gallery_Album_ImageLinks);
+        LineCounter++;
+    }
+
+    Gallery_Album_ImageLinks_Separated = [];
+    for (a = 0; a != Gallery_Album_ImageLinks.length; a++){
+        Gallery_Album_ImageLinks_Separated.push(Gallery_Album_ImageLinks[a].split("%&")[0]);
+        Gallery_Album_ImageLinks_Separated.push(Gallery_Album_ImageLinks[a].split("%&")[1]);
+    }
+    //console.log(Gallery_Album_ImageLinks_Separated);
+    Gallery_Generate_Album();
+}
+
+var Gallery_Album_Generation_Level = 1;
+var Gallery_Album_Generation_Limit = 6;
+var Gallery_Album_Generation_StartingPoint = 0;
+
+function Gallery_Generate_Album(){
+    /*console.log(Gallery_Album_Generation_Level);
+    console.log(Gallery_Album_Generation_StartingPoint);
+    console.log(Gallery_Album_Generation_Limit * Gallery_Album_Generation_Level);*/
+    for (a = Gallery_Album_Generation_StartingPoint; a != Gallery_Album_Generation_Limit * Gallery_Album_Generation_Level * 2; a += 2){
+        var Gallery_Album_Item = document.createElement("div");
+        Gallery_Album_Item.classList.add("Gallery_Album_Item");
+        Gallery_Album_Item.setAttribute("onclick", "Subwindows_Open('ImageView'); Gallery_Album_ImageView_ChangeImage(this.getAttribute('data-id'));");
+        Gallery_Album_Item.setAttribute("style", 'background-image: url("' + Gallery_Album_ImageLinks_Separated[a] + '");');
+        Gallery_Album_Item.setAttribute("data-id", Gallery_Album_ImageLinks_Separated[a + 1]);
+        if (Gallery_Album_ImageLinks_Separated[a] != undefined || Gallery_Album_ImageLinks_Separated[a] != null){
+            document.getElementById("Gallery_Album").appendChild(Gallery_Album_Item);
+        }
+        
+    }
+    Gallery_Album_Generation_StartingPoint = Gallery_Album_Generation_Limit * Gallery_Album_Generation_Level * 2;
+    Gallery_Album_Generation_Level++;
+}
+
+function Gallery_Album_ImageView_ChangeImage(URL){
+    document.getElementById("Gallery_ImageView_Image").setAttribute("style", "background-image: url('" + URL + "');");
+}
+
