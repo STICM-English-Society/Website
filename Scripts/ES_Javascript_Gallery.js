@@ -13,8 +13,16 @@ function Gallery_Generate_Information(){
     Gallery_Album_Name = Gallery_Album_RawData[1];
     Gallery_Album_Description = Gallery_Album_RawData[2];
     var LineCounter = 4;
-    while (Gallery_Album_RawData[LineCounter] != "#>\r") {
-        Gallery_Album_Information.push(Gallery_Album_RawData[LineCounter].replace("\r", ""));
+    while (Gallery_Album_RawData[LineCounter] != "#>\r" && Gallery_Album_RawData[LineCounter] != "#>") {
+        if (LineCounter > 100){
+            console.log("Loop broken due to exceeding limit");
+            break;
+        }
+        if (Gallery_Album_RawData[LineCounter].includes("\r")){
+            Gallery_Album_Information.push(Gallery_Album_RawData[LineCounter].replace("\r", ""));
+        } else {
+            Gallery_Album_Information.push(Gallery_Album_RawData[LineCounter]);
+        }
         //console.log(Gallery_Album_Information);
         LineCounter++;
     }
@@ -50,7 +58,15 @@ function Gallery_Generate_Information(){
 
     var LineCounter = 8;
     while (Gallery_Album_RawData[LineCounter] != undefined) {
-        Gallery_Album_ImageLinks.push(Gallery_Album_RawData[LineCounter].replace("\r", ""));
+        if (LineCounter > 100){
+            console.log("Loop broken due to exceeding limit");
+            break;
+        }
+        if(Gallery_Album_RawData[LineCounter].includes("\r")){
+            Gallery_Album_ImageLinks.push(Gallery_Album_RawData[LineCounter].replace("\r", ""));
+        } else {
+            Gallery_Album_ImageLinks.push(Gallery_Album_RawData[LineCounter]);
+        }
         //console.log(Gallery_Album_ImageLinks);
         LineCounter++;
     }
