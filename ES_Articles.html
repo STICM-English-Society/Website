@@ -29,39 +29,84 @@
       <h1 class="Branch_Title">
         Articles
       </h1>
-      <div class="Branch_Navigation_Search">
-        <h4 class="Branch_Navigation_Search_Section_Title">
-          Search by title
-        </h4>
-        <div></div>
-        <h4 class="Branch_Navigation_Search_Section_Title">
-          Filter by
-        </h4>
-        <div></div>
-        <input class="Branch_Navigation_Search_Input" placeholder="Search by title"></input>
-        <img class="Branch_Navigation_Search_Button" src="Assets/Icons/icon_search.png"/>
-        <div class="Branch_Navigation_Search_Dropdown">
-          Categories
+      <div class="Branch_Content">
+        <div class="Branch_Featured">
+          <h1 class="Branch_Content_Title">
+            Featured
+          </h1>
+          <p class="Branch_Content_Paragraph">
+            Sorry, I'm on my 14-hour lunch break. This section will have content once I get a hold of actual articles to feature here. In the mean time, pretend this section doesn't exist.
+          </p>
         </div>
-        <div class="Branch_Navigation_Search_Dropdown">
-          Authors
-        </div>
-      </div>
-      <div class="Branch_Navigation" data-id="Type_List" id="Branch_Navigation">
-        <div class="Branch_Navigation_Item">
-          <h2 class="Branch_Navigation_Item_Title">
-            Test Article
-          </h2>
-          <div class="Branch_Navigation_Item_Details">
-            <p class="Branch_Navigation_Item_Details_Text">
-              Author: Elmer Felisilda
-            </p>
-            <p class="Branch_Navigation_Item_Details_Text">
-              Category: Test
-            </p>
-            <p class="Branch_Navigation_Item_Details_Text">
-              Date published: 27 May 2023
-            </p>
+        <div class="Branch_Navigation">
+          <h1 class="Branch_Content_Title">
+            All articles
+          </h1>
+          <div class="Branch_Navigation_Search">
+            <input type="text" class="Branch_Navigation_Search_Input" placeholder="Search for titles, authors, or categories" id="BranchNavigation_Search_Query" oninput="BranchNavigation_Search_Articles(this.value)"/>
+            <img src="Assets/Icons/icon_search.png" class="Branch_Navigation_Search_Button" onclick="BranchNavigation_Search_Articles(document.getElementById('BranchNavigation_Search_Query').value)"/>
+          </div>
+          <div class="Branch_Navigation_Status">
+            <h3 class="Branch_Navigation_Status_Text" id="Branch_Navigation_Status">
+              Loading article list. Please wait...
+            </h3>
+          </div>
+          <div class="Branch_Navigation_Grid" id="Branch_Navigation_Main">
+            <!--<div class="Branch_Navigation_Grid_Item">
+              <div class="Branch_Navigation_Grid_Item_Thumbnail"></div>
+              <h2 class="Branch_Navigation_Grid_Item_Title">
+                Test Title
+              </h2>
+              <div class="Branch_Navigation_Grid_Item_Details">
+                <div class="Branch_Navigation_Grid_Item_Details_Item">
+                  Jemma Regalados
+                </div>
+                <div class="Branch_Navigation_Grid_Item_Details_Item">
+                  Test Category
+                </div>
+                <div class="Branch_Navigation_Grid_Item_Details_Item">
+                  July 13, 2023
+                </div>
+              </div>
+            </div>
+            <div class="Branch_Navigation_Grid_Item">
+              <div class="Branch_Navigation_Grid_Item_Thumbnail"></div>
+              <h2 class="Branch_Navigation_Grid_Item_Title">
+                Test Title 2
+              </h2>
+              <div class="Branch_Navigation_Grid_Item_Details">
+                <div class="Branch_Navigation_Grid_Item_Details_Item">
+                  Jemma Regalados
+                </div>
+                <div class="Branch_Navigation_Grid_Item_Details_Item">
+                  Test Category
+                </div>
+                <div class="Branch_Navigation_Grid_Item_Details_Item">
+                  July 13, 2023
+                </div>
+              </div>
+            </div>
+            <div class="Branch_Navigation_Grid_Item">
+              <div class="Branch_Navigation_Grid_Item_Thumbnail"></div>
+              <h2 class="Branch_Navigation_Grid_Item_Title">
+                Test Title 3
+                Test Title 3
+                Test Title 3
+                Test Title 3
+                Test Title 3
+              </h2>
+              <div class="Branch_Navigation_Grid_Item_Details">
+                <div class="Branch_Navigation_Grid_Item_Details_Item">
+                  Jemma Regalados
+                </div>
+                <div class="Branch_Navigation_Grid_Item_Details_Item">
+                  Test Category
+                </div>
+                <div class="Branch_Navigation_Grid_Item_Details_Item">
+                  July 13, 2023
+                </div>
+              </div>
+            </div>-->
           </div>
         </div>
       </div>

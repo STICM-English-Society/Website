@@ -20,7 +20,7 @@ function Slideshow_Stop(){
 }
 var Slideshow_TotalSlides;
 function Slideshow_Loop(){
-    console.log("Slide number: " + Slideshow_SlideNumber);
+    //console.log("Slide number: " + Slideshow_SlideNumber);
     Slideshow_TotalSlides = document.querySelectorAll(".Home_Latest_Item").length;
     document.querySelectorAll(".Home_Latest_Item")[Slideshow_SlideNumber].style.opacity = "100%";
     Slideshow_SlideNumber++;

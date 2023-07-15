@@ -108,3 +108,13 @@ function Subwindows_Close(ID){
 
   subwindow_activeSubwindow = "none";
 }
+
+function scrollToPosition(direction){
+	if (direction == "bottom"){
+    console.log("Bottom");
+		document.querySelectorAll("Main_Content_Container").scrollTo(0, document.getElementById("pageElement_Content").scrollHeight);
+	} else if (direction == "top"){
+    console.log("Top");
+		document.querySelectorAll("Main_Content_Container").scrollTop = 0;
+	}
+}
