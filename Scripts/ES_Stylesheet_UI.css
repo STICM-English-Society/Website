@@ -381,3 +381,32 @@ a{
 	margin: 0;
 	text-align: center;
 }
+
+.Page_BackButton{
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	position: sticky;
+	top: 10px;
+	background-color: #264653;
+	align-items: center;
+	transition: var(--Element-Transition-Delay);
+	width: 50px;
+	overflow-x: hidden;
+	left: 10%;
+	display: none;
+}
+
+.Page_BackButton:hover{
+	width: 250px;
+}
+
+.Page_BackButton_Icon{
+	width: 30px;
+	padding: 10px;
+}
+
+.Page_BackButton_Text{
+	font-family: Roboto;
+	color: white;
+	text-wrap: nowrap;
+}

@@ -59,11 +59,19 @@
 
 .Branch_Navigation_Status{
     /* background-color: #1e3741; */
+    overflow-y: hidden;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+    margin-top: none;
+    max-height: 500px;
+    transition: 2s;
+    position: sticky;
 }
 
 .Branch_Navigation_Status_Text{
     font-family: Raleway;
     color: #1e3741;
+    margin: 0;
 }
 
 .Branch_Navigation_Grid{
@@ -78,6 +86,13 @@
     flex-direction: column;
     /* width: 300px; */
     height: auto;
+    transition: var(--Element-Transition-Delay);
+}
+
+.Branch_Navigation_Grid_Item:hover{
+    transform: scale(1.02);
+    box-shadow: var(--Element-BoxShadow);
+    background-color: #dddbdb;
 }
 
 .Branch_Navigation_Grid_Item_Thumbnail{
@@ -130,6 +145,9 @@
     height: 50px;
     background-color: #264653;
     align-items: center;
+    z-index: 50;
+    top: 10px;
+    position: sticky;
 }
 
 .Branch_Navigation_Search_Input{

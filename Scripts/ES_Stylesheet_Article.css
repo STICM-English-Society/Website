@@ -15,7 +15,7 @@
 }
 
 .Article_Header_Fade{
-    background: linear-gradient(178deg, rgba(0,0,0,0) 25%, var(--Header-Thumbnail-Fade-Color) 100%);
+    /* background: linear-gradient(180deg, rgba(0,0,0,0) 90%, var(--Header-Thumbnail-Fade-Color) 100%); */
 	z-index: 0;
 	width: 100%;
 	height: 100%;
@@ -58,17 +58,36 @@
 }
 
 .Article_Info{
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    grid-gap: 10px;
+    flex-wrap: wrap;
+    /* background-color: gray; */
 }
 
-.Article_Info_Author{
-    font-family: Roboto;
+.Article_Info_Item{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 5px;
+    padding: 10px;
+    background-color: #dbdbdb;
 }
 
-.Article_Info_Publication{
+.Article_Info_Item > p{
+    margin: 0;
+}
+
+.Article_Info_Item_Title{
+    font-weight: 700;
     font-family: Roboto;
+    color: #264653;
+}
+
+.Article_Info_Item_Value{
+    font-family: Roboto;
+    color: #264653;
 }
 
 .Article_Content_Paragraph{
@@ -111,4 +130,14 @@
     font-family: Roboto;
     font-style: italic;
     margin: 0;
+}
+
+@media only screen and (max-width: 650px){
+    .Article_Title{
+        font-size: 3rem;
+    }
+
+    .Article_Main_Content_Container{
+        width: calc(100% - 20px);
+    }
 }

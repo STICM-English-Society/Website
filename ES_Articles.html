@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Test_Page</title>
+    <title>Articles and Literary Works</title>
     <link rel="stylesheet" href="Scripts/ES_Stylesheet_UI.css" />
     <link rel="stylesheet" href="Scripts/ES_Stylesheet_Article.css" />
     <!-- <link rel="stylesheet" href="Scripts/ES_Stylesheet.css"> -->
@@ -24,7 +24,7 @@
   <script src="Scripts/ES_Javascript.js"></script>
   <script src="Scripts/ES_Javascript_UI.js"></script>
   <script src="Scripts/ES_Javascript_BranchNavigation.js"></script>
-  <body id="pageElement_Body" onload="Load_Template('Template_UI'), BranchNavigation_Generate_List()">
+  <body id="pageElement_Body" onload="Load_Template('Template_UI'), BranchNavigation_Generate_List_Articles()">
     <div class="Main_Content_Container">
       <h1 class="Branch_Title">
         Articles
@@ -46,7 +46,7 @@
             <input type="text" class="Branch_Navigation_Search_Input" placeholder="Search for titles, authors, or categories" id="BranchNavigation_Search_Query" oninput="BranchNavigation_Search_Articles(this.value)"/>
             <img src="Assets/Icons/icon_search.png" class="Branch_Navigation_Search_Button" onclick="BranchNavigation_Search_Articles(document.getElementById('BranchNavigation_Search_Query').value)"/>
           </div>
-          <div class="Branch_Navigation_Status">
+          <div class="Branch_Navigation_Status" id="Branch_Navigation_Status_Container">
             <h3 class="Branch_Navigation_Status_Text" id="Branch_Navigation_Status">
               Loading article list. Please wait...
             </h3>

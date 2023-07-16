@@ -1,12 +1,108 @@
-console.log("This is detected");
 var BranchList_Article_Name = [];
 var BranchList_Article_Author = [];
 var BranchList_Article_Category = [];
 var BranchList_Article_Date_Published = [];
 var BranchList_Article_URL = [];
 var BranchList_Article_Thumbnail = [];
-var BranchList_Data;
-function BranchNavigation_Generate_List(){
+
+var BranchList_Album_Name = [];
+var BranchList_Album_Author = [];
+var BranchList_Album_Category = [];
+var BranchList_Album_Date_Published = [];
+var BranchList_Album_IndexFileName = [];
+var BranchList_Album_Thumbnail = [];
+
+function BranchNavigation_Generate_List_Gallery(){
+    const request = new XMLHttpRequest();
+    request.open("GET", "Gallery/Index_Gallery_Main.txt", false);
+    request.send();
+    var messages = request.responseText.split("\n");
+    console.log(messages);
+    BranchList_Data = messages;
+    for (a = 6; a != messages.length; a++){
+        console.log("Processing item " + a + "...");
+        BranchList_Line_Data = messages[a].split("%&");
+        BranchList_Album_Name[a] = BranchList_Line_Data[0];
+        BranchList_Album_Author[a] = BranchList_Line_Data[1];
+        BranchList_Album_Category[a] = BranchList_Line_Data[2];
+        BranchList_Album_Date_Published[a] = BranchList_Line_Data[3];
+        BranchList_Album_IndexFileName[a] = BranchList_Line_Data[4];
+        if (BranchList_Line_Data[5].includes("\r")){
+            BranchList_Album_Thumbnail[a] = BranchList_Line_Data[5].replace("\r", "");
+        } else {
+            BranchList_Album_Thumbnail[a] = BranchList_Line_Data[5];
+        }
+        console.log("Done processing item " + a + ".");
+    }
+    BranchNavigation_Generate_BranchList_Gallery();
+}
+
+function BranchNavigation_Generate_BranchList_Gallery(){
+    for (a = 6; a != BranchList_Album_Name.length; a++){
+        console.log("Processing item " + a + "...");
+        // Anchor
+        var BranchList_Item_Anchor = document.createElement('a');
+        BranchList_Item_Anchor.setAttribute("href", "ES_AlbumViewer.html?albumName=" + BranchList_Album_IndexFileName[a]);
+        BranchList_Item_Anchor.setAttribute("id", "BranchList_Main_Item_Anchor_" + a);
+        document.getElementById("Branch_Navigation_Main").appendChild(BranchList_Item_Anchor);
+
+        // Item Container
+        var BranchList_Item_Div = document.createElement('div');
+        BranchList_Item_Div.setAttribute('id','BranchList_Main_Item_Div_' + a);
+        BranchList_Item_Div.className = "Branch_Navigation_Grid_Item";
+        document.getElementById("BranchList_Main_Item_Anchor_" + a).appendChild(BranchList_Item_Div);
+
+        // Item Thumbnail
+        var BranchList_Item_Thumbnail = document.createElement('div');
+        BranchList_Item_Thumbnail.setAttribute('style', 'background-image: url("' + BranchList_Album_Thumbnail[a] + '")');
+        BranchList_Item_Thumbnail.className = "Branch_Navigation_Grid_Item_Thumbnail";
+        document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Thumbnail);
+
+        // Item Title
+        var BranchList_Item_Title = document.createElement('h2');
+        BranchList_Item_Title.innerHTML = BranchList_Album_Name[a];
+        BranchList_Item_Title.className = "Branch_Navigation_Grid_Item_Title";
+        document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Title);
+
+        // Item Detail Container
+        var BranchList_Item_Details = document.createElement('div');
+        BranchList_Item_Details.setAttribute('id', 'BranchList_Main_Item_Details_' + a);
+        BranchList_Item_Details.className = "Branch_Navigation_Grid_Item_Details";
+        document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Details);
+
+        // Item Detail Author
+        var BranchList_Item_Details_Item = document.createElement('div');
+        BranchList_Item_Details_Item.innerHTML = BranchList_Album_Author[a];
+        BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
+        BranchList_Item_Details_Item.classList.add("Detail_Type_Author");
+        BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
+        document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
+
+        // Item Detail Category
+        var BranchList_Item_Details_Item = document.createElement('div');
+        BranchList_Item_Details_Item.innerHTML = BranchList_Album_Category[a];
+        BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
+        BranchList_Item_Details_Item.classList.add("Detail_Type_Category");
+        BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
+        document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
+
+        // Item Detail Publishing Date
+        var BranchList_Item_Details_Item = document.createElement('div');
+        BranchList_Item_Details_Item.innerHTML = BranchList_Album_Date_Published[a];
+        BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
+        BranchList_Item_Details_Item.classList.add("Detail_Type_DatePublished");
+        BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
+        document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
+
+        console.log("Done processing item " + a + ".");
+    }
+    document.getElementById("Branch_Navigation_Status").style.display = "none";
+    document.getElementById("Branch_Navigation_Status_Container").style.maxHeight = "0px";
+    BranchNavigation_Search_SetDataToUppercase();
+}
+
+
+function BranchNavigation_Generate_List_Articles(){
     const request = new XMLHttpRequest();
     request.open("GET", "Articles/Index_Articles.txt", false);
     request.send();
@@ -131,6 +227,7 @@ function BranchNavigation_Generate_BranchList_Articles(){
         //console.log("Done processing item " + a + ".");
     }
     document.getElementById("Branch_Navigation_Status").style.display = "none";
+    document.getElementById("Branch_Navigation_Status_Container").style.maxHeight = "0px";
     BranchNavigation_Search_SetDataToUppercase();
 }
 
@@ -165,6 +262,7 @@ function BranchNavigation_Search_Articles(Query){
     }
 
     document.getElementById("Branch_Navigation_Status").style.display = "block";
+    document.getElementById("Branch_Navigation_Status_Container").style.maxHeight = "500px";
     document.getElementById("Branch_Navigation_Status").innerHTML = BranchList_Search_Results_Lines.length + " results for '" + Query + "'";
     if (BranchList_Search_Results_Lines.length == 0){
         document.getElementById("Branch_Navigation_Status").innerHTML = "No article found containing '" + Query + "'.";
@@ -172,6 +270,7 @@ function BranchNavigation_Search_Articles(Query){
 
     if (Query == ""){
         document.getElementById("Branch_Navigation_Status").style.display = "none";
+        document.getElementById("Branch_Navigation_Status_Container").style.maxHeight = "1px";
     }
 }
 

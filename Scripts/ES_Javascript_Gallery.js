@@ -5,9 +5,21 @@ var Gallery_Album_RawData;
 var Gallery_Album_ImageLinks = [];
 var Gallery_Album_ImageLinks_Separated = [];
 
-function Gallery_Generate_Information(){
+var Gallery_Album_IndexFinder_QueryString;
+var Gallery_Album_IndexFinder_URLParameters;
+var Gallery_Album_IndexFinder_IndexFileName;
+function Gallery_IndexFinder(){
+    Gallery_Album_IndexFinder_QueryString = window.location.search;
+    Gallery_Album_IndexFinder_URLParameters = new URLSearchParams(Gallery_Album_IndexFinder_QueryString);
+    Gallery_Album_IndexFinder_IndexFileName = "Gallery/Album_Indexes/Index_" + Gallery_Album_IndexFinder_URLParameters.get('albumName') + ".txt";
+    console.log(Gallery_Album_IndexFinder_IndexFileName);
+    Gallery_Generate_Information(Gallery_Album_IndexFinder_IndexFileName);
+}
+
+
+function Gallery_Generate_Information(IndexURL){
     const request = new XMLHttpRequest();
-    request.open("GET", "Gallery/ES_Template_Photos/Index_ES_Template_Photos.txt", false);
+    request.open("GET", IndexURL, false);
     request.send();
     Gallery_Album_RawData = request.responseText.split("\n");
     Gallery_Album_Name = Gallery_Album_RawData[1];
