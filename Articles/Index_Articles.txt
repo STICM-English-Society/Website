@@ -1,13 +1,13 @@
 ==================
-Index_Articles.txt
-This text file contains the records of the articles that is currently up. ES_Articles.html will use this file to generate the article list.
-To add a record, follow the format for one line: Article Name%&Article Author%&Article Category%&Date Published%&URL of the article file%&Thumbnail image
+Link index name here
+This text file contains the records of the gallery that is currently up. ES_Gallery.html will use this file to generate the article list.
+To add a record, follow the format for one line: Album Name%&Album Photographer(s)%&Album Category%&Date Published%&File name of the index file associated with the album (remove Index_ prefix and .txt extension)%&Thumbnail image
 Scanning starts at line 7. 
 ==================
 Looking for an article that actually links to something? Click this one!%&Padilla Padua%&Testing Purposes%&16 July 2023%&ES_Template_Articles.html%&Assets/Images/Articles/Placeholder.png
 AMAKABOGERA Bodega? Star Magic Star Maymay Entrata Reveals a new selling opportunity%&Jemma Regalados%&Showbiz%&22 May 2023%&Article_URL_1.html%&Assets/Images/Articles/Placeholder.png
-What's up danger - Man challenges local crevice to a jump-off, falls nearly to his death%&Andrew Maglangit%&Local%&21 May 2023%&Article_URL_1.html%&Assets/Images/Articles/Placeholder.png
-Onion prices soar to new heights; now competes with the price of the latest iPhones%&Andrew Maglangit%&Local%&27 May 2023%&Article_URL_1.html%&Assets/Images/Articles/Placeholder.png
+What's up danger - Man challenges local crevice to a jump-off, falls nearly to his death%&Jemma Regalados%&Local%&21 May 2023%&Article_URL_1.html%&Assets/Images/Articles/Placeholder.png
+Onion prices soar to new heights; now competes with the price of the latest iPhones%&Jemma Regalados%&Local%&27 May 2023%&Article_URL_1.html%&Assets/Images/Articles/Placeholder.png
 Why dark mode is superior%&Jemma Regalados%&Opinion%&28 May 2023%&Article_URL_1.html%&Assets/Images/Articles/Placeholder.png
 15 reasons why this website is made using unconventional methods%&Padilla Padua%& Website Updates%& 29 May 2023%&Article_URL_2.html%&Assets/Images/Articles/Placeholder.png
 There's a slight chance this will get taken down after a year%&Christopher Ramos%&Gossip%&30 May 2023%&Article_URL_3.html%&Assets/Images/Articles/Placeholder.png
