@@ -94,7 +94,7 @@
 
 .Gallery_Album_Item:active{
     transform: scale(1.0);
-    background-size: 300%;
+    background-size: 110%;
 }
 
 /* .Gallery_Album_Item:nth-child(1){
@@ -150,7 +150,7 @@
     backdrop-filter: var(--Element-BackdropBlur);
     background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
-    height: calc(100% - 50px);
+    height: 100%;
     display: grid;
     grid-template-rows: 50px 1fr;
     /* display: none; */

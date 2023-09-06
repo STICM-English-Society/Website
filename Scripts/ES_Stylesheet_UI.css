@@ -73,6 +73,7 @@ a{
 	position: fixed;
 	user-select: none;
 	z-index: 50;
+	transition: var(--Element-Transition-Delay);
 }
 
 .UI_Header_Hamburger{
@@ -294,6 +295,7 @@ a{
 	overflow-y: auto;
 	/* padding: 20px; */
 	padding-top: 0px;
+	transition: var(--Element-Transition-Delay);
 }
 
 
@@ -306,6 +308,7 @@ a{
 	/* padding: 20px; */
 	padding-top: 0px;
 	z-index: 40;
+	transition: var(--Element-Transition-Delay);
 }
 
 ::-webkit-scrollbar {

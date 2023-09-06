@@ -104,6 +104,33 @@
     text-transform: uppercase;
 }
 
+.Home_Latest_Carousel_Selector{
+    /* background-color: #264653; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home_Latest_Carousel_Selector_Item{
+    height: 10px;
+    width: 50px;
+    background-color: #2a9d8f;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.75s;
+    cursor: pointer;
+}
+
+.Home_Latest_Carousel_Selector_Item:hover{
+    transition: 0.2s;
+    transform: scale(1.3);
+}
+
+.Home_Latest_Carousel_Selector_Item[data-id = "Selected"]{
+    width: 150px;
+}
+
 .Home_Featured_Title{
     font-family: Hansief;
     color: #264653;

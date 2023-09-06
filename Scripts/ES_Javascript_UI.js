@@ -112,9 +112,31 @@ function Subwindows_Close(ID){
 function scrollToPosition(direction){
 	if (direction == "bottom"){
     console.log("Bottom");
-		document.querySelectorAll("Main_Content_Container").scrollTo(0, document.getElementById("pageElement_Content").scrollHeight);
+		document.querySelectorAll(".Main_Content_Container").scrollTo(0, document.getElementById("pageElement_Body").scrollHeight);
 	} else if (direction == "top"){
     console.log("Top");
-		document.querySelectorAll("Main_Content_Container").scrollTop = 0;
+		document.querySelectorAll(".Main_Content_Container").scrollTop = 0;
 	}
+}
+
+function Header_Hide(){
+  document.getElementById("pageElement_Header").style.transform = "translateY(-50px)";
+  document.querySelector(".Main_Content_Container").style.marginTop = "0px";
+  document.querySelector(".Main_Content_Container").style.height = "100%";
+
+  if (document.querySelector(".Main_Subwindows_Container") != null){
+    document.querySelector(".Main_Subwindows_Container").style.marginTop = "0px"
+    document.querySelector(".Main_Subwindows_Container").style.height = "100%"
+  }
+}
+
+function Header_Show(){
+  document.getElementById("pageElement_Header").style.transform = "translateY(0px)";
+  document.querySelector(".Main_Content_Container").style.marginTop = "50px";
+  document.querySelector(".Main_Content_Container").style.height = "calc(100% - 50px)";
+
+  if (document.querySelector(".Main_Subwindows_Container") != null){
+    document.querySelector(".Main_Subwindows_Container").style.marginTop = "50px"
+    document.querySelector(".Main_Subwindows_Container").style.height = "calc(100% - 50px)"
+  }
 }

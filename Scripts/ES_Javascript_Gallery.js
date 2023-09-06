@@ -103,7 +103,7 @@ function Gallery_Generate_Album(){
     for (a = Gallery_Album_Generation_StartingPoint; a != Gallery_Album_Generation_Limit * Gallery_Album_Generation_Level * 2; a += 2){
         var Gallery_Album_Item = document.createElement("div");
         Gallery_Album_Item.classList.add("Gallery_Album_Item");
-        Gallery_Album_Item.setAttribute("onclick", "Subwindows_Open('ImageView'); Gallery_Album_ImageView_ChangeImage(this.getAttribute('data-id'));");
+        Gallery_Album_Item.setAttribute("onclick", "Subwindows_Open('ImageView'); Gallery_Album_ImageView_ChangeImage(this.getAttribute('data-id')); Header_Hide()");
         Gallery_Album_Item.setAttribute("style", 'background-image: url("' + Gallery_Album_ImageLinks_Separated[a] + '");');
         Gallery_Album_Item.setAttribute("data-id", Gallery_Album_ImageLinks_Separated[a + 1]);
         if (Gallery_Album_ImageLinks_Separated[a] != undefined || Gallery_Album_ImageLinks_Separated[a] != null){
@@ -117,5 +117,6 @@ function Gallery_Generate_Album(){
 
 function Gallery_Album_ImageView_ChangeImage(URL){
     document.getElementById("Gallery_ImageView_Image").setAttribute("style", "background-image: url('" + URL + "');");
+    document.getElementById("Gallery_ImageView_Image").setAttribute("onclick", "window.open('" + URL + "', '_blank');");
 }
 
