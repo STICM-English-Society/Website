@@ -1,25 +1,181 @@
 .Home_Welcome{
     width: 100%;
     background-color: #264653;
-    background-image: url("../Assets/Images/Home/Header/1.png");
+    background-image: url("../Assets/Images/Home/Header/Header_Layer_Background.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
-    height: 30%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.Home_Welcome > img{
+    position: absolute;
+    top: 0;
+}
+
+.Home_Welcome_MainLayers{
+    position: absolute;
+    /* top: 0; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    padding: 0;
+    /* background-color: #ececec; */
+    text-align: center;
+    overflow: hidden;
+}
+
+.Home_Welcome_MainLayers > img{
+    position: absolute;
+    right: 60%;
+}
+
+.Home_Welcome_Layer_Logo{
+    width: 200px;
+}
+
+.Home_Welcome_Layer_Cog{
+    width: 200px;
+}
+
+.Home_Welcome_Layer_Cog:nth-child(1){
+    /* transform: scale(1.8);
+    rotate: 30deg;
+    filter: blur(2px); */
+    background-color: #264653;
+}
+
+.Home_Welcome_Layer_Cog:nth-child(2){
+    transform: scale(1.9);
+    rotate: 30deg;
+    filter: blur(1.2px);
+}
+
+.Home_Welcome_Layer_Cog:nth-child(3){
+    transform: scale(4);
+    rotate: 45deg;
+    filter: blur(2.5px);
+}
+
+.Home_Welcome_Layer_Cog:nth-child(4){
+    transform: scale(10);
+    rotate: 45deg;
+    filter: blur(2.6px);
+}
+
+.Home_Welcome_Layer_Cog:nth-child(even){
+    animation-name: RotateLeft;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.Home_Welcome_Layer_Cog:nth-child(odd){
+    animation-name: RotateRight;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes RotateLeft{
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes RotateRight{
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: -360deg;
+    }
+}
+
+
+.Home_Welcome_Layer_Overlay_Central{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    /* mix-blend-mode: soft-light; */
+}
+
+.Home_Welcome_Layer_Overlay_Central{
+    opacity: 25%;
+    mix-blend-mode: soft-light;
+}
+
+.Home_Welcome_Layer_Overlay_Central:nth-child(2){
+    opacity: 2%;
+    mix-blend-mode: soft-light;
+}
+
+.Home_Welcome_Layer_Overlay_Central:nth-child(3){
+    opacity: 2%;
+    mix-blend-mode: soft-light;
+}
+
+.Home_Welcome_Layer_Overlay_Top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    opacity: 60%;
+    mix-blend-mode: soft-light;
+    
+}
+
+.Home_Welcome_Layer_Overlay_Top:nth-child(1){
+    opacity: 1%;
+    mix-blend-mode: soft-light;
+}
+
+.Home_Welcome_Layer_Overlay_Top:nth-child(2){
+    opacity: 1%;
+    mix-blend-mode: soft-light;
+}
+
+.Home_Welcome_Layer_Overlay_Top:nth-child(3){
+    opacity: 1%;
+    mix-blend-mode: soft-light;
+}
+
+.Home_Welcome_Text{
+    height: 500px;
+    width: 55%;
+    /* background-color: #264653; */
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}
+
 .Home_Welcome_Subtitle{
-    font-family: Hansief;
+    font-family: Gilroy Bold;
     color: white;
     margin: 0;
     text-transform: uppercase;
     font-size: 30;
-    text-align: center;
+    text-align: left;
+    z-index: 50;
+    /* position: absolute;
+    left: 40%; */
+    /* transform: translateY(25px); */
 }
 
 .Home_Welcome_Title{
@@ -27,8 +183,38 @@
     color: white;
     margin: 0;
     text-transform: uppercase;
-    font-size: 60;
-    text-align: center;
+    font-size: 62;
+    text-align: left;
+    z-index: 50;
+    /* position: absolute;
+    left: 40%; */
+    /* transform: translateY(-25px); */
+}
+
+@media only screen and (max-width: 700px)  {
+    .Home_Welcome_Text{
+        width: 100%;
+        height: 250px;
+        top: 275px;
+        right: unset;
+    }
+    .Home_Welcome_Title{
+        font-size: 53;
+        text-align: center;
+    }
+    .Home_Welcome_Subtitle{
+        font-size: 25;
+        text-align: center;
+    }
+    .Home_Welcome_MainLayers{
+        text-align: unset;
+        align-items: unset;
+        justify-content: center;
+    }
+    .Home_Welcome_MainLayers > img{
+        right: unset;
+        top: 100px;
+    }
 }
 
 .Home_Latest{

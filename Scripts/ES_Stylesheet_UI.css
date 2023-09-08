@@ -33,6 +33,27 @@
 	font-style: normal;
 }
 
+@font-face{
+	font-family: "Gilroy Medium";
+	src: url("../Assets/Fonts/Gilroy-Medium.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Gilroy Bold";
+	src: url("../Assets/Fonts/Gilroy-Bold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Gilroy Heavy";
+	src: url("../Assets/Fonts/Gilroy-Heavy.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
 *{
 	outline: var(--Debug-ElementOutline);
 }
