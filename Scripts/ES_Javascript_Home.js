@@ -49,7 +49,7 @@ function Slideshow_Change_Image(Number){
     }
     Slideshow_SlideNumber++;
     Slideshow_PreviousSlideNumber = Number;
-    console.log(Number);
+    //console.log(Number);
 }
 
 function Slideshow_Clear_Carousel(){
