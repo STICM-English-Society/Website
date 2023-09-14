@@ -5,14 +5,17 @@ var AutoStart_Slideshow = true;
 
 window.addEventListener('load', function(){
     if (AutoStart_Slideshow == true){
+        document.querySelectorAll(".Home_Latest_Item")[0].style.opacity = "100%";
         Slideshow_Start();
     }
 })
 
 function Slideshow_Start(){
-    Slideshow_Control = setInterval(Slideshow_Loop, Slideshow_Speed);
     Slideshow_TotalSlides = document.querySelectorAll(".Home_Latest_Item").length;
-    document.querySelectorAll(".Home_Latest_Item")[0].style.opacity = "100%";
+    //document.querySelectorAll(".Home_Latest_Item")[0].style.opacity = "100%";
+    Slideshow_Clear_Carousel();
+    Slideshow_Change_Image(0);
+    Slideshow_Control = setInterval(Slideshow_Loop, Slideshow_Speed);
     Slideshow_Clear_Carousel();
 }
 

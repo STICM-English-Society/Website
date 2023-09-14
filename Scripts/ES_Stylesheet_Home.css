@@ -395,13 +395,13 @@
 
 .Home_Featured_Articles_Item_Category{
     font-family: Roboto;
-    color: white;
+    color: #264653;
     width: auto;
     padding: 5px;
     margin: 15px;
     margin-bottom: 5px;
     height: 20px;
-    background-color: #264653;
+    background-color: #d6d4d4;
     max-width: auto;
     border-radius: 5px;
 }
@@ -446,7 +446,7 @@
     /* background-color: #2a9d8f; */
     margin-top: 7px;
     padding-top: 10px;
-    background-image: url("../Assets/Images/Home/Header/Header_Layer_Background.png");
+    background-image: url("../Assets/Images/Home/Header/Default_Background_2.png");
     background-position: center;
     background-size: cover;
     padding-bottom: 20px;

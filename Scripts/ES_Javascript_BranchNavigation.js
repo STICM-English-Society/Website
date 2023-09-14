@@ -254,11 +254,18 @@ function BranchNavigation_Search_Articles(Query){
     //console.log("Search result lines: " + BranchList_Search_Results_Lines);
 
     for (a = 6; a != BranchList_Data.length; a++){
+        
         document.getElementById("BranchList_Main_Item_Anchor_" + a).style.display = "none";
+        document.getElementById("BranchList_Main_Item_Anchor_" + a).style.animationName = "Animation_Branch_Navigation_Grid_Item_FadeOut";
+        document.getElementById("BranchList_Main_Item_Anchor_" + a).style.animationFillMode = "forwards";
+        document.getElementById("BranchList_Main_Item_Anchor_" + a).style.animationDuration = "0.25s";
     }
 
     for (a = 0; a != BranchList_Search_Results_Lines.length; a++){
         document.getElementById("BranchList_Main_Item_Anchor_" + BranchList_Search_Results_Lines[a]).style.display = "block";
+        document.getElementById("BranchList_Main_Item_Anchor_" + BranchList_Search_Results_Lines[a]).style.animationName = "Animation_Branch_Navigation_Grid_Item_FadeIn";
+        document.getElementById("BranchList_Main_Item_Anchor_" + BranchList_Search_Results_Lines[a]).style.animationFillMode = "forwards";
+        document.getElementById("BranchList_Main_Item_Anchor_" + BranchList_Search_Results_Lines[a]).style.animationDuration = "0.25s";
     }
 
     document.getElementById("Branch_Navigation_Status").style.display = "block";
