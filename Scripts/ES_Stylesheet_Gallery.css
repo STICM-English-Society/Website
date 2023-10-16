@@ -83,6 +83,11 @@
     background-repeat: no-repeat;
     background-size: 190%;
     transition: var(--Element-Transition-Delay);
+    opacity: 100%;
+}
+
+.Gallery_Album_Item_Loaded{
+    opacity: 100%;
 }
 
 .Gallery_Album_Item:hover{

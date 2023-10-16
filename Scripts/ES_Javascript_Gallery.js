@@ -93,7 +93,7 @@ function Gallery_Generate_Information(IndexURL){
 }
 
 var Gallery_Album_Generation_Level = 1;
-var Gallery_Album_Generation_Limit = 6;
+var Gallery_Album_Generation_Limit = 12;
 var Gallery_Album_Generation_StartingPoint = 0;
 
 function Gallery_Generate_Album(){
@@ -104,12 +104,20 @@ function Gallery_Generate_Album(){
         var Gallery_Album_Item = document.createElement("div");
         Gallery_Album_Item.classList.add("Gallery_Album_Item");
         Gallery_Album_Item.setAttribute("onclick", "Subwindows_Open('ImageView'); Gallery_Album_ImageView_ChangeImage(this.getAttribute('data-id')); Header_Hide()");
-        Gallery_Album_Item.setAttribute("style", 'background-image: url("' + Gallery_Album_ImageLinks_Separated[a] + '");');
+        
         Gallery_Album_Item.setAttribute("data-id", Gallery_Album_ImageLinks_Separated[a + 1]);
+
+        
+
         if (Gallery_Album_ImageLinks_Separated[a] != undefined || Gallery_Album_ImageLinks_Separated[a] != null){
             document.getElementById("Gallery_Album").appendChild(Gallery_Album_Item);
         }
-        
+        Gallery_Album_Item.setAttribute("style", 'background-image: url("' + Gallery_Album_ImageLinks_Separated[a] + '");');
+        Gallery_Album_Item.setAttribute("onload", 'this.style.opacity = 1');
+        // Gallery_Album_Item.addEventListener('load', function() {
+        //     // Set the opacity of the element to 100%
+        //     this.style.opacity = 1;
+        //   });
     }
     Gallery_Album_Generation_StartingPoint = Gallery_Album_Generation_Limit * Gallery_Album_Generation_Level * 2;
     Gallery_Album_Generation_Level++;

@@ -1,7 +1,7 @@
 .Socials{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(6, 200px);
+    /* grid-template-rows: 1fr; */
     /* display: flex;
     flex-direction: row;
     flex-wrap: wrap; */
@@ -9,14 +9,118 @@
     width: calc(100% - 20%);
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 50px;
 }
 
 .Socials_Item{
-    background-color: #f0f0f0;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    height: auto;
+    grid-gap: 10px;
+    align-self: center;
+    width: 1000px;
+    max-width: 1000px;
 }
+
+.Socials_Item:nth-child(odd){
+    display: grid;
+    grid-template-columns: 690px 300px;
+    height: 200px;
+    /* outline: solid red; */
+    animation-name: Socials_AnimationStart_Odd;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+}
+
+.Socials_Item:nth-child(even){
+    display: grid;
+    grid-template-columns: 300px 690px;
+    height: 200px;
+    animation-name: Socials_AnimationStart_Even;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+}
+
+.Socials_Item_TextSpace{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Socials_Item_TextSpace:nth-child(even){
+    align-items: end;
+}
+
+.Socials_Item_TextSpace_Platform{
+    font-family: Gilroy Bold;
+    margin: 0;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.Socials_Item_TextSpace_Handle{
+    font-family: Gilroy Bold;
+    margin: 0;
+    font-weight: 900;
+    font-size: 2rem;
+    transform: translateY(-10px);
+}
+
+.Socials_Item_TextSpace_Visit{
+    font-family: Gilroy Bold;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(21, 83, 255);
+    width: 150px;
+    color: white;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: var(--Element-Transition-Delay);
+}
+
+.Socials_Item_IconSpace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    /* width: 200px; */
+}
+
+.Socials_Item_IconSpace_Icon{
+    width: 125px;
+    height: 125px;
+    filter: brightness(0);
+}
+
+@keyframes Socials_AnimationStart_Odd {
+    0% {
+        grid-template-columns: 590px 500px;
+    }
+    75% {
+        grid-template-columns: 690px 300px;
+    }
+}
+
+@keyframes Socials_AnimationStart_Even {
+    0% {
+        grid-template-columns: 500px 590px;
+    }
+    75% {
+        grid-template-columns: 300px 690px;
+    }
+}
+
+/* Hover effects */
+.Socials_Item_TextSpace_Visit[data-id="1"]:hover{
+    background-color: red;
+}
+
+
+
 
 .Socials_Item_Images{
     background-position: center;

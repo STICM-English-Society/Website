@@ -1,5 +1,5 @@
 ==================
-Index_Gallery_Main.txt
+Link index name here
 This text file contains the records of the gallery that is currently up. ES_Gallery.html will use this file to generate the article list.
 To add a record, follow the format for one line: Album Name%&Album Photographer(s)%&Album Category%&Date Published%&File name of the index file associated with the album (remove Index_ prefix and .txt extension)%&Thumbnail image
 Scanning starts at line 7. 
@@ -7,3 +7,4 @@ Scanning starts at line 7.
 Nice Minecraft Screenshots%&ElmerF5445%&Testing Purposes%&2 July 2023%&ES_Template_Photos%&Assets/Images/Articles/Placeholder.png
 Test Album%&ElmerF5445%&Testing Purposes%&2 July 2023%&TestAlbum%&Assets/Images/Articles/Placeholder.png
 Leaders' Convergence%&Kiro Fernandez%&Documentation%&23 June 2023%&Leaders_Convergence%&https://drive.google.com/uc?export=view&id=1gPCfidhNHB2f3eDJ1TEKQFRsSebcudtr
+General Assembly 2023%&Nyx Galera, Aerol Jacob Epino%&Documentation%&26 September 2023%&General_Assembly_2023%&https://drive.google.com/uc?export=view&id=1V4LM-K9_duwtQwaWBl_PpSfCEHHPAHHd

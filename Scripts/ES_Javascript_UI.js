@@ -13,6 +13,10 @@ function Load_Template(templateId) {
         .content.cloneNode(true);
       const bodyElement = document.getElementById("pageElement_Body");
       bodyElement.appendChild(templateContent);
+
+      if (bodyElement.getAttribute("Access_Restrict") == "true"){
+        Access_Restrict();
+      }
     })
     .catch((error) => console.log(error));
 }
@@ -139,4 +143,11 @@ function Header_Show(){
     document.querySelector(".Main_Subwindows_Container").style.marginTop = "50px"
     document.querySelector(".Main_Subwindows_Container").style.height = "calc(100% - 50px)"
   }
+}
+
+function Access_Restrict(){
+  document.getElementById("pageElement_Sidebar").style.display = "none";
+  document.getElementById("pageElement_Header").querySelector(".UI_Header_Hamburger").style.display = "none";
+  document.getElementById("pageElement_Header").querySelector(".UI_Header_Title").style.justifyContent = "left";
+  document.getElementById("pageElement_Header").style.gridTemplateColumns = "1fr 50px";
 }

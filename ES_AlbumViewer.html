@@ -23,7 +23,7 @@
   <script src="Scripts/ES_Javascript.js"></script>
   <script src="Scripts/ES_Javascript_UI.js"></script>
   <script src="Scripts/ES_Javascript_Gallery.js"></script>
-  <body id="pageElement_Body" onload="Load_Template('Template_UI'), Gallery_IndexFinder()">
+  <body id="pageElement_Body" onload="Load_Template('Template_UI'), Gallery_IndexFinder()" Access_Restrict="true">
     <div class="Main_Subwindows_Container" id="pageElement_Subwindows" style="display: none">
       <div class="Gallery_ImageView" id="subwindow_ImageView">
         <div class="Gallery_ImageView_Top">
@@ -60,6 +60,9 @@
           </p>
         </div> -->
       </div>
+      <p class="Gallery_Description">
+        Click an image to view it in full resolution.
+      </p>
       <div class="Gallery_Album" id="Gallery_Album">
         <!-- <div class="Gallery_Album_Item" onclick="Subwindows_Open('ImageView')"></div>
         <div class="Gallery_Album_Item"></div>
