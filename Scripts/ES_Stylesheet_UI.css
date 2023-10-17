@@ -83,6 +83,7 @@ a{
 
 .UI_Header{
 	background-color: #264653;
+	background-color: #0936af;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -106,6 +107,7 @@ a{
 
 .UI_Header_Hamburger:hover{
 	background-color: #2a9d8f;
+	background-color: #06257a;
 	cursor: pointer;
 }
 
@@ -143,6 +145,7 @@ a{
 
 .UI_Header_Share:hover{
 	background-color: #2a9d8f;
+	background-color: #0e48e6;
 	cursor: pointer;
 }
 
@@ -152,6 +155,7 @@ a{
 
 .UI_Header_Share_Toast{
 	background-color: #264653;
+	background-color: #0e48e6;
 	margin-top: 50px;
 	width: 100px;
 	padding: 5px;
@@ -173,6 +177,7 @@ a{
 	top: 50px;
 	width: 300px;
 	background-color: #264653;
+	background-color: #0936af;
 	padding: 10px;
 	padding-right: 20px;
 	display: grid;
@@ -355,22 +360,22 @@ a{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background-color: var(--Accent-Color);
-	border-radius: 10px;
+	background-color: #0936af;
+	/* border-radius: 10px; */
 	
 	transition: var(--Element-Transition-Delay);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background-color: var(--Accent-Color-Hover);
-	border-radius: 10px;
+	background-color: rgb(5, 37, 124);
+	/* border-radius: 10px; */
 	width: 50px;
 	height: 50px;
 }
 /* Selection color */
 ::selection{
-	background-color: var(--Accent-Color);
+	background-color: #0936af;
 }
 
 .ComingSoon{
