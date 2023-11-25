@@ -2,6 +2,17 @@
 	UI
 */
 
+document.addEventListener('DOMContentLoaded', function() {
+  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const baseElement = document.getElementById('pageElement_Base');
+
+  if (isLocalhost) {
+      baseElement.href = '/';
+  } else {
+      baseElement.href = '/Website/';
+  }
+});
+
 function Load_Template(templateId) {
   fetch("ES_Template_4.html")
     .then((response) => response.text())

@@ -4,6 +4,7 @@ This text file contains the records of the gallery that is currently up. ES_Gall
 To add a record, follow the format for one line: Album Name%&Album Photographer(s)%&Album Category%&Date Published%&File name of the index file associated with the album (remove Index_ prefix and .txt extension)%&Thumbnail image
 Scanning starts at line 7. 
 ==================
+STI Marikina Talent Search 2023%&Adriene Dillo & Trisha Bravo%&Documentation%&October 2023%&ES_Article_Test_1.html%&https://drive.google.com/uc?export=view&id=1TZg7-Kt-pzHlz8JoMktFFf-Sdhl3pcj7
 Looking for an article that actually links to something? Click this one!%&Padilla Padua%&Testing Purposes%&16 July 2023%&ES_Template_Articles.html%&Assets/Images/Articles/Placeholder.png
 AMAKABOGERA Bodega? Star Magic Star Maymay Entrata Reveals a new selling opportunity%&Jemma Regalados%&Showbiz%&22 May 2023%&Article_URL_1.html%&Assets/Images/Articles/Placeholder.png
 What's up danger - Man challenges local crevice to a jump-off, falls nearly to his death%&Jemma Regalados%&Local%&21 May 2023%&Article_URL_1.html%&Assets/Images/Articles/Placeholder.png
