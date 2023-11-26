@@ -34,6 +34,7 @@
     grid-gap: 5px;
     padding: 10px;
     background-color: #dbdbdb;
+    border-radius: 7px;
 }
 
 .Gallery_Information_Item > p{

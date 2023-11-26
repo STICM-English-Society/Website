@@ -2,16 +2,16 @@
 	UI
 */
 
-document.addEventListener('DOMContentLoaded', function() {
-  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const baseElement = document.getElementById('pageElement_Base');
+// document.addEventListener('DOMContentLoaded', function() {
+//   const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+//   const baseElement = document.getElementById('pageElement_Base');
 
-  if (isLocalhost) {
-      baseElement.href = '/';
-  } else {
-      baseElement.href = '/Website/';
-  }
-});
+//   if (isLocalhost) {
+//       baseElement.href = '/';
+//   } else {
+//       baseElement.href = '/Website/';
+//   }
+// });
 
 function Load_Template(templateId) {
   fetch("ES_Template_4.html")
@@ -27,6 +27,9 @@ function Load_Template(templateId) {
 
       if (bodyElement.getAttribute("Access_Restrict") == "true"){
         Access_Restrict();
+      }
+      if (bodyElement.getAttribute("Branch_BackToParent") == "true"){
+        Branch_BackToParent_AddButton(bodyElement.getAttribute("Branch_BackToParent_URL"));
       }
     })
     .catch((error) => console.log(error));
@@ -161,4 +164,9 @@ function Access_Restrict(){
   document.getElementById("pageElement_Header").querySelector(".UI_Header_Hamburger").style.display = "none";
   document.getElementById("pageElement_Header").querySelector(".UI_Header_Title").style.justifyContent = "left";
   document.getElementById("pageElement_Header").style.gridTemplateColumns = "1fr 50px";
+}
+
+function Branch_BackToParent_AddButton(ParentURL){
+  document.getElementById("UI_Header_Branch_BackToParent").style.display = "grid";
+  document.getElementById("Branch_BackToParent_Anchor").setAttribute("href", ParentURL);
 }

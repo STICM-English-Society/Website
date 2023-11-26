@@ -441,3 +441,40 @@ a{
 	color: white;
 	text-wrap: nowrap;
 }
+
+.UI_Header_Branch_BackToParent{
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	position: fixed;
+	top: 60px;
+	left: 10px;
+	background-color: #0936af;
+	align-items: center;
+	transition: var(--Element-Transition-Delay);
+	width: 50px;
+	height: 50px;
+	overflow-x: hidden;
+	border-radius: 7px;
+	/* left: 10%; */
+	display: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+.UI_Header_Branch_BackToParent:hover{
+	width: 130px;
+	box-shadow: var(--Element-BoxShadow);
+}
+
+.UI_Header_Branch_BackToParent_Icon{
+	width: 30px;
+	padding: 5px;
+	padding-left: 7px;
+}
+
+.UI_Header_Branch_BackToParent_Text{
+	font-family: Roboto;
+	color: white;
+	text-wrap: nowrap;
+	margin: 0;
+}

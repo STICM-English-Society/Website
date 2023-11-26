@@ -8,7 +8,8 @@
 
 .Branch_Content{
     display: grid;
-    grid-template-columns: 1fr 300px;
+    /* grid-template-columns: 1fr 300px; */
+    grid-template-columns: 1fr;
     grid-gap: 10px;
     margin-left: 10%;
     margin-right: 10%;
@@ -29,6 +30,7 @@
     background-color: #f0f0f0;
     grid-area: 1 / 2 / 2 / 3;
     padding: 10px;
+    display: none;
 }
 
 .Branch_Navigation{
@@ -117,7 +119,7 @@ a:focus > .Branch_Navigation_Grid_Item{
 .Branch_Navigation_Grid_Item_Thumbnail{
     background-color: white;
     background-position: center;
-    background-size: fit;
+    background-size:cover;
     height: 200px;
     border-radius: 7px 7px 0px 0px;
 }
@@ -156,6 +158,8 @@ a:focus > .Branch_Navigation_Grid_Item{
     font-family: Roboto;
     color: #264653;
     border-radius: 5px;
+    max-width: 100%;
+    text-overflow: ellipsis;
 }
 
 
