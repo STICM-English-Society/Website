@@ -73,6 +73,9 @@
         grid-gap: 5px;
         grid-row-gap: 5px;
     }
+    .Gallery_Title{
+        margin-top: 70px;
+    }
 }
 
 .Gallery_Album_Item{

@@ -13,6 +13,10 @@
 //   }
 // });
 
+var fullPath = window.location.href;
+var PageName = fullPath.split("/").pop();
+console.log(PageName);
+
 function Load_Template(templateId) {
   fetch("ES_Template_4.html")
     .then((response) => response.text())
@@ -31,6 +35,10 @@ function Load_Template(templateId) {
       if (bodyElement.getAttribute("Branch_BackToParent") == "true"){
         Branch_BackToParent_AddButton(bodyElement.getAttribute("Branch_BackToParent_URL"));
       }
+      if (bodyElement.getAttribute("ShortenedLinks_HasShortenedLink") == "true"){
+        ShortenedLinks_GetShortenedLink(PageName);
+      }
+      
     })
     .catch((error) => console.log(error));
 }
@@ -57,9 +65,11 @@ function scrollToPosition(direction) {
   }
 }
 
+var CopyURL = window.location.href;
+
 function copyURLLink() {
   // Get the current URL
-  const currentUrl = window.location.href;
+  const currentUrl = CopyURL;
 
   // Create a temporary input element to hold the URL
   const tempInput = document.createElement("input");
@@ -78,7 +88,9 @@ function copyURLLink() {
 
   // Remove the input element from the DOM
   document.body.removeChild(tempInput);
-
+  if (CopyURL != window.location.href){
+    document.getElementById("Header_Toast_Share_Link_Text").innerHTML = "Link copied as " + CopyURL + "!";
+  }
   toast_Popup_Animate("Header_Toast_Share_Link");
 }
 
@@ -169,4 +181,29 @@ function Access_Restrict(){
 function Branch_BackToParent_AddButton(ParentURL){
   document.getElementById("UI_Header_Branch_BackToParent").style.display = "grid";
   document.getElementById("Branch_BackToParent_Anchor").setAttribute("href", ParentURL);
+}
+
+function ShortenedLinks_GetShortenedLink(PageName){
+  const request = new XMLHttpRequest();
+  request.open("GET", "Assets/ShortenedLinks.txt", false);
+  request.send();
+  var messages = request.responseText.split("\n");
+  console.log(messages);
+  File_Data = messages;
+  var ShortenedLinks_Line_Data;
+  var ShortenedLinks_Line_Data_WebURL = [];
+  var ShortenedLinks_Line_Data_ShortURL = [];
+  for (a = 5; a != File_Data.length; a++){
+    ShortenedLinks_Line_Data = File_Data[a].split("%&");
+    ShortenedLinks_Line_Data_WebURL[a] = ShortenedLinks_Line_Data[0];
+    ShortenedLinks_Line_Data_ShortURL[a] = ShortenedLinks_Line_Data[1].split("\r")[0];
+  }
+  // console.log(ShortenedLinks_Line_Data_WebURL);
+  // console.log(ShortenedLinks_Line_Data_ShortURL);
+  for (a = 5; a < ShortenedLinks_Line_Data_WebURL.length; a++){
+    if (ShortenedLinks_Line_Data_WebURL[a] == PageName){
+      CopyURL = ShortenedLinks_Line_Data_ShortURL[a];
+      break;
+    }
+  }
 }

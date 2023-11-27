@@ -157,7 +157,7 @@ a{
 	background-color: #264653;
 	background-color: #0e48e6;
 	margin-top: 50px;
-	width: 100px;
+	width: auto;
 	padding: 5px;
 	float: right;
 	z-index: 0;

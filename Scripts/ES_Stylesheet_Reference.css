@@ -4,6 +4,9 @@
 */
 
 :root{
+	--UI-Pallete-Level-1: #5390d9;
+	--UI-Pallete-Level-2: #5e60ce;
+
 	--Debug-ElementOutline: none;
 	/* Root values. This will be loaded when loadSettings() is triggered. */
 	--BGColor: rgb(255, 255, 255);
