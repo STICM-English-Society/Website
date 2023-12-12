@@ -1,3 +1,26 @@
+document.addEventListener('DOMContentLoaded', function () {
+   // Add an event listener to the .Main_Content_Container for scroll events
+    document.querySelector('.Main_Content_Container').addEventListener('scroll', function () {
+    // Calculate how far the user has scrolled within .Main_Content_Container
+    var scrollPosition = this.scrollTop;
+
+    // Calculate the height of .Main_Content_Container
+    var containerHeight = this.clientHeight;
+
+    // Calculate the height of the content inside .Main_Content_Container
+    var contentHeight = this.scrollHeight;
+
+    // Set a threshold (e.g., 200 pixels from the bottom) to trigger the function
+    var threshold = 200;
+
+    // Check if the user is near the bottom of .Main_Content_Container
+    if (scrollPosition + containerHeight >= contentHeight - threshold) {
+        // Call the function to generate more images
+        Gallery_Generate_Album();
+    }
+});
+});
+
 var Gallery_Album_Name;
 var Gallery_Album_Description;
 var Gallery_Album_Information = [];
@@ -8,6 +31,7 @@ var Gallery_Album_ImageLinks_Separated = [];
 var Gallery_Album_IndexFinder_QueryString;
 var Gallery_Album_IndexFinder_URLParameters;
 var Gallery_Album_IndexFinder_IndexFileName;
+
 function Gallery_IndexFinder(){
     Gallery_Album_IndexFinder_QueryString = window.location.search;
     Gallery_Album_IndexFinder_URLParameters = new URLSearchParams(Gallery_Album_IndexFinder_QueryString);
@@ -88,9 +112,12 @@ function Gallery_Generate_Information(IndexURL){
         Gallery_Album_ImageLinks_Separated.push(Gallery_Album_ImageLinks[a].split("%&")[0]);
         Gallery_Album_ImageLinks_Separated.push(Gallery_Album_ImageLinks[a].split("%&")[1]);
     }
+    document.getElementById("Gallery_Album_Blur").src = Gallery_Album_ImageLinks_Separated[0];
     //console.log(Gallery_Album_ImageLinks_Separated);
     Gallery_Generate_Album();
 }
+
+
 
 var Gallery_Album_Generation_Level = 1;
 var Gallery_Album_Generation_Limit = 12;
@@ -128,3 +155,5 @@ function Gallery_Album_ImageView_ChangeImage(URL){
     document.getElementById("Gallery_ImageView_Image").setAttribute("onclick", "window.open('" + URL + "', '_blank');");
 }
 
+
+ 

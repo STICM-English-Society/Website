@@ -57,6 +57,10 @@
     .Branch_Navigation{
         grid-area: 2 / 1 / 3 / 2;
     }
+
+    .Branch_Navigation_Grid{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }
 
 .Branch_Navigation_Status{
@@ -174,6 +178,7 @@ a:focus > .Branch_Navigation_Grid_Item{
     top: 10px;
     position: sticky;
     border-radius: 7px;
+    box-shadow: var(--Element-BoxShadow);
 }
 
 .Branch_Navigation_Search_Input{

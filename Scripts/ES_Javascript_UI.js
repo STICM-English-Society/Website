@@ -38,7 +38,9 @@ function Load_Template(templateId) {
       if (bodyElement.getAttribute("ShortenedLinks_HasShortenedLink") == "true"){
         ShortenedLinks_GetShortenedLink(PageName);
       }
-      
+      if (bodyElement.getAttribute("Header_HasCustomHeaderTitle") == "true"){
+        Header_Change_HeaderTitle(bodyElement.getAttribute("Header_CustomHeaderTitle"));
+      }
     })
     .catch((error) => console.log(error));
 }
@@ -206,4 +208,9 @@ function ShortenedLinks_GetShortenedLink(PageName){
       break;
     }
   }
+}
+
+function Header_Change_HeaderTitle(Title){
+  Header_CustomHeaderTitle = Title;
+  document.getElementById("UI_Header_Title_Text").innerText = Header_CustomHeaderTitle;
 }
