@@ -4,4 +4,5 @@ This text file contains the records of the gallery that is currently up. ES_Gall
 To add a record, follow the format for one line: Album Name%&Album Photographer(s)%&Album Category%&Date Published%&File name of the index file associated with the album (remove Index_ prefix and .txt extension)%&Thumbnail image
 Scanning starts at line 7. 
 ==================
-STI Marikina Talent Search 2023%&Adriene Dillo & Trisha Bravo%&Documentation%&October 2023%&STI Marikina Talent Search 2023.html%&https://drive.google.com/uc?export=view&id=1TZg7-Kt-pzHlz8JoMktFFf-Sdhl3pcj7
+STI Marikina Talent Search 2023%&Adriene Dillo & Trisha Bravo%&School events%&October 2023%&STI Marikina Talent Search 2023.html%&https://drive.google.com/uc?export=view&id=1TZg7-Kt-pzHlz8JoMktFFf-Sdhl3pcj7
+Sustainable Artistry: Highlights from the Cultural Showcase at STI College Marikina %&Unspecified Authors%&School events%&November 2023%&Parade of Characters 2023.html%&https://drive.google.com/uc?export=view&id=1t7WVaf5WWnQJmI5VteVnV4MoJGlDKulU
