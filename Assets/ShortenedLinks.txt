@@ -1,7 +1,7 @@
 ShortenedLinks
 This text file contains all the shortened links of certain pages.
 Make sure that the ShortenedLinks_HasShortenedLink attribute on the body element exists and is set to "true".
-Line scanning starts at Line 6.
+Line scanning starts at Line 6. 
 #>
 ES_ContactUs.html%&https://bit.ly/ES-Socials
 ES_Articles.html%&https://bit.ly/ES-Articles
