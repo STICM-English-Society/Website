@@ -132,6 +132,7 @@ function Gallery_Generate_Album(){
         Gallery_Album_Item.classList.add("Gallery_Album_Item");
         Gallery_Album_Item.setAttribute("onclick", "Subwindows_Open('ImageView'); Gallery_Album_ImageView_ChangeImage(this.getAttribute('data-id')); Header_Hide()");
         
+        Gallery_Album_Item.style.animationDelay = "0." + a + "s";
         Gallery_Album_Item.setAttribute("data-id", Gallery_Album_ImageLinks_Separated[a + 1]);
 
         
@@ -139,8 +140,16 @@ function Gallery_Generate_Album(){
         if (Gallery_Album_ImageLinks_Separated[a] != undefined || Gallery_Album_ImageLinks_Separated[a] != null){
             document.getElementById("Gallery_Album").appendChild(Gallery_Album_Item);
         }
-        Gallery_Album_Item.setAttribute("style", 'background-image: url("' + Gallery_Album_ImageLinks_Separated[a] + '");');
-        Gallery_Album_Item.setAttribute("onload", 'this.style.opacity = 1');
+
+        var Gallery_Album_Item_Image = document.createElement("img");
+        Gallery_Album_Item_Image.classList.add("Gallery_Album_Item_Image");
+        Gallery_Album_Item_Image.setAttribute("draggable", "false");
+        Gallery_Album_Item_Image.setAttribute("loading", "lazy");
+        Gallery_Album_Item_Image.setAttribute("onload", "this.setAttribute('State', 'Loaded'), this.parentNode.setAttribute('State', 'Loaded')");
+        Gallery_Album_Item_Image.setAttribute("onerror", "this.parentNode.setAttribute('State', 'Error')");
+        Gallery_Album_Item_Image.setAttribute("src", Gallery_Album_ImageLinks_Separated[a]);
+        Gallery_Album_Item.appendChild(Gallery_Album_Item_Image);
+
         // Gallery_Album_Item.addEventListener('load', function() {
         //     // Set the opacity of the element to 100%
         //     this.style.opacity = 1;
