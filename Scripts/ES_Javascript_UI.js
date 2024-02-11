@@ -45,6 +45,23 @@ function Load_Template(templateId) {
     .catch((error) => console.log(error));
 }
 
+function Load_Template_Footer(templateId) {
+  fetch("ES_Template_4.html")
+    .then((response) => response.text())
+    .then((template) => {
+      const templateElement = document.createElement("div");
+      templateElement.innerHTML = template;
+      const templateContent = templateElement
+        .querySelector(`#${templateId}`)
+        .content.cloneNode(true);
+      const bodyElement = document.getElementById("pageElement_Footer");
+      bodyElement.appendChild(templateContent);
+
+      
+    })
+    .catch((error) => console.log(error));
+}
+
 var UI_Sidebar_isOpen = false;
 function toggle_Sidebar() {
   var UI_Sidebar = document.getElementById("pageElement_Sidebar");

@@ -33,6 +33,8 @@
             class="UI_Header_Hamburger"
             src="Assets/Icons/icon_hamburgermenu.png"
             onclick="toggle_Sidebar()"
+            loading="lazy"
+            draggable="false"
           />
           <div class="UI_Header_Title">
             <h1 class="UI_Header_Title_Text" id="UI_Header_Title_Text">English Society</h1>
@@ -41,6 +43,8 @@
             class="UI_Header_Share"
             src="Assets/Icons/icon_share.png"
             onclick="copyURLLink()"
+            loading="lazy"
+            draggable="false"
           />
         </header>
         <div class="UI_Header_Share_Toast" id="Header_Toast_Share_Link">
@@ -48,7 +52,8 @@
         </div>
         <a href="" id="Branch_BackToParent_Anchor">
           <div class="UI_Header_Branch_BackToParent" id="UI_Header_Branch_BackToParent">
-            <img src="Assets/Icons/icon_leftArrow.png" class="UI_Header_Branch_BackToParent_Icon"/>
+            <img src="Assets/Icons/icon_leftArrow.png" class="UI_Header_Branch_BackToParent_Icon" loading="lazy"
+            draggable="false"/>
             <h3 class="UI_Header_Branch_BackToParent_Text">
               Back
             </h3>
@@ -119,6 +124,9 @@
           </div>
         </div>
       </div>
+    </template>
+    <template id="Template_UI_Footer">
+      TEST
     </template>
   </body>
 </html>
