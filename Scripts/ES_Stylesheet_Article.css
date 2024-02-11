@@ -170,6 +170,16 @@
     margin-bottom: 5px;
 }
 
+.Article_Content_Title_Big{
+    font-family: Hansief;
+    color: black;
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
 @media only screen and (max-width: 650px){
     .Article_Title{
         font-size: 3rem;
