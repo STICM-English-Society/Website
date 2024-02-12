@@ -180,19 +180,7 @@
     font-size: 2.5rem;
 }
 
-@media only screen and (max-width: 650px){
-    .Article_Title{
-        font-size: 3rem;
-    }
 
-    .Article_Main_Content_Container{
-        width: calc(100% - 20px);
-    }
-
-    .Article_References_Content_Container{
-        width: calc(100% - 20px);
-    }
-}
 
 .Article_References_Content_Container{
     width: 100%;
@@ -236,4 +224,84 @@
 .Article_References_List_Item:hover{
     background-color: #264653;
     color: white;
+}
+
+li {
+    font-family: Roboto;
+}
+
+.Article_CTABox{
+    top: 60px;
+    position: fixed;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background-color: #264653; */
+    transform: translateX(-3px);
+    user-select: none;
+}
+
+.Article_CTABox_Content{
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    background-color: #dbdbdb;
+    box-shadow: var(--Element-BoxShadow);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.Article_CTABox_Content_Text{
+    font-family: Roboto;
+    margin: 0;
+}
+
+.Article_CTABox_Content_Button{
+    background-color: #0936af;
+    border-radius: 5px;
+    font-family: Roboto;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: var(--Element-Transition-Delay);
+}
+
+.Article_CTABox_Content_Button:hover{
+    box-shadow: var(--Element-BoxShadow);
+}
+
+@media only screen and (max-width: 650px){
+    .Article_Title{
+        font-size: 3rem;
+    }
+
+    .Article_Main_Content_Container{
+        width: calc(100% - 20px);
+        margin-top: 10px;
+    }
+
+    .Article_References_Content_Container{
+        width: calc(100% - 20px);
+    }
+
+    .Article_CTABox{
+        left: 70px;
+        width: calc(100% - 80px);
+        height: 50px;
+    }
+
+    .Article_CTABox_Content{
+        padding: 10px;
+        padding: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
