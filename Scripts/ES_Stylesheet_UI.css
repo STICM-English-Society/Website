@@ -138,6 +138,12 @@ a{
 	letter-spacing: 5px;
 }
 
+@media only screen and (max-width: 650px){
+	.UI_Header_Title_Text:hover{
+		letter-spacing: 1px;
+	}
+}
+
 .UI_Header_Share{
 	width: 30px;
 	height: 30px;
