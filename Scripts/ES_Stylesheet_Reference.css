@@ -4,6 +4,9 @@
 */
 
 :root{
+	--Margin-Left: 12%;
+	--Margin-Right: 12%;
+	--Full-Width-Marginned: calc(100% - var(--Margin-Left) - var(--Margin-Right));
 	--UI-Pallete-Level-1: #5390d9;
 	--UI-Pallete-Level-2: #5e60ce;
 

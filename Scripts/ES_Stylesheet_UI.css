@@ -69,6 +69,20 @@ a{
 	text-decoration: none;
 }
 
+.Header{
+	background-color: white;
+	box-shadow: var(--Element-BoxShadow);
+	width: 100%;
+	height: 50px;
+	position: fixed;
+}
+
+.Header_Logo{
+	height: 40px;
+	padding: 5px;
+	/* filter:hue-rotate(30px); */
+}
+
 .UI_ElementContainer{
 	width: 100%;
 	height: 100%;
