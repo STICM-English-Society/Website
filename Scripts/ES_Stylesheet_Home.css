@@ -1,5 +1,6 @@
 .Home_MainTitle{
     width: calc(100% - var(--Margin-Left) - var(--Margin-Right) - 60px);
+    /* max-width: 993px; */
     height: 350px;
     margin-left: var(--Margin-Left);
     margin-right: var(--Margin-Right);
@@ -116,15 +117,31 @@
     flex-direction: row;
     padding-left: 30px;
     padding-right: 30px;
-    transform: translateY(-15px);
+    transform: translateY(-20px);
     z-index: 70;
     position: relative;
     /* top: 30px; */
 }
 
-.Home_Section_Title:nth-child(1){
+.Home_Section_Title[Section="Featured"]{
     justify-content: left;
 }
+
+.Home_Section_Title[Section="Articles"]{
+    justify-content: center;
+    transform: translateY(-50px);
+}
+
+.Home_Section_Title[Section="Articles_Button"]{
+    justify-content: center;
+    transform: translateY(-90px);
+}
+
+.Home_Section_Title[Section="InPhotos"]{
+    justify-content: right;
+    transform: translateY(-80px);
+}
+
 
 .Home_Section_Title_Text{
     font-family: Gilroy Heavy;
@@ -172,7 +189,7 @@
     margin-left: var(--Margin-Left);
     margin-right: var(--Margin-Right);
     background-color: #004cff;
-    transform: translateY(-30px);
+    transform: translateY(-40px);
 }
 
 .Home_Latest_Item{
@@ -233,7 +250,7 @@
 .Home_Featured_Selector{
     background-color: #e76740;
     margin-top: 10px;
-    transform: translateY(-30px);
+    transform: translateY(-40px);
     width: calc(100% - var(--Margin-Left) - var(--Margin-Right));
     margin-left: var(--Margin-Left);
     margin-right: var(--Margin-Right);
@@ -283,4 +300,203 @@
     /* min-width: calc(100% - var(--Margin-Left) - var(--Margin-Right)); */
     width: 200px;
     transition: 1s;
+}
+
+.Home_Articles_Decoration[Count="1"]{
+    background-color: #004cff;
+    width: calc(100% - var(--Margin-Left) - var(--Margin-Right));
+    height: 30px;
+    margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right);
+    transform: translateY(-30px);
+}
+
+.Home_Articles_Decoration[Count="2"]{
+    background-color: #004cff;
+    width: calc(100% - var(--Margin-Left) - var(--Margin-Right));
+    height: 30px;
+    margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right);
+    transform: translateY(-60px);
+}
+
+.Home_Articles{
+    background-color: #004cff;
+    width: calc(100% - var(--Margin-Left) - var(--Margin-Right) - 60px);
+    height: 425px;
+    margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right);
+    transform: translateY(-70px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
+}
+
+.Home_Articles_Item{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: white;
+    height: 349px;
+    padding: 10px;
+    border: solid #00216f 3px;
+    user-select: none;
+    transition: var(--Element-Transition-Delay);
+    cursor: pointer;
+}
+
+.Home_Articles_Item:hover{
+    transform: scale(1.02);
+}
+
+.Home_Articles_Item_Image{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.Home_Articles_Item_Image_Image{
+    height: 100%;
+}
+
+.Home_Articles_Item_Title{
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+}
+
+.Home_Articles_Item_Title_Text, .Home_Articles_Item_Title_WrittenBy, .Home_Articles_Item_Title_WrittenBy_Author{
+    font-family: Gilroy Bold;
+    margin: 0;
+    /* color: #001f68; */
+    letter-spacing: -2px;
+}
+
+.Home_Articles_Item_Title_Text{
+    line-height: 30px;
+}
+
+.Home_Articles_Item_Title_WrittenBy{
+    letter-spacing: -1px;
+}
+
+.Home_Articles_Item_Title_WrittenBy_Author{
+    line-height: 20px;
+}
+
+.Home_Articles_CheckOut{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.Home_Articles_CheckOut_Decoration{
+    background-color: white;
+    border: solid #00216f 3px;
+    height: 20px;
+}
+
+.Home_Articles_CheckOut_Button{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-family: Gilroy Bold;
+    color: black;
+    border: solid #00216f 3px;
+    text-align: center;
+}
+
+.Home_InPhotos{
+    background-color: #004cff;
+    width: calc(100% - var(--Margin-Left) - var(--Margin-Right) - 60px);
+    height: 431px;
+    margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right);
+    transform: translateY(-100px);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 30px;
+    overflow-x: hidden;
+}
+
+.Home_InPhotos_Item{
+    background-color: white;
+    height: 405px;
+    padding: 10px;
+    border: solid #00216f 3px;
+    transition: var(--Element-Transition-Delay);
+    cursor: pointer;
+}
+
+.Home_InPhotos_Item:hover{
+    transform: scale(1.02);
+}
+
+.Home_InPhotos_Item:hover > .Home_InPhotos_Item_Image > .Home_InPhotos_Item_Title{
+    padding-bottom: 20px;
+}
+
+.Home_InPhotos_Item:hover > .Home_InPhotos_Item_Image{
+    background-size: 300%;
+}
+
+.Home_InPhotos_Item_Image{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 405px;
+    /* width: 405px; */
+    background-position: center;
+    background-size: 290%;
+    /* position: absolute; */
+    transition: var(--Element-Transition-Delay);
+}
+
+.Home_InPhotos_Item:nth-child(1) > .Home_InPhotos_Item_Image{
+    background-image: url("../Assets/Images/Gallery/ES_Template_Photos/10.png")
+}
+
+.Home_InPhotos_Item:nth-child(2) > .Home_InPhotos_Item_Image{
+    background-image: url("../Assets/Images/Gallery/ES_Template_Photos/11.png")
+}
+
+.Home_InPhotos_Item:nth-child(3) > .Home_InPhotos_Item_Image{
+    background-image: url("../Assets/Images/Gallery/ES_Template_Photos/12.png")
+}
+
+.Home_InPhotos_Item_Image_Image{
+    width: 100%;
+}
+
+.Home_InPhotos_Item_Title{
+    /* position: absolute; */
+    /* bottom: 40px;
+    left: 40px; */
+    /* background-color: red; */
+    height: fit-content;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 1);
+    transition: var(--Element-Transition-Delay);
+    display: flex;
+    align-items: center;
+}
+
+.Home_InPhotos_Item_Title_Text{
+    font-family: Gilroy Bold;
+    margin: 0;
+    line-height: 20px;
+    color: black;
+    padding: 10px;
+    font-size: 1.3em;
+    letter-spacing: -1px;
 }
