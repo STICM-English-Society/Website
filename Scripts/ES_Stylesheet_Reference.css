@@ -48,6 +48,13 @@
 	--Color-Dividers: #282830; /* Divider colors */
 }
 
+@media only screen and (max-width: 1300px){
+    :root{
+        --Margin-Left: 0%;
+        --Margin-Right: 0%;
+    }
+}
+
 :darkmode{
 	/* Root values. This will be loaded when loadSettings() is triggered. */
 	--BG-WallpaperImg: url(../Assets/Background/gardenofwords.jpg);
