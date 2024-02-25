@@ -60,3 +60,103 @@ function Slideshow_Clear_Carousel(){
         document.querySelectorAll(".Home_Latest_Item")[a].style.opacity = "0%";
     }
 }
+
+let Home_PageElements = {
+    Featured: [
+        {
+            Name: "Featured_1",
+            Image: "Assets/Images/Articles/ESA_FS23/ESA_FS23_1.png",
+            Title: "February Sentiments: The voice and thoughts of STIers this month of love",
+            Link: "Articles/February%20Sentiments%202024.html"
+        },
+        {
+            Name: "Featured_2",
+            Image: "Assets/Images/Articles/ESA_DTR23/ESA_DTR23_1.png",
+            Title: "A December to Remember",
+            Link: "Articles/December%20to%20Remember%202023.html"
+        },
+        {
+            Name: "Featured_3",
+            Image: "Assets/Images/Placeholder.png",
+            Title: "Tagisan ng Talino at Sining 2024",
+            Link: "ES_Articles.html"
+        },
+        {
+            Name: "Featured_4",
+            Image: "Assets/Images/Placeholder.png",
+            Title: "Join English Society now!",
+            Link: "ES_ContactUs.html"
+        },
+        {
+            Name: "Featured_5",
+            Image: "Assets/Images/Placeholder.png",
+            Title: "In Photos: STI Marikina Year-End Event 2023",
+            Link: "ES_Gallery.html"
+        },
+    ],
+    Articles: [
+        {
+            Name: "Article_1",
+            Image: "Assets/Images/Articles/ESA_STIMTS23/ESA_STIMTS23_1.png",
+            Title: "STI College Marikina Talent Search 2023",
+            Author: "Adriene Dillo & Trisha Bravo",
+            Link: "Articles/STI%20Marikina%20Talent%20Search%202023.html"
+        },
+        {
+            Name: "Article_2",
+            Image: "Assets/Images/Articles/ESA_POC23/ESA_POC23_1.png",
+            Title: "Parade of Characters 2023",
+            Author: "Adriene Dillo & Trisha Bravo",
+            Link: "Articles/Parade%20of%20Characters%202023.html"
+        },
+        {
+            Name: "Article_3",
+            Image: "Assets/Images/Articles/ESA_DTR23/ESA_DTR23_15.png",
+            Title: "Year-End Events 2023",
+            Author: "Elmer Felisilda",
+            Link: "December%20to%20Remember%202023.html"
+        },
+    ],
+    InPhotos: [
+        {
+            Name: "InPhotos_1",
+            Image: "Assets/Images/Placeholder.png",
+            Title: "English Day 2023",
+            Link: "ES_Gallery.html"
+        },
+        {
+            Name: "InPhotos_2",
+            Image: "Assets/Images/Placeholder.png",
+            Title: "Parade of Characters 2023",
+            Link: "ES_Gallery.html"
+        },
+        {
+            Name: "InPhotos_3",
+            Image: "Assets/Images/Placeholder.png",
+            Title: "STI Marikina Talent Search 2023",
+            Link: "ES_Gallery.html"
+        },
+    ]
+}
+
+function Home_PageData_Load(){
+    // Featured List
+    for(a = 0; a < 5; a++){
+        document.getElementById("Featured_" + a).style.setProperty("--Home-Featured-Image-" + a, "url(../" + Home_PageElements.Featured[a].Image + ")");
+        document.getElementById("Featured_" + a).setAttribute("onclick", "window.location.href = '" + Home_PageElements.Featured[a].Link + "';");
+        document.getElementById("Featured_" + a).querySelector(".Home_Latest_Item_Title").innerText = Home_PageElements.Featured[a].Title;
+    }
+    // Article List
+    for(a = 0; a < 3; a++){
+        document.getElementById("Article_" + a).querySelector(".Home_Articles_Item_Image_Image").src = Home_PageElements.Articles[a].Image;
+        document.getElementById("Article_" + a).querySelector(".Home_Articles_Item_Title_Text").innerText = Home_PageElements.Articles[a].Title;
+        document.getElementById("Article_" + a).querySelector(".Home_Articles_Item_Title_WrittenBy_Author").innerText = Home_PageElements.Articles[a].Author;
+        document.getElementById("Article_" + a).setAttribute("href", Home_PageElements.Articles[a].Link);
+    }
+    // Gallery List
+    for(a = 0; a < 3; a++){
+        document.getElementById("InPhotos_" + a).querySelector(".Home_InPhotos_Item_Image").style.backgroundImage = "url(../" + Home_PageElements.InPhotos[a].Image + ")";
+        document.getElementById("InPhotos_" + a).querySelector(".Home_InPhotos_Item_Title_Text").innerText = Home_PageElements.InPhotos[a].Title;
+        document.getElementById("InPhotos_" + a).setAttribute("href", Home_PageElements.InPhotos[a].Link);
+    }
+}

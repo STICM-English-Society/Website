@@ -10,6 +10,12 @@
 	--UI-Pallete-Level-1: #5390d9;
 	--UI-Pallete-Level-2: #5e60ce;
 
+	--Home-Featured-Image-0: url("../Assets/Images/Home/Latest/1.png");
+	--Home-Featured-Image-1: url("../Assets/Images/Home/Latest/2.png");
+	--Home-Featured-Image-2: url("../Assets/Images/Home/Latest/3.png");
+	--Home-Featured-Image-3: url("../Assets/Images/Home/Latest/4.png");
+	--Home-Featured-Image-4: url("../Assets/Images/Home/Latest/5.png");
+
 	--Debug-ElementOutline: none;
 	/* Root values. This will be loaded when loadSettings() is triggered. */
 	--BGColor: rgb(255, 255, 255);

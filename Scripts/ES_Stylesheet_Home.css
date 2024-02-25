@@ -2,6 +2,11 @@
     transition: var(--Element-Transition-Delay);
 }
 
+a{
+    text-decoration: none;
+    color: unset;
+}
+
 .Home_MainTitle{
     width: calc(100% - var(--Margin-Left) - var(--Margin-Right) - 60px);
     /* max-width: 993px; */
@@ -210,25 +215,45 @@
     background-color: gray;
 }
 
-.Home_Latest_Item:nth-child(1){
-    background-image: url("../Assets/Images/Home/Latest/1.png");
+a#Featured_0 > .Home_Latest_Item{
+    background-image: var(--Home-Featured-Image-0);
+}
+
+a#Featured_1 > .Home_Latest_Item{
+    background-image: var(--Home-Featured-Image-1);
+}
+
+a#Featured_2 > .Home_Latest_Item{
+    background-image: var(--Home-Featured-Image-2);
+}
+
+a#Featured_3 > .Home_Latest_Item{
+    background-image: var(--Home-Featured-Image-3);
+}
+
+a#Featured_4 > .Home_Latest_Item{
+    background-image: var(--Home-Featured-Image-4);
+}
+
+/* .Home_Latest_Item:nth-child(1){
+    background-image: var(--Home-Featured-Image-1);
 }
 
 .Home_Latest_Item:nth-child(2){
-    background-image: url("../Assets/Images/Home/Latest/2.png");
+    background-image: var(--Home-Featured-Image-2);
 }
 
 .Home_Latest_Item:nth-child(3){
-    background-image: url("../Assets/Images/Home/Latest/3.png");
+    background-image: var(--Home-Featured-Image-3);
 }
 
 .Home_Latest_Item:nth-child(4){
-    background-image: url("../Assets/Images/Home/Latest/4.png");
+    background-image: var(--Home-Featured-Image-4);
 }
 
 .Home_Latest_Item:nth-child(5){
-    background-image: url("../Assets/Images/Home/Latest/5.png");
-}
+    background-image: var(--Home-Featured-Image-5);
+} */
 
 .Home_Latest_Item_Overlay{
     background: linear-gradient(178deg, rgba(0,0,0,0) 50%, rgba(0,0,0,75) 100%);
@@ -391,7 +416,7 @@
 }
 
 .Home_Articles_Item_Image_Image{
-    height: 100%;
+    width: 100%;
 }
 
 .Home_Articles_Item_Title{
@@ -471,7 +496,7 @@
 
 .Home_InPhotos_List{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     overflow-y: hidden;
 }
@@ -537,6 +562,7 @@
     transition: var(--Element-Transition-Delay);
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .Home_InPhotos_Item_Title_Text{
@@ -596,6 +622,12 @@
     margin: 5px;
     border-radius: 25px;
     width: 250px;
+}
+
+.Home_Footer_Links_Button:hover{
+    transform: scale(1.05);
+    /* font-size: 1.5em; */
+    /* width: 275px; */
 }
 
 .Home_Footer_Decoration[Count="1"]{
@@ -804,5 +836,9 @@
     .Home_Footer_Copyright{
         grid-template-columns: auto;
         padding: 10px;
+    }
+    .Home_Section_Title{
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }

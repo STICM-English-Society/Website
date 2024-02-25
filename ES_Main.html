@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>English Society Website</title>
+    <title>English Society</title>
     <link rel="stylesheet" href="Scripts/ES_Stylesheet_Home.css" />
     <link rel="stylesheet" href="Scripts/ES_Stylesheet_UI.css" />
     <link rel="stylesheet" href="Scripts/ES_Stylesheet_Article.css" />
@@ -10,7 +10,7 @@
     <link
       rel="icon"
       type="image/png"
-      href="Assets/Icons/ContentByElmerF.png"
+      href="Assets/Icons/favicon.png"
       sizes="96x96"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +27,7 @@
   <script src="Scripts/ES_Javascript.js"></script>
   <script src="Scripts/ES_Javascript_UI.js"></script>
   <script src="Scripts/ES_Javascript_Home.js"></script>
-  <body id="pageElement_Body" style="overflow-x: hidden">
+  <body id="pageElement_Body" style="overflow-x: hidden" onload="Home_PageData_Load(), Slideshow_Change_Image(0)">
      <div class="Home_MainTitle">
         <h1 class="Home_MainTitle_Title">
           ENGLISH
@@ -56,23 +56,23 @@
      </div>
      <div class="Home_Featured">
       <div class="Home_Latest" id="pageElement_Carousel">
-        <div class="Home_Latest_Item">
+        <div class="Home_Latest_Item" id="Featured_0" style="opacity: 1">
           <div class="Home_Latest_Item_Overlay"></div>
           <h1 class="Home_Latest_Item_Title">Image 1</h1>
         </div>
-        <div class="Home_Latest_Item">
+        <div class="Home_Latest_Item" id="Featured_1">
           <div class="Home_Latest_Item_Overlay"></div>
           <h1 class="Home_Latest_Item_Title">Image 2</h1>
         </div>
-        <div class="Home_Latest_Item">
+        <div class="Home_Latest_Item" id="Featured_2">
           <div class="Home_Latest_Item_Overlay"></div>
           <h1 class="Home_Latest_Item_Title">Image 3</h1>
         </div>
-        <div class="Home_Latest_Item">
+        <div class="Home_Latest_Item" id="Featured_3">
           <div class="Home_Latest_Item_Overlay"></div>
           <h1 class="Home_Latest_Item_Title">Image 4</h1>
         </div>
-        <div class="Home_Latest_Item">
+        <div class="Home_Latest_Item" id="Featured_4">
           <div class="Home_Latest_Item_Overlay"></div>
           <h1 class="Home_Latest_Item_Title">Image 5</h1>
         </div>
@@ -100,54 +100,60 @@
      </div>
      <div class="Home_Articles">
       <div class="Home_Articles_List">
-        <div class="Home_Articles_Item">
-          <div class="Home_Articles_Item_Image">
-            <img class='Home_Articles_Item_Image_Image' src='Assets/Images/Gallery/ES_Template_Photos/1.png' draggable='false' loading='lazy'/>
+        <a href="" id="Article_0">
+          <div class="Home_Articles_Item" id="Article_0">
+            <div class="Home_Articles_Item_Image">
+              <img class='Home_Articles_Item_Image_Image' src='Assets/Images/Gallery/ES_Template_Photos/1.png' draggable='false' loading='lazy'/>
+            </div>
+            <div class="Home_Articles_Item_Title">
+              <h1 class="Home_Articles_Item_Title_Text">
+                Is Training Season truly over? We asked gym experts to find out
+              </h1>
+              <h4 class="Home_Articles_Item_Title_WrittenBy">
+                Written by:
+              </h4>
+              <h2 class="Home_Articles_Item_Title_WrittenBy_Author">
+                Christopher Ramos
+              </h2>
+            </div>
           </div>
-          <div class="Home_Articles_Item_Title">
-            <h1 class="Home_Articles_Item_Title_Text">
-              Is Training Season truly over? We asked gym experts to find out
-            </h1>
-            <h4 class="Home_Articles_Item_Title_WrittenBy">
-              Written by:
-            </h4>
-            <h2 class="Home_Articles_Item_Title_WrittenBy_Author">
-              Christopher Ramos
-            </h2>
+        </a>
+        <a href="" id="Article_1">
+          <div class="Home_Articles_Item">
+            <div class="Home_Articles_Item_Image">
+              <img class='Home_Articles_Item_Image_Image' src='Assets/Images/Gallery/ES_Template_Photos/1.png' draggable='false' loading='lazy'/>
+            </div>
+            <div class="Home_Articles_Item_Title">
+              <h1 class="Home_Articles_Item_Title_Text">
+                Is Training Season truly over? We asked gym experts to find out
+              </h1>
+              <h4 class="Home_Articles_Item_Title_WrittenBy">
+                Written by:
+              </h4>
+              <h2 class="Home_Articles_Item_Title_WrittenBy_Author">
+                Christopher Ramos
+              </h2>
+            </div>
           </div>
-        </div>
-        <div class="Home_Articles_Item">
-          <div class="Home_Articles_Item_Image">
-            <img class='Home_Articles_Item_Image_Image' src='Assets/Images/Gallery/ES_Template_Photos/1.png' draggable='false' loading='lazy'/>
+        </a>
+        <a href="" id="Article_2">
+          <div class="Home_Articles_Item">
+            <div class="Home_Articles_Item_Image">
+              <img class='Home_Articles_Item_Image_Image' src='Assets/Images/Gallery/ES_Template_Photos/1.png' draggable='false' loading='lazy'/>
+            </div>
+            <div class="Home_Articles_Item_Title">
+              <h1 class="Home_Articles_Item_Title_Text">
+                Is Training Season truly over? We asked gym experts to find out
+              </h1>
+              <h4 class="Home_Articles_Item_Title_WrittenBy">
+                Written by:
+              </h4>
+              <h2 class="Home_Articles_Item_Title_WrittenBy_Author">
+                Christopher Ramos
+              </h2>
+            </div>
           </div>
-          <div class="Home_Articles_Item_Title">
-            <h1 class="Home_Articles_Item_Title_Text">
-              Is Training Season truly over? We asked gym experts to find out
-            </h1>
-            <h4 class="Home_Articles_Item_Title_WrittenBy">
-              Written by:
-            </h4>
-            <h2 class="Home_Articles_Item_Title_WrittenBy_Author">
-              Christopher Ramos
-            </h2>
-          </div>
-        </div>
-        <div class="Home_Articles_Item">
-          <div class="Home_Articles_Item_Image">
-            <img class='Home_Articles_Item_Image_Image' src='Assets/Images/Gallery/ES_Template_Photos/1.png' draggable='false' loading='lazy'/>
-          </div>
-          <div class="Home_Articles_Item_Title">
-            <h1 class="Home_Articles_Item_Title_Text">
-              Is Training Season truly over? We asked gym experts to find out
-            </h1>
-            <h4 class="Home_Articles_Item_Title_WrittenBy">
-              Written by:
-            </h4>
-            <h2 class="Home_Articles_Item_Title_WrittenBy_Author">
-              Christopher Ramos
-            </h2>
-          </div>
-        </div>
+        </a>
       </div>
       <div class="Home_Articles_CheckOut_Box">
         <div class="Home_Articles_CheckOut_Box_Item" Count="1">
@@ -181,36 +187,42 @@
      </div>
      <div class="Home_InPhotos">
       <div class="Home_InPhotos_List">
-        <div class="Home_InPhotos_Item">
-          <div class="Home_InPhotos_Item_Image">
-            <!-- <img class='Home_InPhotos_Item_Image_Image' src='Assets/Images/Gallery/ES_Template_Photos/10.png' draggable='false' loading='lazy'/> -->
-            <div class="Home_InPhotos_Item_Title">
-              <h1 class="Home_InPhotos_Item_Title_Text">
-                An event that transpired a long time ago
-              </h1>
+        <a href="" id="InPhotos_0">
+          <div class="Home_InPhotos_Item">
+            <div class="Home_InPhotos_Item_Image">
+              <!-- <img class='Home_InPhotos_Item_Image_Image' src='Assets/Images/Gallery/ES_Template_Photos/10.png' draggable='false' loading='lazy'/> -->
+              <div class="Home_InPhotos_Item_Title">
+                <h1 class="Home_InPhotos_Item_Title_Text">
+                  An event that transpired a long time ago
+                </h1>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="Home_InPhotos_Item">
-          <div class="Home_InPhotos_Item_Image">
-            <!-- <img class='Home_InPhotos_Item_Image_Image' src='Assets/Images/Gallery/ES_Template_Photos/10.png' draggable='false' loading='lazy'/> -->
-            <div class="Home_InPhotos_Item_Title">
-              <h1 class="Home_InPhotos_Item_Title_Text">
-                An event that transpired a long time ago
-              </h1>
+        </a>
+        <a href="" id="InPhotos_1">
+          <div class="Home_InPhotos_Item">
+            <div class="Home_InPhotos_Item_Image">
+              <!-- <img class='Home_InPhotos_Item_Image_Image' src='Assets/Images/Gallery/ES_Template_Photos/10.png' draggable='false' loading='lazy'/> -->
+              <div class="Home_InPhotos_Item_Title">
+                <h1 class="Home_InPhotos_Item_Title_Text">
+                  An event that transpired a long time ago
+                </h1>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="Home_InPhotos_Item">
-          <div class="Home_InPhotos_Item_Image">
-            <!-- <img class='Home_InPhotos_Item_Image_Image' src='Assets/Images/Gallery/ES_Template_Photos/10.png' draggable='false' loading='lazy'/> -->
-            <div class="Home_InPhotos_Item_Title">
-              <h1 class="Home_InPhotos_Item_Title_Text">
-                An event that transpired a long time ago
-              </h1>
+        </a>
+        <a href="" id="InPhotos_2">
+          <div class="Home_InPhotos_Item">
+            <div class="Home_InPhotos_Item_Image">
+              <!-- <img class='Home_InPhotos_Item_Image_Image' src='Assets/Images/Gallery/ES_Template_Photos/10.png' draggable='false' loading='lazy'/> -->
+              <div class="Home_InPhotos_Item_Title">
+                <h1 class="Home_InPhotos_Item_Title_Text">
+                  An event that transpired a long time ago
+                </h1>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="Home_Articles_CheckOut_Box">
         <div class="Home_Articles_CheckOut_Box_Item" Count="1">
@@ -276,7 +288,7 @@
         <div class="Home_Footer_Decoration_Inner" Count="3"></div>
         <div class="Home_Footer_Decoration_Inner" Count="4"></div>
         <p class="Home_Footer_Copyright_Text">
-          An experimental project of the 2024 English Society.
+          An experimental project of the English Society S.Y. 2023 - 2024.
         </p>
         <div class="Home_Footer_Decoration_Inner" Count="5"></div>
         <div class="Home_Footer_Decoration_Inner" Count="6"></div>
