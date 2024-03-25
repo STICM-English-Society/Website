@@ -62,6 +62,7 @@
     grid-gap: 10px;
     overflow-x: hidden;
     overflow-y: hidden;
+    /* padding: 20px; */
 }
 
 .Gallery_Album_Loader{
@@ -91,13 +92,17 @@
     .Gallery_Title{
         margin-top: 70px;
     }
+    .Gallery_ImageView_Top_Title{
+        display: none;
+    }
 }
 
 .Gallery_Album_Item{
     /* background-color: aqua; */
     width: 100%;
     aspect-ratio: 1/1;
-    background-color: var(--UI-Pallete-Level-1);
+    /* background-color: var(--UI-Pallete-Level-1); */
+    background-color: var(--UI-Pallete-Level-2);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 190%;
@@ -112,6 +117,7 @@
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    z-index: 50;
 }
 
 .Gallery_Album_Item[State="Loaded"]{
@@ -138,15 +144,21 @@
     user-select: none;
     height: 100%;
     opacity: 0%;
-    transition: opacity 1s;
+    transition: opacity 1s all 0.2s;
 }
 
 .Gallery_Album_Item_Image[State="Loaded"]{
     opacity: 100%;
 }
 
-.Gallery_Album_Item:hover > .Gallery_Album_Item_Image{
-    transform: scale(0.75);
+.Gallery_Album_Item:nth-child(odd):hover > .Gallery_Album_Item_Image{
+    transform: scale(0.75) rotate(5deg);
+    box-shadow: var(--Element-BoxShadow);
+}
+
+.Gallery_Album_Item:nth-child(even):hover > .Gallery_Album_Item_Image{
+    transform: scale(0.75) rotate(-5deg);
+    box-shadow: var(--Element-BoxShadow);
 }
 
 .Gallery_Album_Item:active > .Gallery_Album_Item_Image{
@@ -156,15 +168,26 @@
 @keyframes Image_Loading{
     0% {
         opacity: 0%;
-        transform: scale(0.9);
+        /* transform: scale(0.9); */
     }
     50% {
         opacity: 100%;
-        transform: scale(1.0);
+        /* transform: scale(1.0); */
     }
     100% {
         opacity: 0%;
-        transform: scale(0.9);
+        /* transform: scale(0.9); */
+    }
+}
+
+@keyframes Image_Loading_Finished{
+    0% {
+        opacity: 0%;
+        /* transform: scale(0.9); */
+    }
+    100% {
+        opacity: 0%;
+        /* transform: scale(0.9); */
     }
 }
 

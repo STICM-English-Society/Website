@@ -142,7 +142,8 @@ let Home_PageElements = {
 function Home_PageData_Load(){
     // Featured List
     for(a = 0; a < 5; a++){
-        document.getElementById("Featured_" + a).style.setProperty("--Home-Featured-Image-" + a, "url(../" + Home_PageElements.Featured[a].Image + ")");
+        // document.getElementById("Featured_" + a).style.setProperty("--Home-Featured-Image-" + a, "url(../" + Home_PageElements.Featured[a].Image + ")");
+        document.getElementById("Featured_" + a).style.backgroundImage = "url(../" + Home_PageElements.Featured[a].Image + ")";
         document.getElementById("Featured_" + a).setAttribute("onclick", "window.location.href = '" + Home_PageElements.Featured[a].Link + "';");
         document.getElementById("Featured_" + a).querySelector(".Home_Latest_Item_Title").innerText = Home_PageElements.Featured[a].Title;
     }
@@ -151,7 +152,7 @@ function Home_PageData_Load(){
         document.getElementById("Article_" + a).querySelector(".Home_Articles_Item_Image_Image").src = Home_PageElements.Articles[a].Image;
         document.getElementById("Article_" + a).querySelector(".Home_Articles_Item_Title_Text").innerText = Home_PageElements.Articles[a].Title;
         document.getElementById("Article_" + a).querySelector(".Home_Articles_Item_Title_WrittenBy_Author").innerText = Home_PageElements.Articles[a].Author;
-        document.getElementById("Article_" + a).setAttribute("href", Home_PageElements.Articles[a].Link);
+        document.getElementById("Article_" + a).setAttribute("href", "Articles/" + Home_PageElements.Articles[a].Link);
     }
     // Gallery List
     for(a = 0; a < 3; a++){
