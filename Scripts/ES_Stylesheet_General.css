@@ -1,0 +1,7 @@
+main {
+    margin: 0;
+    margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right);
+    background-color: antiquewhite;
+    background-color: aqua;
+}

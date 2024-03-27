@@ -1,3 +1,7 @@
+body{
+    background-color: #004cff;
+}
+
 .Socials_Title{
     font-family: Hansief;
     color: white;
@@ -111,7 +115,8 @@
 
 .Socials_Register{
     background-color: white;
-    background-image: url("../Assets/Images/Socials/Background\ with\ Cogs.png");
+    /* background-image: url("../Assets/Images/Socials/Background\ with\ Cogs.png"); */
+    background-color: #0936af;
     border-radius: 20px;
     padding: 20px;
     display: flex;
@@ -270,10 +275,12 @@
 
     .Socials_Item_TextSpace{
         align-items: end;
+        transform: translateX(-10px);
     }
 
     .Socials_Item_TextSpace:nth-child(even){
         align-items: start;
+        transform: translateX(0px);
     }
 
     .Socials_Register{
@@ -287,6 +294,7 @@
     .Socials_Register_Title{
         width: 425px;
         text-align: center;
+        font-size: 2rem;
     }
 
     .Socials_EMail{

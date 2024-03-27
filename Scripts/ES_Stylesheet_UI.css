@@ -58,6 +58,7 @@
 
 *{
 	outline: var(--Debug-ElementOutline);
+	transition: var(--Element-Transition-Delay);
 }
 
 body{
