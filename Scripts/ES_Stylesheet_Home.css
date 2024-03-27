@@ -208,6 +208,7 @@ a{
     position: absolute;
     background-position: center;
     background-size: cover;
+    /* background-size: 100%; */
     /* border: solid white; */
     opacity: 0%;
     transition: 1s;

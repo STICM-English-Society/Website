@@ -152,6 +152,7 @@
     font-family: Roboto;
     font-style: italic;
     margin: 0;
+    opacity: 50%;
 }
 
 .Article_Content_EmbeddedVideo{
@@ -279,14 +280,15 @@ li {
     box-shadow: var(--Element-BoxShadow);
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 750px){
     .Article_Title{
         font-size: 3rem;
     }
 
     .Article_Main_Content_Container{
         width: calc(100% - 20px);
-        margin-top: 10px;
+        /* margin-top: 10px; */
+        border-radius: 0px;
     }
 
     .Article_References_Content_Container{
@@ -304,5 +306,9 @@ li {
         padding: 0px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .Article_Main_Content_Image_Container{
+        height: 230px;
     }
 }

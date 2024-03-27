@@ -9,6 +9,7 @@
 
 *{
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	scroll-behavior: smooth;
 }
 
 @font-face {
@@ -100,7 +101,7 @@ a{
 
 .UI_Header{
 	background-color: #264653;
-	background-color: #0936af;
+	background-color: var(--English-Blue-Level-1);
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -124,7 +125,7 @@ a{
 
 .UI_Header_Hamburger:hover{
 	background-color: #2a9d8f;
-	background-color: #06257a;
+	background-color: var(--English-Blue-Level-3);
 	cursor: pointer;
 }
 
@@ -168,7 +169,7 @@ a{
 
 .UI_Header_Share:hover{
 	background-color: #2a9d8f;
-	background-color: #0e48e6;
+	background-color: var(--English-Blue-Level-3);
 	cursor: pointer;
 }
 
@@ -178,7 +179,7 @@ a{
 
 .UI_Header_Share_Toast{
 	background-color: #264653;
-	background-color: #0e48e6;
+	background-color: var(--English-Blue-Level-2);
 	margin-top: 50px;
 	width: auto;
 	padding: 5px;
@@ -200,7 +201,7 @@ a{
 	top: 50px;
 	width: 300px;
 	background-color: #264653;
-	background-color: #0936af;
+	background-color: var(--English-Blue-Level-1);
 	padding: 10px;
 	padding-right: 20px;
 	display: grid;
@@ -232,6 +233,7 @@ a{
 
 .UI_Sidebar_Main_Item:hover{
 	background-color: #2a9d8f;
+	background-color: var(--English-Blue-Level-3);
 }
 
 .UI_Sidebar_Main_Item_Text{
@@ -264,6 +266,7 @@ a{
 
 .UI_Sidebar_Secondary_Item:hover{
 	background-color: #2a9d8f;
+	background-color: var(--English-Blue-Level-3);
 }
 
 .UI_Sidebar_Secondary_Item_Text{
@@ -383,7 +386,7 @@ a{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background-color: #0936af;
+	background-color: var(--English-Blue-Level-1);
 	/* border-radius: 10px; */
 	
 	transition: var(--Element-Transition-Delay);
@@ -398,7 +401,7 @@ a{
 }
 /* Selection color */
 ::selection{
-	background-color: #0936af;
+	background-color: var(--English-Blue-Level-1);
 }
 
 .ComingSoon{
@@ -471,7 +474,7 @@ a{
 	position: fixed;
 	top: 60px;
 	left: 10px;
-	background-color: #0936af;
+	background-color: var(--English-Blue-Level-1);
 	align-items: center;
 	transition: var(--Element-Transition-Delay);
 	width: 50px;

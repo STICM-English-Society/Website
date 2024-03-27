@@ -275,12 +275,12 @@ body{
 
     .Socials_Item_TextSpace{
         align-items: end;
-        transform: translateX(-10px);
+        transform: translateX(-20px);
     }
 
     .Socials_Item_TextSpace:nth-child(even){
         align-items: start;
-        transform: translateX(0px);
+        transform: translateX(20px);
     }
 
     .Socials_Register{

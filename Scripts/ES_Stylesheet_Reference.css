@@ -9,6 +9,10 @@
 	--Full-Width-Marginned: calc(100% - var(--Margin-Left) - var(--Margin-Right));
 	--UI-Pallete-Level-1: #5390d9;
 	--UI-Pallete-Level-2: #5e60ce;
+	--English-Blue-Level-1: #0936af;
+	--English-Blue-Level-2: #0e35a1;
+	--English-Blue-Level-3: #06257a;
+	--English-Blue-Level-4: #06194d;
 
 	--Home-Featured-Image-0: url("../Assets/Images/Home/Latest/1.png");
 	--Home-Featured-Image-1: url("../Assets/Images/Home/Latest/2.png");
