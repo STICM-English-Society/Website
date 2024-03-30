@@ -143,7 +143,7 @@ function Home_PageData_Load(){
     // Featured List
     for(a = 0; a < 5; a++){
         // document.getElementById("Featured_" + a).style.setProperty("--Home-Featured-Image-" + a, "url(../" + Home_PageElements.Featured[a].Image + ")");
-        document.getElementById("Featured_" + a).style.backgroundImage = "url(../" + Home_PageElements.Featured[a].Image + ")";
+        document.getElementById("Featured_" + a).style.backgroundImage = "url(./" + Home_PageElements.Featured[a].Image + ")";
         document.getElementById("Featured_" + a).setAttribute("onclick", "window.location.href = '" + Home_PageElements.Featured[a].Link + "';");
         document.getElementById("Featured_" + a).querySelector(".Home_Latest_Item_Title").innerText = Home_PageElements.Featured[a].Title;
     }
