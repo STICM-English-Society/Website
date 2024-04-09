@@ -216,6 +216,10 @@ a{
     background-color: gray;
 }
 
+.Home_Latest_Item[Clickable = "false"]{
+    pointer-events: none;
+}
+
 a#Featured_0 > .Home_Latest_Item{
     background-image: var(--Home-Featured-Image-0);
 }

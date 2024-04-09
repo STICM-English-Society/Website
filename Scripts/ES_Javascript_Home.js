@@ -43,8 +43,13 @@ function Slideshow_Change_Image(Number){
     }
 
     document.querySelectorAll(".Home_Latest_Item")[Number].style.opacity = "100%";
+    for (a = 0; a != document.querySelectorAll(".Home_Latest_Item").length; a++){
+        document.querySelectorAll(".Home_Latest_Item")[a].setAttribute("Clickable", "false");
+    }
+    document.querySelectorAll(".Home_Latest_Item")[Number].setAttribute("Clickable", "true");
 
     for (a = 0; a != document.querySelectorAll(".Home_Latest_Carousel_Selector_Item").length; a++){
+        document.querySelectorAll(".Home_Latest_Carousel_Selector_Item")[a].setAttribute('data-id', null);
         document.querySelectorAll(".Home_Latest_Carousel_Selector_Item")[a].setAttribute('data-id', null);
     }
     if (document.querySelectorAll(".Home_Latest_Carousel_Selector_Item")[Number] != null){

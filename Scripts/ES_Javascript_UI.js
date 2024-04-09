@@ -2,17 +2,6 @@
 	UI
 */
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-//   const baseElement = document.getElementById('pageElement_Base');
-
-//   if (isLocalhost) {
-//       baseElement.href = '/';
-//   } else {
-//       baseElement.href = '/Website/';
-//   }
-// });
-
 var fullPath = window.location.href;
 var PageName = fullPath.split("/").pop();
 console.log(PageName);
@@ -40,6 +29,27 @@ function Load_Template(templateId) {
       }
       if (bodyElement.getAttribute("Header_HasCustomHeaderTitle") == "true"){
         Header_Change_HeaderTitle(bodyElement.getAttribute("Header_CustomHeaderTitle"));
+      }
+      if (bodyElement.getAttribute("Header_ChangeTitles") == "true"){
+        if (bodyElement.getAttribute("Header_ChangeTitles_AltPage_Title") != null){
+          document.getElementById("UI_Header_Title_Text_AltPage").innerHTML =bodyElement.getAttribute("Header_ChangeTitles_AltPage_Title");
+          if (bodyElement.getAttribute("Header_ChangeTitles_AltPage_URL") != null){
+            if (bodyElement.getAttribute("Header_ChangeTitles_AltPage_URL") == "Top") {
+              document.getElementById("UI_Header_Title_AltPage").removeAttribute("href");
+              document.getElementById("UI_Header_Title_AltPage").setAttribute("onclick", "Scroll_ToPosition('top')");
+            } else {
+              document.getElementById("UI_Header_Title_AltPage").setAttribute("href", bodyElement.getAttribute("Header_ChangeTitles_AltPage_URL"));
+            }
+            
+          } else {
+            document.getElementById("UI_Header_Title_AltPage").removeAttribute("href");
+            document.getElementById("UI_Header_Title_AltPage").setAttribute("onclick", "Scroll_ToPosition('top')");
+          }
+        } else {
+          bodyElement.setAttribute("Header_ChangeTitles", false);
+        }
+      } else {
+        bodyElement.setAttribute("Header_ChangeTitles", false);
       }
     })
     .catch((error) => console.log(error));
@@ -158,15 +168,28 @@ function Subwindows_Close(ID){
   subwindow_activeSubwindow = "none";
 }
 
-function scrollToPosition(direction){
-	if (direction == "bottom"){
-    console.log("Bottom");
-		document.querySelectorAll(".Main_Content_Container").scrollTo(0, document.getElementById("pageElement_Body").scrollHeight);
-	} else if (direction == "top"){
-    console.log("Top");
-		document.querySelectorAll(".Main_Content_Container").scrollTop = 0;
-	}
+function Scroll_ToPosition(direction) {
+  const mainContentContainers = document.querySelectorAll(".Main_Content_Container");
+
+  if (direction === "top") {
+      console.log("Bottom");
+      mainContentContainers.forEach(container => {
+          container.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      });
+  } else if (direction === "bottom") {
+      console.log("Top");
+      mainContentContainers.forEach(container => {
+          container.scrollTo({
+              top: container.scrollHeight,
+              behavior: 'smooth'
+          });
+      });
+  }
 }
+
 
 function Header_Hide(){
   document.getElementById("pageElement_Header").style.transform = "translateY(-50px)";
@@ -231,3 +254,26 @@ function Header_Change_HeaderTitle(Title){
   Header_CustomHeaderTitle = Title;
   document.getElementById("UI_Header_Title_Text").innerText = Header_CustomHeaderTitle;
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var Main_Content_Container = document.querySelector(".Main_Content_Container");
+  Main_Content_Container.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    var Header_Title = document.getElementById("UI_Header_Title");
+    var Body = document.getElementById("pageElement_Body");
+    if (Body.getAttribute("Header_ChangeTitles") == "true"){
+      if (Main_Content_Container.scrollTop > 100) {
+        Header_Title.setAttribute("ActiveTitle", "AltPage");
+      } else {
+        Header_Title.setAttribute("ActiveTitle", "Home");
+      }
+    } else {
+      Header_Title.setAttribute("ActiveTitle", "Home");
+    }
+    
+  }
+});
+
+
+
