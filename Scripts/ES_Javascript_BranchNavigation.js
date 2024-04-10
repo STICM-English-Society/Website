@@ -101,29 +101,42 @@ function BranchNavigation_Generate_BranchList_Gallery(){
     BranchNavigation_Search_SetDataToUppercase();
 }
 
+var BranchList = {};
+var BranchList_Searchable = [];
 
 function BranchNavigation_Generate_List_Articles(FileURL){
     const request = new XMLHttpRequest();
     request.open("GET", FileURL, false);
     request.send();
-    var messages = request.responseText.split("\n");
+    var messages = request.responseText;
     console.log(messages);
-    BranchList_Data = messages;
-    for (a = 6; a != messages.length; a++){
-        console.log("Processing item " + a + "...");
-        BranchList_Line_Data = messages[a].split("%&");
-        BranchList_Article_Name[a] = BranchList_Line_Data[0];
-        BranchList_Article_Author[a] = BranchList_Line_Data[1];
-        BranchList_Article_Category[a] = BranchList_Line_Data[2];
-        BranchList_Article_Date_Published[a] = BranchList_Line_Data[3];
-        BranchList_Article_URL[a] = BranchList_Line_Data[4];
-        if (BranchList_Line_Data[5].includes("\r")){
-            BranchList_Article_Thumbnail[a] = BranchList_Line_Data[5].replace("\r", "");
-        } else {
-            BranchList_Article_Thumbnail[a] = BranchList_Line_Data[5];
-        }
-        console.log("Done processing item " + a + ".");
+    // BranchList_Data = JSON.parse(messages);
+    BranchList = JSON.parse(messages)
+    console.log(BranchList);
+    for (a = 0; a != BranchList.length; a++){
+        BranchList_Article_Name[a] = BranchList[a].Title;
+        BranchList_Article_Author[a] = BranchList[a].Authors;
+        BranchList_Article_Category[a] = BranchList[a].Category;
+        BranchList_Article_Date_Published[a] = BranchList[a].Date_Published;
+        BranchList_Article_URL[a] = BranchList[a].Link;
+        BranchList_Article_Thumbnail[a] = BranchList[a].Thumbnail;
+        BranchList_Searchable[a] = "<" + BranchList[a].Title + " & " + BranchList[a].Authors + " & " + BranchList[a].Category + " & " + BranchList[a].Date_Published +">";
     }
+    // for (a = 6; a != messages.length; a++){
+    //     console.log("Processing item " + a + "...");
+    //     BranchList_Line_Data = messages[a].split("%&");
+    //     BranchList_Article_Name[a] = BranchList_Line_Data[0];
+    //     BranchList_Article_Author[a] = BranchList_Line_Data[1];
+    //     BranchList_Article_Category[a] = BranchList_Line_Data[2];
+    //     BranchList_Article_Date_Published[a] = BranchList_Line_Data[3];
+    //     BranchList_Article_URL[a] = BranchList_Line_Data[4];
+    //     if (BranchList_Line_Data[5].includes("\r")){
+    //         BranchList_Article_Thumbnail[a] = BranchList_Line_Data[5].replace("\r", "");
+    //     } else {
+    //         BranchList_Article_Thumbnail[a] = BranchList_Line_Data[5];
+    //     }
+    //     console.log("Done processing item " + a + ".");
+    // }
     BranchNavigation_Generate_BranchList_Articles();
 }
 
@@ -168,11 +181,11 @@ function BranchNavigation_Generate_BranchList_Articles_Depracated(){
 }
 
 function BranchNavigation_Generate_BranchList_Articles(){
-    for (a = 6; a != BranchList_Article_Name.length; a++){
-        //console.log("Processing item " + a + "...");
+    for (a = 0; a != BranchList_Article_Name.length; a++){
+        console.log("Processing item " + a + "...");
         // Anchor
         var BranchList_Item_Anchor = document.createElement('a');
-        BranchList_Item_Anchor.setAttribute("href", "Articles/" + BranchList_Article_URL[a]);
+        BranchList_Item_Anchor.setAttribute("href", BranchList_Article_URL[a]);
         BranchList_Item_Anchor.setAttribute("id", "BranchList_Main_Item_Anchor_" + a);
         document.getElementById("Branch_Navigation_Main").appendChild(BranchList_Item_Anchor);
 
@@ -232,8 +245,8 @@ function BranchNavigation_Generate_BranchList_Articles(){
 }
 
 function BranchNavigation_Search_SetDataToUppercase(){
-    for (a = 6; a != BranchList_Data.length; a++){
-        BranchList_Data[a] = BranchList_Data[a].toUpperCase();
+    for (a = 0; a != BranchList_Searchable.length; a++){
+        BranchList_Searchable[a] = BranchList_Searchable[a].toUpperCase();
     }
 }
 
@@ -243,9 +256,9 @@ function BranchNavigation_Search_Articles(Query){
     //console.log("Starting search...");
     BranchList_Search_Results = [];
     BranchList_Search_Results_Lines = [];
-    for (a = 6; a != BranchList_Data.length; a++){
-        if (BranchList_Data[a].includes(Query.toUpperCase())){
-            BranchList_Search_Results.push(BranchList_Data[a]);
+    for (a = 0; a != BranchList_Searchable.length; a++){
+        if (BranchList_Searchable[a].includes(Query.toUpperCase())){
+            BranchList_Search_Results.push(BranchList_Searchable[a]);
             BranchList_Search_Results_Lines.push(a);
             //console.log("Result found on line: " + a);
         }
@@ -253,7 +266,7 @@ function BranchNavigation_Search_Articles(Query){
     //console.log("Search results: " + BranchList_Search_Results);
     //console.log("Search result lines: " + BranchList_Search_Results_Lines);
 
-    for (a = 6; a != BranchList_Data.length; a++){
+    for (a = 0; a != BranchList_Searchable.length; a++){
         
         document.getElementById("BranchList_Main_Item_Anchor_" + a).style.display = "none";
         document.getElementById("BranchList_Main_Item_Anchor_" + a).style.animationName = "Animation_Branch_Navigation_Grid_Item_FadeOut";
@@ -272,7 +285,7 @@ function BranchNavigation_Search_Articles(Query){
     document.getElementById("Branch_Navigation_Status_Container").style.maxHeight = "500px";
     document.getElementById("Branch_Navigation_Status").innerHTML = BranchList_Search_Results_Lines.length + " results for '" + Query + "'";
     if (BranchList_Search_Results_Lines.length == 0){
-        document.getElementById("Branch_Navigation_Status").innerHTML = "No article found containing '" + Query + "'.";
+        document.getElementById("Branch_Navigation_Status").innerHTML = "No result found containing '" + Query + "'.";
     }
 
     if (Query == ""){

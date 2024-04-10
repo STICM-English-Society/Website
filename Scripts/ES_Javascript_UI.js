@@ -230,7 +230,7 @@ function ShortenedLinks_GetShortenedLink(PageName){
   request.open("GET", "Assets/ShortenedLinks.txt", false);
   request.send();
   var messages = request.responseText.split("\n");
-  console.log(messages);
+  // console.log(messages);
   File_Data = messages;
   var ShortenedLinks_Line_Data;
   var ShortenedLinks_Line_Data_WebURL = [];

@@ -1,3 +1,15 @@
-.UI_Header_Title_Text, .Branch_Title{
+.UI_Header_Title_Text, .Branch_Title, .Branch_Navigation_Grid_Item_Title{
     font-family: Graduate;
+}
+
+.UI_Sidebar_Main_Item_Text{
+    font-family: Roboto;
+}
+
+a:nth-child(odd):hover > .Branch_Navigation_Grid_Item{
+    transform: scale(1.02);
+}
+
+a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
+    transform: scale(1.02);
 }
