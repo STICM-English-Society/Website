@@ -55,6 +55,12 @@
 	font-style: normal;
 }
 
+@font-face{
+	font-family: "Graduate";
+	src: url("../Assets/Fonts/graduate-regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
 
 
 *{
@@ -152,7 +158,7 @@ a{
 }
 
 .UI_Header_Title_Text{
-	font-family: "Hansief";
+	font-family: "Gilroy Heavy";
 	color: white;
 	text-transform: uppercase;
 	margin: 0;

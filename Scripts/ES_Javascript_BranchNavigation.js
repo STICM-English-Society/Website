@@ -102,9 +102,9 @@ function BranchNavigation_Generate_BranchList_Gallery(){
 }
 
 
-function BranchNavigation_Generate_List_Articles(){
+function BranchNavigation_Generate_List_Articles(FileURL){
     const request = new XMLHttpRequest();
-    request.open("GET", "Articles/Index_Articles.txt", false);
+    request.open("GET", FileURL, false);
     request.send();
     var messages = request.responseText.split("\n");
     console.log(messages);

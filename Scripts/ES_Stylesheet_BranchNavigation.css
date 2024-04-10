@@ -63,6 +63,10 @@
     .Branch_Navigation_Grid{
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+    .Branch_Title{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
 }
 
 .Branch_Navigation_Status{
