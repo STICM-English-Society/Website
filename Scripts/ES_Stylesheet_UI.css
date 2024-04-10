@@ -150,11 +150,46 @@ a{
 }
 
 .UI_Header_Title[ActiveTitle = "Home"]{
-	transform: translateY(20px);
+	/* transform: translateY(20px); */
 }
 
 .UI_Header_Title[ActiveTitle = "AltPage"]{
-	transform: translateY(-20px);
+	transform: translateY(-100%);
+	opacity: 0%;
+}
+
+.UI_Header_Title_AltPage{
+	position: absolute;
+	/* background-color: red; */
+	width: calc(100% - 20px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 100%;
+	pointer-events: none;
+}
+
+.UI_Header_Title_AltPage > a{
+	width: auto;
+	pointer-events: auto;
+	margin: 0;
+}
+
+.UI_Header_Title_AltPage > a > h1 {
+	margin: 0;
+}
+
+.UI_Header_Title[ActiveTitle = "Home"] + .UI_Header_Title_AltPage{
+	transform: translateY(100%);
+	opacity: 0%;
+}
+
+.UI_Header_Title[ActiveTitle = "AltPage"] > .UI_Header_Title_AltPage{
+	transform: translateY(calc(100% - 10px));
+	
 }
 
 .UI_Header_Title_Text{
@@ -172,6 +207,9 @@ a{
 @media only screen and (max-width: 650px){
 	.UI_Header_Title_Text:hover{
 		letter-spacing: 1px;
+	}
+	.UI_Header_Title_Text{
+		font-size: 1.7rem;
 	}
 }
 
@@ -252,7 +290,7 @@ a{
 }
 
 .UI_Sidebar_Main_Item_Text{
-	font-family: Raleway;
+	font-family: "Gilroy Medium";
 	color: white;
 	margin: 0;
 	font-size: 20;
@@ -285,7 +323,7 @@ a{
 }
 
 .UI_Sidebar_Secondary_Item_Text{
-	font-family: Raleway;
+	font-family: "Gilroy Medium";
 	color: white;
 	margin: 0;
 	font-size: 15;
