@@ -1,4 +1,4 @@
-.UI_Header_Title_Text, .Branch_Title, .Branch_Navigation_Grid_Item_Title{
+.UI_Header_Title_Text, .Branch_Title, .Branch_Navigation_Grid_Item_Title, .Article_Title{
     font-family: Graduate;
 }
 
@@ -12,4 +12,16 @@ a:nth-child(odd):hover > .Branch_Navigation_Grid_Item{
 
 a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     transform: scale(1.02);
+}
+
+.Article_Header{
+    visibility: hidden;
+}
+
+.Article_Main_Content_Container{
+    box-shadow: none;
+}
+
+.Branch_Navigation_Grid_Item:hover{
+    box-shadow: unset;
 }
