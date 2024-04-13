@@ -104,7 +104,7 @@ function BranchNavigation_Generate_BranchList_Gallery(){
 var BranchList = {};
 var BranchList_Searchable = [];
 
-function BranchNavigation_Generate_List_Articles(FileURL){
+function BranchNavigation_Generate_List(FileURL){
     const request = new XMLHttpRequest();
     request.open("GET", FileURL, false);
     request.send();
