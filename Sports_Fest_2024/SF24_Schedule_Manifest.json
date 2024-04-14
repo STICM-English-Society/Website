@@ -1,0 +1,147 @@
+[
+    {
+        "Day": "Day 1 | April 24, 2024",
+        "Schedules": [
+            {
+                "Schedule_Location": "Court A",
+                "Schedule_Schedule": [
+                    {
+                        "Schedule_Game": "Volleyball Female - Brown vs. Gray",
+                        "Schedule_Time": "8:00 AM - 9:30 AM"
+                    },
+                    {
+                        "Schedule_Game": "Volleyball Female - Violet vs. Blue",
+                        "Schedule_Time": "9:30 AM - 11:00 AM"
+                    },
+                    {
+                        "Schedule_Game": "Volleyball Female - Red vs. Green",
+                        "Schedule_Time": "11:00 AM - 12:30 PM"
+                    },
+                    {
+                        "Schedule_Game": "Volleyball Male - Brown vs. Gray",
+                        "Schedule_Time": "12:30 PM - 2:00 PM"
+                    },
+                    {
+                        "Schedule_Game": "Volleyball Male - Violet vs. Blue",
+                        "Schedule_Time": "2:00 PM - 3:30 PM"
+                    }
+                    ,
+                    {
+                        "Schedule_Game": "Volleyball Male - Red vs. Green",
+                        "Schedule_Time": "3:30 PM - 5:00 PM"
+                    }
+                ]
+            },
+            {
+                "Schedule_Location": "Court B",
+                "Schedule_Schedule": [
+                    {
+                        "Schedule_Game": "Basketball - Red vs. Brown",
+                        "Schedule_Time": "8:00 AM - 9:30 AM"
+                    },
+                    {
+                        "Schedule_Game": "Basketball - Gray vs. Violet",
+                        "Schedule_Time": "9:30 AM - 11:00 AM"
+                    },
+                    {
+                        "Schedule_Game": "Basketball - Blue vs. Red",
+                        "Schedule_Time": "11:00 AM - 12:30 PM"
+                    },
+                    {
+                        "Schedule_Game": "Basketball - Violet vs. Green",
+                        "Schedule_Time": "12:30 PM - 2:00 PM"
+                    },
+                    {
+                        "Schedule_Game": "Basketball - Brown vs. Blue",
+                        "Schedule_Time": "2:00 PM - 3:30 PM"
+                    },
+                    {
+                        "Schedule_Game": "Basketball - Green vs. Gray",
+                        "Schedule_Time": "3:30 PM - 5:00 PM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Day": "Day 2 | April 25, 2024",
+        "Schedules": [
+            {
+                "Schedule_Location": "Court A",
+                "Schedule_Schedule": [
+                    {
+                        "Schedule_Game": "Recreational Games",
+                        "Schedule_Time": "8:00 AM - 10:00 AM"
+                    },
+                    {
+                        "Schedule_Game": "Basketball Semis - Game 1 - Top 1 Group A vs. Top 2 Group B",
+                        "Schedule_Time": "10:00 AM - 11:30 AM"
+                    },
+                    {
+                        "Schedule_Game": "Basketball Semis - Game 2 - Top 1 Group B vs. Top 2 Group A",
+                        "Schedule_Time": "11:30 AM - 1:00 PM"
+                    },
+                    {
+                        "Schedule_Game": "Volleyball Female Finals",
+                        "Schedule_Time": "1:30 PM - 3:00 PM"
+                    },
+                    {
+                        "Schedule_Game": "Basketball Battle for Third - Loser Match 7 vs. Loser Match 8",
+                        "Schedule_Time": "3:00 PM - 4:30 PM"
+                    }
+                ]
+            },
+            {
+                "Schedule_Location": "Court B",
+                "Schedule_Schedule": [
+                    {
+                        "Schedule_Game": "Recreational Games",
+                        "Schedule_Time": "9:00 AM - 5:00 PM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Day": "Day 3 | April 26, 2024",
+        "Schedules": [
+            {
+                "Schedule_Location": "Court A",
+                "Schedule_Schedule": [
+                    {
+                        "Schedule_Game": "Registration",
+                        "Schedule_Time": "8:00 AM - 8:15 AM"
+                    },
+                    {
+                        "Schedule_Game": "Cheer Dance Competition",
+                        "Schedule_Time": "8:20 AM - 9:50 AM"
+                    },
+                    {
+                        "Schedule_Game": "Volleyball Male Finals",
+                        "Schedule_Time": "10:00 AM - 11:30 PM"
+                    },
+                    {
+                        "Schedule_Game": "Exhibition Game - Volleyball",
+                        "Schedule_Time": "11:30 PM - 12:30 PM"
+                    },
+                    {
+                        "Schedule_Game": "Lunch Break",
+                        "Schedule_Time": "12:30 PM - 1:00 PM"
+                    },
+                    {
+                        "Schedule_Game": "Exhibition Game - Basketball",
+                        "Schedule_Time": "1:00 PM - 2:00 PM"
+                    },
+                    {
+                        "Schedule_Game": "Basketball Finals",
+                        "Schedule_Time": "2:00 PM - 3:30 PM"
+                    },
+                    {
+                        "Schedule_Game": "Awarding / Closing",
+                        "Schedule_Time": "3:30 PM - 5:00 PM"
+                    }
+                ]
+            }
+        ]
+    }
+]

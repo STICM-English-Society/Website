@@ -25,3 +25,65 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
 .Branch_Navigation_Grid_Item:hover{
     box-shadow: unset;
 }
+
+.SF_Schedule_Day{
+    font-family: Graduate;
+    color: var(--English-Blue-Level-3);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.SF_Schedule_Schedule{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.SF_Schedule_Item{
+    /* background-color: red; */
+    border: solid rgba(128, 128, 128, 0.242) 3px;
+    /* border-radius: 7px; */
+    padding: 10px;
+}
+
+.SF_Schedule_Location{
+    font-family: Raleway;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.SF_Schedule_Item_List{
+    display: flex;
+    flex-direction: column;
+}
+
+.SF_Schedule_Item_List_Item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+}
+
+.SF_Schedule_Item_List_Item:nth-child(odd){
+    background-color: rgba(128, 128, 128, 0.242);
+}
+
+.SF_Schedule_Item_List_Item_Text{
+    margin: 0;
+    font-family: Roboto;
+}
+
+.SF_Schedule_Item_List_Item_Text:nth-child(2){
+    text-align: right;
+}
+
+@media only screen and (max-width: 700px){
+    .SF_Schedule_Day, .SF_Schedule_Schedule{
+        margin-left: 0%;
+        margin-right: 0%;
+        margin: 10px;
+    }
+}
