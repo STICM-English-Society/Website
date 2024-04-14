@@ -26,6 +26,12 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     box-shadow: unset;
 }
 
+.SF_Schedule{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .SF_Schedule_Day{
     font-family: Graduate;
     color: var(--English-Blue-Level-3);
@@ -37,8 +43,7 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
+    
 }
 
 .SF_Schedule_Item{
@@ -46,6 +51,7 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     border: solid rgba(128, 128, 128, 0.242) 3px;
     /* border-radius: 7px; */
     padding: 10px;
+    width: auto;
 }
 
 .SF_Schedule_Location{
@@ -63,6 +69,7 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
 .SF_Schedule_Item_List_Item{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     align-items: center;
     padding: 10px;
 }
@@ -81,9 +88,19 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
 }
 
 @media only screen and (max-width: 700px){
-    .SF_Schedule_Day, .SF_Schedule_Schedule{
+    .SF_Schedule_Day, .SF_Schedule{
         margin-left: 0%;
         margin-right: 0%;
         margin: 10px;
+    }
+    .SF_Schedule_Item_List_Item{
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+    }
+    /* .SF_Schedule_Item_List_Item_Text{
+        font-size: 0.8rem;
+    } */
+    .SF_Schedule_Item_List_Item_Text:nth-child(2){
+        text-align: unset;
     }
 }
