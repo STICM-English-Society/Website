@@ -1,0 +1,206 @@
+[
+    {
+        "Team": "Green",
+        "Total_Score": "0",
+        "Info": [
+            {
+                "Data": "Place:",
+                "Value": "Count:"
+            },
+            {
+                "Data": "Champion",
+                "Value": "0"
+            }, 
+            {
+                "Data": "2nd",
+                "Value": "0"
+            }, 
+            {
+                "Data": "3rd",
+                "Value": "0"
+            }, 
+            {
+                "Data": "4th",
+                "Value": "0"
+            }, 
+            {
+                "Data": "5th",
+                "Value": "0"
+            }, 
+            {
+                "Data": "6th",
+                "Value": "0"
+            }
+        ]
+    },
+    {
+        "Team": "Blue",
+        "Total_Score": "0",
+        "Info": [
+            {
+                "Data": "Place:",
+                "Value": "Count:"
+            },
+            {
+                "Data": "Champion",
+                "Value": "0"
+            }, 
+            {
+                "Data": "2nd",
+                "Value": "0"
+            }, 
+            {
+                "Data": "3rd",
+                "Value": "0"
+            }, 
+            {
+                "Data": "4th",
+                "Value": "0"
+            }, 
+            {
+                "Data": "5th",
+                "Value": "0"
+            }, 
+            {
+                "Data": "6th",
+                "Value": "0"
+            }
+        ]
+    },
+    {
+        "Team": "Red",
+        "Total_Score": "0",
+        "Info": [
+            {
+                "Data": "Place:",
+                "Value": "Count:"
+            },
+            {
+                "Data": "Champion",
+                "Value": "0"
+            }, 
+            {
+                "Data": "2nd",
+                "Value": "0"
+            }, 
+            {
+                "Data": "3rd",
+                "Value": "0"
+            }, 
+            {
+                "Data": "4th",
+                "Value": "0"
+            }, 
+            {
+                "Data": "5th",
+                "Value": "0"
+            }, 
+            {
+                "Data": "6th",
+                "Value": "0"
+            }
+        ]
+    },
+    {
+        "Team": "Gray",
+        "Total_Score": "0",
+        "Info": [
+            {
+                "Data": "Place:",
+                "Value": "Count:"
+            },
+            {
+                "Data": "Champion",
+                "Value": "0"
+            }, 
+            {
+                "Data": "2nd",
+                "Value": "0"
+            }, 
+            {
+                "Data": "3rd",
+                "Value": "0"
+            }, 
+            {
+                "Data": "4th",
+                "Value": "0"
+            }, 
+            {
+                "Data": "5th",
+                "Value": "0"
+            }, 
+            {
+                "Data": "6th",
+                "Value": "0"
+            }
+        ]
+    },
+    {
+        "Team": "Violet",
+        "Total_Score": "0",
+        "Info": [
+            {
+                "Data": "Place:",
+                "Value": "Count:"
+            },
+            {
+                "Data": "Champion",
+                "Value": "0"
+            }, 
+            {
+                "Data": "2nd",
+                "Value": "0"
+            }, 
+            {
+                "Data": "3rd",
+                "Value": "0"
+            }, 
+            {
+                "Data": "4th",
+                "Value": "0"
+            }, 
+            {
+                "Data": "5th",
+                "Value": "0"
+            }, 
+            {
+                "Data": "6th",
+                "Value": "0"
+            }
+        ]
+    },
+    {
+        "Team": "Brown",
+        "Total_Score": "0",
+        "Info": [
+            {
+                "Data": "Place:",
+                "Value": "Count:"
+            },
+            {
+                "Data": "Champion",
+                "Value": "0"
+            }, 
+            {
+                "Data": "2nd",
+                "Value": "0"
+            }, 
+            {
+                "Data": "3rd",
+                "Value": "0"
+            }, 
+            {
+                "Data": "4th",
+                "Value": "0"
+            }, 
+            {
+                "Data": "5th",
+                "Value": "0"
+            }, 
+            {
+                "Data": "6th",
+                "Value": "0"
+            }
+        ]
+    }
+]

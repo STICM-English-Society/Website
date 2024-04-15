@@ -27,7 +27,7 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
 }
 
 .SF_Schedule{
-    width: 80%;
+    /* width: 80%; */
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -35,8 +35,8 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
 .SF_Schedule_Day{
     font-family: Graduate;
     color: var(--English-Blue-Level-3);
-    margin-left: 10%;
-    margin-right: 10%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
 }
 
 .SF_Schedule_Schedule{
@@ -87,6 +87,137 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     text-align: right;
 }
 
+.SF_Ranks{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+.SF_Ranks_Team[Team="Green"]{
+    background-color: rgb(10, 198, 41);
+}
+
+.SF_Ranks_Team[Team="Blue"]{
+    background-color: rgb(10, 88, 198);
+}
+
+.SF_Ranks_Team[Team="Red"]{
+    background-color: rgb(198, 10, 10);
+}
+
+.SF_Ranks_Team[Team="Gray"]{
+    background-color: rgb(149, 149, 149);
+}
+
+.SF_Ranks_Team[Team="Violet"]{
+    background-color: rgb(107, 20, 229);
+}
+
+.SF_Ranks_Team[Team="Brown"]{
+    background-color: rgb(191, 81, 7);
+}
+
+.SF_Ranks_Team[Team="Green"] > .SF_Ranks_Team_Score{
+    background-color: rgb(3, 134, 25);
+}
+
+.SF_Ranks_Team[Team="Blue"] > .SF_Ranks_Team_Score{
+    background-color: rgb(5, 65, 149);
+}
+
+.SF_Ranks_Team[Team="Red"] > .SF_Ranks_Team_Score{
+    background-color: rgb(144, 7, 7);
+}
+
+.SF_Ranks_Team[Team="Gray"] > .SF_Ranks_Team_Score{
+    background-color: rgb(104, 104, 104);
+}
+
+.SF_Ranks_Team[Team="Violet"] > .SF_Ranks_Team_Score{
+    background-color: rgb(83, 16, 176);
+}
+
+.SF_Ranks_Team[Team="Brown"] > .SF_Ranks_Team_Score{
+    background-color: rgb(117, 51, 7);
+}
+
+.SF_Ranks_Team{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: calc(100% - 20px);
+    /* max-width: 350px; */
+    border-bottom-right-radius: 15px;
+}
+
+
+.SF_Ranks_Team_Score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    transform: translateX(-20px) translateY(-10px);
+    border-top-left-radius: 15px;
+}
+
+.SF_Ranks_Team_Score_Text{
+    font-family: Graduate;
+    color: white;
+    margin: 0;
+}
+
+.SF_Ranks_Team_Name{
+    margin-left: 85px;
+}
+
+.SF_Ranks_Team_Name_Text{
+    font-family: Graduate;
+    color: white;
+}
+
+.SF_Ranks_Team_Info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.SF_Ranks_Team_Info_Item{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    /* grid-gap: 10px; */
+    justify-items: center;
+    align-items: center;
+    /* margin-right: 10px; */
+    padding: 10px;
+}
+
+.SF_Ranks_Team_Info_Item:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.111);
+}
+
+.SF_Ranks_Team_Info_Item_Data, .SF_Ranks_Team_Info_Item_Value{
+    font-family: Roboto;
+    color: white;
+    margin: 0;
+}
+
+.SF_Ranks_Team_Info_Item_Value{
+    font-weight: bolder;
+}
+
+.SF_LastUpdated{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Roboto;
+    margin-bottom: 30px;
+}
+
 @media only screen and (max-width: 700px){
     .SF_Schedule_Day, .SF_Schedule{
         margin-left: 0%;
@@ -102,5 +233,31 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     } */
     .SF_Schedule_Item_List_Item_Text:nth-child(2){
         text-align: unset;
+        opacity: 65%;
+    }
+    .SF_Schedule_Schedule{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .SF_Ranks{
+        margin: 30px;
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+    .SF_Ranks_Team{
+        width: 100%;
+        max-width: unset;
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 0px;
+    }
+    .SF_LastUpdated{
+        margin: 30;
+    }
+    .SF_Ranks_Team_Info{
+        justify-content: flex-start;
+        padding-top: 0px;
+    }
+    .SF_Ranks_Team_Info_Item{
+        flex-grow: 1;
     }
 }
