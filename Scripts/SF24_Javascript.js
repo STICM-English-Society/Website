@@ -62,3 +62,65 @@ function SF_Generate_Schedules(){
         }
     }
 }
+
+let SF_Standings = {};
+function SF_Fetch_Standings(){
+    const request = new XMLHttpRequest();
+    request.open("GET", "Sports_Fest_2024/SF24_Standings_Manifest.json", false);
+    request.send();
+    var messages = request.responseText;
+    console.log(messages);
+    // BranchList_Data = JSON.parse(messages);
+    SF_Standings = JSON.parse(messages);
+    SF_Standings = SF_Standings.sort((b,a) => a.Total_Score - b.Total_Score);
+    SF_Generate_Standings();
+}
+
+function SF_Generate_Standings(){
+    document.getElementById("SF_Ranks").innerHTML = "";
+    for (a = 0; a < SF_Standings.length; a++){
+        // SF_Ranks_Team
+        var Team_Item = document.createElement('div');
+        Team_Item.setAttribute('class', 'SF_Ranks_Team');
+        Team_Item.setAttribute('Team', SF_Standings[a].Team);
+        Team_Item.setAttribute('id', "Team_" + SF_Standings[a].Team);
+        document.getElementById('SF_Ranks').appendChild(Team_Item);
+
+        // SF_Ranks_Team > SF_Ranks_Team_Score
+        var Team_Score_Item = document.createElement('div');
+        Team_Score_Item.setAttribute('class', 'SF_Ranks_Team_Score');
+        Team_Score_Item.innerHTML = `
+            <h1 class="SF_Ranks_Team_Score_Text">
+                ${SF_Standings[a].Total_Score}
+            </h1>`;
+        document.getElementById("Team_" + SF_Standings[a].Team).appendChild(Team_Score_Item);
+
+        // SF_Ranks_Team > SF_Ranks_Team_Name
+        var Team_Name_Item = document.createElement('div');
+        Team_Name_Item.setAttribute('class', 'SF_Ranks_Team_Name');
+        Team_Name_Item.innerHTML = `
+            <h1 class="SF_Ranks_Team_Name_Text">
+                ${SF_Standings[a].Team}
+            </h1>`;
+        document.getElementById("Team_" + SF_Standings[a].Team).appendChild(Team_Name_Item);
+
+        // SF_Ranks_Team > SF_Ranks_Team_Info
+        var Team_Info_Item = document.createElement('div');
+        Team_Info_Item.setAttribute('class', 'SF_Ranks_Team_Info');
+        Team_Info_Item.setAttribute('id', "Team_Info_" + SF_Standings[a].Team);
+        document.getElementById("Team_" + SF_Standings[a].Team).appendChild(Team_Info_Item);
+
+        for (b = 0; b < SF_Standings[a].Info.length; b++){
+            var Team_Info_Item_Item = document.createElement('div');
+            Team_Info_Item_Item.setAttribute('class', 'SF_Ranks_Team_Info_Item');
+            Team_Info_Item_Item.innerHTML = `
+                <p class="SF_Ranks_Team_Info_Item_Data">
+                    ${SF_Standings[a].Info[b].Data}
+                </p>
+                <p class="SF_Ranks_Team_Info_Item_Value">
+                    ${SF_Standings[a].Info[b].Value}
+                </p>`;
+            document.getElementById("Team_Info_" + SF_Standings[a].Team).appendChild(Team_Info_Item_Item);
+        }
+    }
+}

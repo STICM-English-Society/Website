@@ -26,7 +26,8 @@
   <script src="Scripts/ES_Javascript.js"></script>
   <script src="Scripts/ES_Javascript_UI.js"></script>
   <script src="Scripts/ES_Javascript_BranchNavigation.js"></script>
-  <body id="pageElement_Body" onload="Load_Template('Template_UI_SF24')"  ShortenedLinks_HasShortenedLink="true" Header_ChangeTitles="true" Header_ChangeTitles_AltPage_Title="Team Standings" Header_ChangeTitles_AltPage_URL="Top" >
+  <script src="Scripts/SF24_Javascript.js"></script>
+  <body id="pageElement_Body" onload="Load_Template('Template_UI_SF24'), SF_Fetch_Standings()"  ShortenedLinks_HasShortenedLink="true" Header_ChangeTitles="true" Header_ChangeTitles_AltPage_Title="Team Standings" Header_ChangeTitles_AltPage_URL="Top" >
     <div class="Main_Content_Container">
       <h1 class="Branch_Title">
         Team Standings
@@ -35,7 +36,10 @@
         Last updated: 16 April 2024
       </p>
       <div class="SF_Ranks" id="SF_Ranks">
-        <div class="SF_Ranks_Team" Team="Green">
+        <h3 class="Branch_Navigation_Status_Text" style="text-align: center;">
+          Loading rankings. Please wait...
+        </h3>
+        <!--<div class="SF_Ranks_Team" Team="Green">
           <div class="SF_Ranks_Team_Score">
             <h1 class="SF_Ranks_Team_Score_Text">
               32
@@ -169,7 +173,7 @@
               Brown
             </h1>
           </div>
-        </div>
+        </div>-->
       </div>
       <div class="SF_Scores" id="SF_Scores">
 
