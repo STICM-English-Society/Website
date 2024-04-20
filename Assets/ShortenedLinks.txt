@@ -24,3 +24,6 @@ ES_AlbumViewer.html?albumName=TalentSearch2023_Awarding%&https://bit.ly/ESG-TS20
 Parade%20of%20Characters%202023.html%&https://bit.ly/ESA-Parade_Of_Characters_2023
 December%20to%20Remember%202023.html%&https://bit.ly/ESA-December_To_Remember
 February%20Sentiments%202024.html%&https://bit.ly/ES-FebSentiments
+SF24_Guidelines.html%&https://bit.ly/SF24-Guidelines
+SF24_Schedules.html%&https://bit.ly/SF24-Schedules
+SF24_Scores.html%&https://bit.ly/SF24-Standings
