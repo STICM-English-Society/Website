@@ -3,8 +3,29 @@
         "Day": "Day 1 | April 24, 2024",
         "Schedules": [
             {
+                "Schedule_Location": "Campus",
+                "Schedule_Schedule": [
+                    {
+                        "Schedule_Game": "Call time for PE 4 students",
+                        "Schedule_Time": "5:00 AM"
+                    },
+                    {
+                        "Schedule_Game": "Assembly of all team colors",
+                        "Schedule_Time": "5:30 AM - 6:00 AM"
+                    },
+                    {
+                        "Schedule_Game": "Parade to Court",
+                        "Schedule_Time": "6:00 AM - 7:00 AM"
+                    }
+                ]
+            },
+            {
                 "Schedule_Location": "Court A",
                 "Schedule_Schedule": [
+                    {
+                        "Schedule_Game": "Opening Ceremony",
+                        "Schedule_Time": "7:00 AM - 8:00 AM"
+                    },
                     {
                         "Schedule_Game": "Volleyball Female - Brown vs. Gray",
                         "Schedule_Time": "8:00 AM - 9:30 AM"
@@ -70,8 +91,12 @@
                 "Schedule_Location": "Court A",
                 "Schedule_Schedule": [
                     {
-                        "Schedule_Game": "Recreational Games",
-                        "Schedule_Time": "8:00 AM - 10:00 AM"
+                        "Schedule_Game": "Assembly / Registration",
+                        "Schedule_Time": "7:00 AM - 7:30 AM"
+                    },
+                    {
+                        "Schedule_Game": "Recreational Game - Tug of War",
+                        "Schedule_Time": "8:00 AM - 9:00 AM"
                     },
                     {
                         "Schedule_Game": "Basketball Semis - Game 1 - Top 1 Group A vs. Top 2 Group B",
@@ -95,8 +120,37 @@
                 "Schedule_Location": "Court B",
                 "Schedule_Schedule": [
                     {
-                        "Schedule_Game": "Recreational Games",
+                        "Schedule_Game": "Recreational Games - Patintero, Unity Balance, Shoot the Ball, Kasya sa Frame, Running Tic Tac Toe",
                         "Schedule_Time": "9:00 AM - 5:00 PM"
+                    }
+                ]
+            },
+            {
+                "Schedule_Location": "Campus",
+                "Schedule_Schedule": [
+                    {
+                        "Schedule_Game": "Assembly / Registration",
+                        "Schedule_Time": "9:00 AM"
+                    },
+                    {
+                        "Schedule_Game": "E-Games Mechanics",
+                        "Schedule_Time": "9:00 AM - 9:15 AM"
+                    },
+                    {
+                        "Schedule_Game": "E-Games",
+                        "Schedule_Time": "9:15 AM onwards"
+                    },
+                    {
+                        "Schedule_Game": "Recreational Games - Darts",
+                        "Schedule_Time": "9:30 AM - 11:00 AM"
+                    },
+                    {
+                        "Schedule_Game": "Recreational Games - Scrabble",
+                        "Schedule_Time": "10:00 AM onwards"
+                    },
+                    {
+                        "Schedule_Game": "Recreational Games - Chess",
+                        "Schedule_Time": "10:00 AM onwards"
                     }
                 ]
             }
@@ -118,11 +172,11 @@
                     },
                     {
                         "Schedule_Game": "Volleyball Male Finals",
-                        "Schedule_Time": "10:00 AM - 11:30 PM"
+                        "Schedule_Time": "10:00 AM - 11:30 AM"
                     },
                     {
                         "Schedule_Game": "Exhibition Game - Volleyball",
-                        "Schedule_Time": "11:30 PM - 12:30 PM"
+                        "Schedule_Time": "11:30 AM - 12:30 PM"
                     },
                     {
                         "Schedule_Game": "Lunch Break",
