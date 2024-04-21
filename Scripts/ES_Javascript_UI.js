@@ -276,4 +276,27 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  if (document.querySelectorAll('.Article_Main_Content_Container img') != null){
+    const Images = document.querySelectorAll('.Article_Main_Content_Container img');
+    Images.forEach(img => {
+        img.setAttribute("Cursor", "Pointer");
+        img.addEventListener('click', function() {
+          Open_Image(this.src);
+        });
+    });
+  }
+  
+});
 
+function Open_Image(URL){
+  Header_Hide();
+  document.getElementById("UI_ImagePreview").setAttribute("State", "Active");
+  document.getElementById("UI_ImagePreview_Image").src = URL;
+  document.getElementById("UI_ImagePreview_Image").setAttribute("onclick", "window.open('" + URL + "', '_blank')");
+}
+
+function Close_ImagePreview(){
+  Header_Show();
+  document.getElementById("UI_ImagePreview").setAttribute("State", "Inactive");
+}

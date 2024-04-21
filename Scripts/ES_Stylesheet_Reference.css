@@ -52,8 +52,8 @@
 	--BGColor-Menus: #171010; /* Sidebar, Header */
 	--BGColor-Subwindows: #292929; /* Add item, wallpaper selection */
 	--BGColor-Dropdowns: #171010; /* Page Navigation, internet status, dropdown inputs */
-	--BGColor-Opacitated: rgba(2, 48, 166, 0.5); /* For elements with blur effects */
-	--BGColor-ShortcutButtons: #1E1E24; /* Shortcut buttons */
+	--BGColor-Opacitated: rgba(19, 19, 19, 0.5); /* For elements with blur effects */
+	--BGColor-ShortcutButtons: #0d0d0d; /* Shortcut buttons */
 	--BGColor-Buttons: #1E1E24; /* General buttons, subwindow buttons */
 	--BGColor-Input: #121212; /* Input textboxes, dropdowns */
 	--Color-Dividers: #282830; /* Divider colors */

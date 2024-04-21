@@ -12,6 +12,10 @@
 	scroll-behavior: smooth;
 }
 
+*[Cursor="Pointer"]{
+	cursor: pointer;
+}
+
 @font-face {
 	font-family: "Hansief";
 	src: url('../Assets/Fonts/Hansief.otf') format("opentype");
@@ -338,6 +342,73 @@ a{
 	font-size: 10;
 	text-decoration: none;
 	padding-left: 5px;
+}
+
+.UI_ImagePreview{
+	background-color: var(--BGColor-Opacitated);
+	backdrop-filter: var(--Element-BackdropBlur);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.UI_ImagePreview[State="Active"]{
+	pointer-events: auto;
+	opacity: 100%;
+}
+
+.UI_ImagePreview[State="Inactive"]{
+	pointer-events: none;
+	opacity: 0%;
+}
+
+.UI_ImagePreview_Close{
+	/* background-color: var(--English-Blue-Level-2); */
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+	z-index: 500;
+}
+
+.UI_ImagePreview_Close:hover{
+	background-color: var(--English-Blue-Level-2);
+	box-shadow: var(--Element-BoxShadow);
+}
+
+.UI_ImagePreview_Close_Icon{
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+}
+
+.UI_ImagePreview_Image{
+	max-height: 95%;
+	max-width: 95%;
+	object-fit: contain;
+	box-shadow: var(--Element-BoxShadow);
+	cursor: pointer;
+}
+
+.UI_ImagePreview[State="Active"] > .UI_ImagePreview_Image{
+	pointer-events: auto;
+	transform: scale(1);
+	opacity: 100%;
+}
+
+.UI_ImagePreview[State="Inactive"] > .UI_ImagePreview_Image{
+	pointer-events: none;
+	transform: scale(0.9);
+	opacity: 0%;
 }
 
 .TargetArea_CornerButtons{
