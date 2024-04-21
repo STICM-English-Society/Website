@@ -75,6 +75,7 @@
     font-size: 4rem;
     line-height: 0.85;
     overflow-wrap: break-word;
+
 }
 
 .Article_Info{
@@ -167,7 +168,7 @@
     font-family: Raleway;
     color: black;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 5px;
 }
 

@@ -260,5 +260,6 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     .SF_Ranks_Team_Info_Item{
         flex-grow: 1;
         font-size: 0.8rem;
+        padding: 5px;
     }
 }

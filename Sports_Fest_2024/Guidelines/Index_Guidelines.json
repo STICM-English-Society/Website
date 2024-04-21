@@ -24,6 +24,14 @@
         "Thumbnail": "../Assets/Images/Placeholder.png"
     },
     {
+        "Title": "Cheer Dance",
+        "Authors": "PE 4 Committee",
+        "Category": "Cheer Dance",
+        "Date_Published": "21 April 2024",
+        "Link": "Sports_Fest_2024/Guidelines/SP24G_Cheerdance.html",
+        "Thumbnail": "../Assets/Images/Placeholder.png"
+    },
+    {
         "Title": "Mobile Legends: Bang Bang",
         "Authors": "PE 4 Committee",
         "Category": "E-Games",
@@ -117,6 +125,22 @@
         "Category": "Recreational Games",
         "Date_Published": "21 April 2024",
         "Link": "Sports_Fest_2024/Guidelines/SP24G_Chess.html",
+        "Thumbnail": "../Assets/Images/Placeholder.png"
+    },
+    {
+        "Title": "Running Tic Tac Toe",
+        "Authors": "PE 4 Committee",
+        "Category": "Recreational Games",
+        "Date_Published": "21 April 2024",
+        "Link": "Sports_Fest_2024/Guidelines/SP24G_Running_Tic_Tac_Toe.html",
+        "Thumbnail": "../Assets/Images/Placeholder.png"
+    },
+    {
+        "Title": "Darts",
+        "Authors": "PE 4 Committee",
+        "Category": "Recreational Games",
+        "Date_Published": "21 April 2024",
+        "Link": "Sports_Fest_2024/Guidelines/SP24G_Darts.html",
         "Thumbnail": "../Assets/Images/Placeholder.png"
     }
 ]
