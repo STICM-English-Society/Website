@@ -27,28 +27,28 @@
                         "Schedule_Time": "7:00 AM - 8:00 AM"
                     },
                     {
-                        "Schedule_Game": "Volleyball Female - Brown vs. Gray",
+                        "Schedule_Game": "Volleyball Female - Red vs. Brown",
                         "Schedule_Time": "8:00 AM - 9:30 AM"
                     },
                     {
-                        "Schedule_Game": "Volleyball Female - Violet vs. Blue",
+                        "Schedule_Game": "Volleyball Female - Gray vs. Violet",
                         "Schedule_Time": "9:30 AM - 11:00 AM"
                     },
                     {
-                        "Schedule_Game": "Volleyball Female - Red vs. Green",
+                        "Schedule_Game": "Volleyball Female - Blue vs. Red",
                         "Schedule_Time": "11:00 AM - 12:30 PM"
                     },
                     {
-                        "Schedule_Game": "Volleyball Male - Brown vs. Gray",
+                        "Schedule_Game": "Volleyball Male - Violet vs. Green",
                         "Schedule_Time": "12:30 PM - 2:00 PM"
                     },
                     {
-                        "Schedule_Game": "Volleyball Male - Violet vs. Blue",
+                        "Schedule_Game": "Volleyball Male - Brown vs. Blue",
                         "Schedule_Time": "2:00 PM - 3:30 PM"
                     }
                     ,
                     {
-                        "Schedule_Game": "Volleyball Male - Red vs. Green",
+                        "Schedule_Game": "Volleyball Male - Green vs. Gray",
                         "Schedule_Time": "3:30 PM - 5:00 PM"
                     }
                 ]
@@ -120,7 +120,7 @@
                 "Schedule_Location": "Court B",
                 "Schedule_Schedule": [
                     {
-                        "Schedule_Game": "Recreational Games - Patintero, Unity Balance, Shoot the Ball, Kasya sa Frame, Running Tic Tac Toe",
+                        "Schedule_Game": "Recreational Games - Patintero, Unity Balance, Shoot the Ball, Kasya sa Frame, Running Tic Tac Toe, Pass the Ball, Tubo Balance",
                         "Schedule_Time": "9:00 AM - 5:00 PM"
                     }
                 ]

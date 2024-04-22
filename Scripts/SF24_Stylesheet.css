@@ -218,6 +218,13 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     margin-bottom: 30px;
 }
 
+.SF_Sidebar_Logo{
+    height: 150px;
+    object-fit: contain;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
 @media only screen and (max-width: 700px){
     .SF_Schedule_Day, .SF_Schedule{
         margin-left: 0%;
