@@ -225,6 +225,23 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     margin-right: auto; */
 }
 
+.UI_Sidebar_Secondary_Item:hover{
+    cursor: auto;
+    background-color: unset;
+    
+}
+
+.UI_Sidebar_Secondary_Item{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+}
+
+.UI_Sidebar_Secondary_Item_Text:nth-child(2){
+    font-size: 2rem;
+    margin: 0;
+}
+
 @media only screen and (max-width: 700px){
     .SF_Schedule_Day, .SF_Schedule{
         margin-left: 0%;
