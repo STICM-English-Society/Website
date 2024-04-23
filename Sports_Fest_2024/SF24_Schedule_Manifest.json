@@ -14,8 +14,12 @@
                         "Schedule_Time": "5:30 AM - 6:00 AM"
                     },
                     {
-                        "Schedule_Game": "Parade to Court",
+                        "Schedule_Game": "Parade to Court (followed by Opening Ceremony in Court A",
                         "Schedule_Time": "6:00 AM - 7:00 AM"
+                    },
+                    {
+                        "Schedule_Game": "E-Games - Valorant",
+                        "Schedule_Time": "9:30 AM onwards"
                     }
                 ]
             },
@@ -27,28 +31,28 @@
                         "Schedule_Time": "7:00 AM - 8:00 AM"
                     },
                     {
-                        "Schedule_Game": "Volleyball Female - Red vs. Brown",
+                        "Schedule_Game": "Volleyball Female Game 1 - Brown Gray vs Violet Blue",
                         "Schedule_Time": "8:00 AM - 9:30 AM"
                     },
                     {
-                        "Schedule_Game": "Volleyball Female - Gray vs. Violet",
+                        "Schedule_Game": "Volleyball Female Game 2 - Red Green vs. Violet Blue",
                         "Schedule_Time": "9:30 AM - 11:00 AM"
                     },
                     {
-                        "Schedule_Game": "Volleyball Female - Blue vs. Red",
+                        "Schedule_Game": "Volleyball Female Game 3 - Brown Gray vs. Red Green",
                         "Schedule_Time": "11:00 AM - 12:30 PM"
                     },
                     {
-                        "Schedule_Game": "Volleyball Male - Violet vs. Green",
+                        "Schedule_Game": "Volleyball Male Game 4 - Brown Gray vs. Violet Blue",
                         "Schedule_Time": "12:30 PM - 2:00 PM"
                     },
                     {
-                        "Schedule_Game": "Volleyball Male - Brown vs. Blue",
+                        "Schedule_Game": "Volleyball Male Game 5 - Red Green vs. Violet Blue",
                         "Schedule_Time": "2:00 PM - 3:30 PM"
                     }
                     ,
                     {
-                        "Schedule_Game": "Volleyball Male - Green vs. Gray",
+                        "Schedule_Game": "Volleyball Male Game 6 - Brown Gray vs. Red Green",
                         "Schedule_Time": "3:30 PM - 5:00 PM"
                     }
                 ]
@@ -145,11 +149,11 @@
                         "Schedule_Time": "9:30 AM - 11:00 AM"
                     },
                     {
-                        "Schedule_Game": "Recreational Games - Scrabble",
+                        "Schedule_Game": "Recreational Games - Scrabble (Library)",
                         "Schedule_Time": "10:00 AM onwards"
                     },
                     {
-                        "Schedule_Game": "Recreational Games - Chess",
+                        "Schedule_Game": "Recreational Games - Chess (Classroom)",
                         "Schedule_Time": "10:00 AM onwards"
                     }
                 ]
