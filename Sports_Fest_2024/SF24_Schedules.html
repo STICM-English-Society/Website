@@ -16,30 +16,49 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&family=Roboto&display=swap"
     rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <meta
-      property="og:image" 
-      content="Assets/Images/Placeholder.png"
-    />
-    <meta
-      property="og:title"
-      content="Sports Fest 2024 | Schedules"
-    />
-    <meta
-      property="og:description"
-      content="Official schedule of events in each of the courts and areas for Sports Fest 2024."
-    />
+  <meta property="og:image" content="Assets/Images/Placeholder.png" />
+  <meta property="og:title" content="Sports Fest 2024 | Schedules" />
+  <meta property="og:description"
+    content="Official schedule of events in each of the courts and areas for Sports Fest 2024." />
 </head>
 <script src="Scripts/ES_Javascript.js"></script>
 <script src="Scripts/ES_Javascript_UI.js"></script>
 <script src="Scripts/SF24_Javascript.js"></script>
 
-<body id="pageElement_Body" onload="Load_Template('Template_UI_SF24'), SF_Fetch_Schedules()" ShortenedLinks_HasShortenedLink="true"
-  Header_ChangeTitles="true" Header_ChangeTitles_AltPage_Title="Schedules" Header_ChangeTitles_AltPage_URL="Top">
+<body id="pageElement_Body" onload="Load_Template('Template_UI_SF24'), SF_Fetch_Schedules()"
+  ShortenedLinks_HasShortenedLink="true" Header_ChangeTitles="true" Header_ChangeTitles_AltPage_Title="Schedules"
+  Header_ChangeTitles_AltPage_URL="Top">
   <div class="Main_Content_Container">
     <h1 class="Branch_Title">
       Game Schedules
     </h1>
-    
+
+    <div class="SF_Schedule">
+      <h1 class="SF_Schedule_Day">
+        Groupings
+      </h1>
+      <div class="SF_Schedule_Schedule">
+        <div class="SF_Schedule_Item SF_Group">
+          <h3 class="SF_Schedule_Location">
+            Volleyball
+          </h3>
+          <div class="SF_Group_List">
+            <img class='SF_Group_Image' src='Assets/Images/Articles/SF24_G/SF24_S_T_1.png' draggable='false' loading='lazy'/>
+          </div>
+        </div>
+        <div class="SF_Schedule_Item SF_Group">
+          <h3 class="SF_Schedule_Location">
+            Basketball
+          </h3>
+          <div class="SF_Group_List">
+            <img class='SF_Group_Image' src='Assets/Images/Articles/SF24_G/SF24_S_T_2.png' draggable='false' loading='lazy'/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <div class="SF_Schedule" id="SF_Schedule">
       <h3 class="Branch_Navigation_Status_Text" style="text-align: center;">
         Loading schedules. Please wait...
@@ -117,8 +136,8 @@
             </div>
           </div>
         </div>-->
-      </div>
     </div>
+  </div>
 
   </div>
 </body>
