@@ -103,19 +103,19 @@
                         "Schedule_Time": "8:00 AM - 9:00 AM"
                     },
                     {
-                        "Schedule_Game": "Basketball Semis - Game 1 - Top 1 Group A vs. Top 2 Group B",
+                        "Schedule_Game": "Basketball Semis - Game 1 - Blue vs. Green",
                         "Schedule_Time": "10:00 AM - 11:30 AM"
                     },
                     {
-                        "Schedule_Game": "Basketball Semis - Game 2 - Top 1 Group B vs. Top 2 Group A",
+                        "Schedule_Game": "Basketball Semis - Game 2 - Gray vs. Brown",
                         "Schedule_Time": "11:30 AM - 1:00 PM"
                     },
                     {
-                        "Schedule_Game": "Volleyball Female Finals",
+                        "Schedule_Game": "Volleyball Female Finals - Violet Blue vs. Brown Gray",
                         "Schedule_Time": "1:30 PM - 3:00 PM"
                     },
                     {
-                        "Schedule_Game": "Basketball Battle for Third - Loser Match 7 vs. Loser Match 8",
+                        "Schedule_Game": "Basketball Battle for Third - Loser Match 1 vs. Loser Match 2",
                         "Schedule_Time": "3:00 PM - 4:30 PM"
                     }
                 ]
@@ -167,7 +167,7 @@
                 "Schedule_Location": "Court A",
                 "Schedule_Schedule": [
                     {
-                        "Schedule_Game": "Registration",
+                        "Schedule_Game": "Assembly / Registration",
                         "Schedule_Time": "8:00 AM - 8:15 AM"
                     },
                     {
@@ -175,7 +175,7 @@
                         "Schedule_Time": "8:20 AM - 9:50 AM"
                     },
                     {
-                        "Schedule_Game": "Volleyball Male Finals",
+                        "Schedule_Game": "Volleyball Male Finals - Violet Blue vs. Red Green",
                         "Schedule_Time": "10:00 AM - 11:30 AM"
                     },
                     {
