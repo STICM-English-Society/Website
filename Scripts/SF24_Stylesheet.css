@@ -355,7 +355,7 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
 }
 
 @media only screen and (max-width: 700px){
-    .SF_Schedule_Day, .SF_Schedule, .SF_Scores, .SF_Titles, .SF_Scores_Search, .Branch_Navigation_Status_Text{
+    .SF_Schedule_Day, .SF_Schedule, .SF_Scores, .SF_Title, .SF_Scores_Search, .Branch_Navigation_Status_Text{
         margin-left: 0%;
         margin-right: 0%;
         margin: 10px;
@@ -386,8 +386,9 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
         grid-template-rows: 1fr 1fr;
         grid-gap: 0px;
     }
-    .SF_LastUpdated{
-        margin: 30;
+    .SF_LastUpdated, .Branch_Title{
+        margin: 5px;
+        margin-left: 10px;
     }
     .SF_Ranks_Team_Info{
         justify-content: flex-start;
@@ -395,12 +396,16 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     }
     .SF_Ranks_Team_Info_Item{
         flex-grow: 1;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding: 5px;
     }   
+    .Main_Content_Container{
+        width: 100%;
+        overflow-x: hidden;
+    }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 300px){
     .SF_Scores_Game_List_Item{
         grid-template-columns: unset;
         grid-template-rows: 1fr 1fr;
