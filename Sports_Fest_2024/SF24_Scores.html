@@ -30,21 +30,24 @@
     />
     <meta
       property="og:description"
-      content="The official standings of each team color for Sports Fest 2024. Rankings and scores updated live."
+      content="The official standings of each team color for Sports Fest 2024."
     />
   </head>
   <script src="Scripts/ES_Javascript.js"></script>
   <script src="Scripts/ES_Javascript_UI.js"></script>
   <script src="Scripts/ES_Javascript_BranchNavigation.js"></script>
   <script src="Scripts/SF24_Javascript.js"></script>
-  <body id="pageElement_Body" onload="Load_Template('Template_UI_SF24'), SF_Fetch_Standings()"  ShortenedLinks_HasShortenedLink="true" Header_ChangeTitles="true" Header_ChangeTitles_AltPage_Title="Team Standings" Header_ChangeTitles_AltPage_URL="Top" >
+  <body id="pageElement_Body" onload="Load_Template('Template_UI_SF24'), SF_Fetch_Standings(), SF_Fetch_Standings_GameSpecific()"  ShortenedLinks_HasShortenedLink="true" Header_ChangeTitles="true" Header_ChangeTitles_AltPage_Title="Team Standings" Header_ChangeTitles_AltPage_URL="Top" >
     <div class="Main_Content_Container">
       <h1 class="Branch_Title">
         Team Standings
       </h1>
       <p class="SF_LastUpdated" id="SF_LastUpdated">
-        Last updated: 16 April 2024
+        Last updated: 28 April 2024
       </p>
+      <h2 class="SF_Title">
+        Overall team rankings
+      </h2>
       <div class="SF_Ranks" id="SF_Ranks">
         <h3 class="Branch_Navigation_Status_Text" style="text-align: center;">
           Loading rankings. Please wait...
@@ -185,8 +188,59 @@
           </div>
         </div>-->
       </div>
-      <div class="SF_Scores" id="SF_Scores">
-
+      <div class="SF_Scores_GameSpecific">
+        <h2 class="SF_Title">
+          Team rankings per game
+        </h2>
+        <div class="Branch_Navigation_Search SF_Scores_Search">
+          <input type="text" class="Branch_Navigation_Search_Input" placeholder="Search for game names" id="BranchNavigation_Search_Query" oninput="SF_Search_Standings(this.value)"/>
+          <img src="Assets/Icons/icon_search.png" class="Branch_Navigation_Search_Button" onclick="SF_Search_Standings(document.getElementById('BranchNavigation_Search_Query').value)"/>
+        </div>
+        <h3 class="Branch_Navigation_Status_Text" id="Branch_Navigation_Status">
+          Results
+        </h3>
+        <div class="SF_Scores" id="SF_Scores">
+          <h3 class="Branch_Navigation_Status_Text" style="text-align: center;">
+            Loading rankings. Please wait...
+          </h3>
+          <!-- <div class="SF_Scores_Game">
+            <h2 class="SF_Scores_Game_Title">
+              Game
+            </h2>
+            <div class="SF_Scores_Game_List">
+              <div class="SF_Scores_Game_List_Item">
+                <p class="SF_Scores_Game_List_Item_Data"> 
+                  Text
+                </p>
+                <div class="SF_Scores_Game_List_Item_Value">
+                  <div class="SF_Scores_Game_List_Item_Value_Flag"></div>
+                  <p class="SF_Scores_Game_List_Item_Value_Text"> 
+                    Red
+                  </p>
+                </div>
+              </div>
+              <div class="SF_Scores_Game_List_Item">
+                <p class="SF_Scores_Game_List_Item_Data"> 
+                  Text
+                </p>
+                <div class="SF_Scores_Game_List_Item_Value">
+                  <div class="SF_Scores_Game_List_Item_Value_Flag"></div>
+                  <p class="SF_Scores_Game_List_Item_Value_Text"> 
+                    Red
+                  </p>
+                  <div class="SF_Scores_Game_List_Item_Value_Flag"></div>
+                  <p class="SF_Scores_Game_List_Item_Value_Text"> 
+                    Red
+                  </p>
+                  <div class="SF_Scores_Game_List_Item_Value_Flag"></div>
+                  <p class="SF_Scores_Game_List_Item_Value_Text"> 
+                    Red
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
       </div>
     </div>
     

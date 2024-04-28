@@ -88,6 +88,7 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
 }
 
 .SF_Ranks{
+    margin: 20px;
     margin-left: 10%;
     margin-right: 10%;
     display: grid;
@@ -242,8 +243,119 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     margin: 0;
 }
 
+.SF_Scores_GameSpecific{
+    scroll-snap-align: start none;
+}
+
+.SF_Scores{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.SF_Scores_Game{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border: solid rgba(128, 128, 128, 0.242) 3px;
+    padding: 10px;
+}
+
+.SF_Scores_Game_Title{
+    font-family: Raleway;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.SF_Scores_Game_List{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+}
+
+.SF_Scores_Game_List_Item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+}
+
+.SF_Scores_Game_List_Item:nth-child(odd){
+    background-color: rgba(128, 128, 128, 0.242);
+}
+
+.SF_Scores_Game_List_Item_Data, .SF_Scores_Game_List_Item_Value_Text{
+    font-family: Roboto;
+    margin: 0;
+}
+
+.SF_Scores_Game_List_Item_Data{
+    font-weight: bold;
+}
+
+.SF_Scores_Game_List_Item_Value_Text{
+    /* margin-right: 10px; */
+}
+
+.SF_Scores_Game_List_Item_Value{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto; 
+    grid-gap: 5px;
+    align-items: center;
+    justify-content: left;
+}
+
+.SF_Scores_Game_List_Item_Value_Flag{
+    background-color: green;
+    /* margin-right: 10px; */
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.SF_Scores_Game_List_Item_Value_Flag[Team="Green"]{
+    background-color: rgb(10, 198, 41);
+}
+
+.SF_Scores_Game_List_Item_Value_Flag[Team="Blue"]{
+    background-color: rgb(10, 88, 198);
+}
+
+.SF_Scores_Game_List_Item_Value_Flag[Team="Red"]{
+    background-color: rgb(198, 10, 10);
+}
+
+.SF_Scores_Game_List_Item_Value_Flag[Team="Gray"]{
+    background-color: rgb(149, 149, 149);
+}
+
+.SF_Scores_Game_List_Item_Value_Flag[Team="Violet"]{
+    background-color: rgb(107, 20, 229);
+}
+
+.SF_Scores_Game_List_Item_Value_Flag[Team="Brown"]{
+    background-color: rgb(191, 81, 7);
+}
+
+.SF_Title{
+    font-family: Graduate;
+    color: var(--English-Blue-Level-3);
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.SF_Scores_Search, .Branch_Navigation_Status_Text{
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 @media only screen and (max-width: 700px){
-    .SF_Schedule_Day, .SF_Schedule{
+    .SF_Schedule_Day, .SF_Schedule, .SF_Scores, .SF_Titles, .SF_Scores_Search, .Branch_Navigation_Status_Text{
         margin-left: 0%;
         margin-right: 0%;
         margin: 10px;
@@ -285,5 +397,12 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
         flex-grow: 1;
         font-size: 0.8rem;
         padding: 5px;
+    }   
+}
+
+@media only screen and (max-width: 400px){
+    .SF_Scores_Game_List_Item{
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
     }
 }

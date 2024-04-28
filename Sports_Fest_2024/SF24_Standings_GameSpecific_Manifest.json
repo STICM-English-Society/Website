@@ -1,0 +1,528 @@
+[
+    {
+        "Game_Name": "Basketball",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Gray"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "5th Runner Up",
+                "Ranking_Team": ["Violet"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Volleyball Boys",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Red", "Green"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Blue", "Violet"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Gray", "Brown"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Volleyball Girls",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Gray", "Brown"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Blue", "Violet"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Red", "Green"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Cheer Dance",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Gray"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "5th Runner Up",
+                "Ranking_Team": ["Blue"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Patintero",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Gray"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Violet"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Unity Balance",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Blue"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Tubo Balance",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Green"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Kasya sa Frame",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "5th Runner Up",
+                "Ranking_Team": ["Gray"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Tug of War Girls",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Blue"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Tug of War Boys",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Gray", "Blue", "Violet"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Running Tic Tac Toe",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "5th Runner Up",
+                "Ranking_Team": ["Gray"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Shoot the Ball",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Gray"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "5th Runner Up",
+                "Ranking_Team": ["Green"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Pass the Ball",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Gray"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "5th Runner Up",
+                "Ranking_Team": ["Brown"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Darts Girls",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Blue"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Darts Boys",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Gray"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Scrabble",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Gray"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "5th Runner Up",
+                "Ranking_Team": ["Brown"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Chess Girls",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Green"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Chess Boys",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "5th Runner Up",
+                "Ranking_Team": ["Gray"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Valorant",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Gray"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "5th Runner Up",
+                "Ranking_Team": ["Violet"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Mobile Legends: Bang Bang",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "5th Runner Up",
+                "Ranking_Team": ["Gray"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Tekken Tertiary",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Blue"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Gray"]
+            },
+            {
+                "Ranking_Name": "5th Runner Up",
+                "Ranking_Team": ["Brown"]
+            }
+        ]
+    },
+    {
+        "Game_Name": "Tekken SHS",
+        "Game_Rankings": [
+            {
+                "Ranking_Name": "Champion",
+                "Ranking_Team": ["Gray"]
+            },
+            {
+                "Ranking_Name": "1st Runner Up",
+                "Ranking_Team": ["Brown"]
+            },
+            {
+                "Ranking_Name": "2nd Runner Up",
+                "Ranking_Team": ["Red"]
+            },
+            {
+                "Ranking_Name": "3rd Runner Up",
+                "Ranking_Team": ["Violet"]
+            },
+            {
+                "Ranking_Name": "4th Runner Up",
+                "Ranking_Team": ["Green"]
+            },
+            {
+                "Ranking_Name": "5th Runner Up",
+                "Ranking_Team": ["Blue"]
+            }
+        ]
+    }
+]

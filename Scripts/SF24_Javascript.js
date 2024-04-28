@@ -124,3 +124,87 @@ function SF_Generate_Standings(){
         }
     }
 }
+
+let SF_Standings_GameSpecific = {};
+function SF_Fetch_Standings_GameSpecific(){
+    const request = new XMLHttpRequest();
+    request.open("GET", "Sports_Fest_2024/SF24_Standings_GameSpecific_Manifest.json", false);
+    request.send();
+    var messages = request.responseText;
+    console.log(messages);
+    // BranchList_Data = JSON.parse(messages);
+    SF_Standings_GameSpecific = JSON.parse(messages);
+    SF_Generate_Standings_GameSpecific();
+}
+
+function SF_Generate_Standings_GameSpecific(){
+    document.getElementById("SF_Scores").innerHTML = "";
+    for (a = 0; a < SF_Standings_GameSpecific.length; a++){
+        // SF_Scores_Game
+        var Game_Item_Element = document.createElement('div');
+        Game_Item_Element.setAttribute('class', 'SF_Scores_Game');
+        Game_Item_Element.setAttribute('id', 'SF_Scores_Game_' + a);
+        Game_Item_Element.setAttribute('Game', SF_Standings_GameSpecific[a].Game_Name);
+        Game_Item_Element.innerHTML = `
+            <h2 class="SF_Scores_Game_Title">
+                ${SF_Standings_GameSpecific[a].Game_Name}
+            </h2>
+            <div class="SF_Scores_Game_List" id="${'SF_Scores_Game_' + a + '_List'}">
+            </div>
+        `;
+        document.getElementById("SF_Scores").appendChild(Game_Item_Element);
+
+        for (b = 0; b < SF_Standings_GameSpecific[a].Game_Rankings.length; b++){
+            var Game_Item_List_Element = document.createElement('div');
+            Game_Item_List_Element.setAttribute('class', 'SF_Scores_Game_List_Item');
+            Game_Item_List_Element.innerHTML = `
+                <p class="SF_Scores_Game_List_Item_Data"> 
+                    ${SF_Standings_GameSpecific[a].Game_Rankings[b].Ranking_Name}
+                </p>
+                <div class="SF_Scores_Game_List_Item_Value" id="${'SF_Scores_Game_' + a + '_List_' + b + '_Values'}">
+                </div>
+            `;
+            document.getElementById('SF_Scores_Game_' + a + '_List').appendChild(Game_Item_List_Element);
+
+            for (c = 0; c < SF_Standings_GameSpecific[a].Game_Rankings[b].Ranking_Team.length; c++){
+                var Game_Item_List_Value_Flag_Element = document.createElement('div');
+                Game_Item_List_Value_Flag_Element.setAttribute("class", "SF_Scores_Game_List_Item_Value_Flag");
+                Game_Item_List_Value_Flag_Element.setAttribute("Team", SF_Standings_GameSpecific[a].Game_Rankings[b].Ranking_Team[c]);
+                document.getElementById('SF_Scores_Game_' + a + '_List_' + b + '_Values').appendChild(Game_Item_List_Value_Flag_Element);
+
+                var Game_Item_List_Value_Text_Element = document.createElement('div');
+                Game_Item_List_Value_Text_Element.setAttribute("class", "SF_Scores_Game_List_Item_Value_Text");
+                Game_Item_List_Value_Text_Element.innerHTML = SF_Standings_GameSpecific[a].Game_Rankings[b].Ranking_Team[c];
+                document.getElementById('SF_Scores_Game_' + a + '_List_' + b + '_Values').appendChild(Game_Item_List_Value_Text_Element);
+            }
+        }
+    }
+}
+
+function SF_Search_Standings(Query){
+    var Games = document.querySelectorAll('.SF_Scores_Game');
+    if (Query == ''){
+        document.getElementById("Branch_Navigation_Status").style.display = "none";
+        for (a = 0; a < Games.length; a++){
+            Games[a].style.display = "grid";
+        }
+    } else {
+        document.getElementById("Branch_Navigation_Status").style.display = "block";
+        var Games_Hit_Count = 0;
+        for (a = 0; a < Games.length; a++){
+            Games[a].style.display = "none";
+        }
+        for (a = 0; a < Games.length; a++){
+            if (Games[a].getAttribute('Game').toUpperCase().includes(Query.toUpperCase())){
+                Games[a].style.display = "grid";
+                Games_Hit_Count++;
+            }
+        }
+        if (Games_Hit_Count > 0){
+            document.getElementById("Branch_Navigation_Status").innerHTML = Games_Hit_Count + " results for '" + Query + "'";
+        } else {
+            document.getElementById("Branch_Navigation_Status").innerHTML = "No results found for '" + Query + "'.";
+        }
+    }
+    
+}

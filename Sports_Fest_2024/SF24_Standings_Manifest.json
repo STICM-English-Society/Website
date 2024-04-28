@@ -1,7 +1,7 @@
 [
     {
         "Team": "Green",
-        "Total_Score": "0",
+        "Total_Score": "93",
         "Info": [
             {
                 "Data": "Place:",
@@ -9,33 +9,33 @@
             },
             {
                 "Data": "Champion",
-                "Value": "0"
+                "Value": "8"
             }, 
             {
-                "Data": "2nd",
-                "Value": "0"
+                "Data": "1stRU",
+                "Value": "3"
             }, 
             {
-                "Data": "3rd",
-                "Value": "0"
+                "Data": "2ndRU",
+                "Value": "4"
             }, 
             {
-                "Data": "4th",
-                "Value": "0"
+                "Data": "3rdRU",
+                "Value": "3"
             }, 
             {
-                "Data": "5th",
-                "Value": "0"
+                "Data": "4thRU",
+                "Value": "2"
             }, 
             {
-                "Data": "6th",
-                "Value": "0"
+                "Data": "5thRU",
+                "Value": "1"
             }
         ]
     },
     {
         "Team": "Blue",
-        "Total_Score": "0",
+        "Total_Score": "85",
         "Info": [
             {
                 "Data": "Place:",
@@ -43,33 +43,33 @@
             },
             {
                 "Data": "Champion",
-                "Value": "0"
+                "Value": "3"
             }, 
             {
-                "Data": "2nd",
-                "Value": "0"
+                "Data": "1stRU",
+                "Value": "9"
             }, 
             {
-                "Data": "3rd",
-                "Value": "0"
+                "Data": "2ndRU",
+                "Value": "1"
             }, 
             {
-                "Data": "4th",
-                "Value": "0"
+                "Data": "3rdRU",
+                "Value": "4"
             }, 
             {
-                "Data": "5th",
-                "Value": "0"
+                "Data": "4thRU",
+                "Value": "2"
             }, 
             {
-                "Data": "6th",
-                "Value": "0"
+                "Data": "5thRU",
+                "Value": "2"
             }
         ]
     },
     {
         "Team": "Red",
-        "Total_Score": "0",
+        "Total_Score": "58",
         "Info": [
             {
                 "Data": "Place:",
@@ -77,33 +77,33 @@
             },
             {
                 "Data": "Champion",
-                "Value": "0"
+                "Value": "2"
             }, 
             {
-                "Data": "2nd",
-                "Value": "0"
+                "Data": "1stRU",
+                "Value": "2"
             }, 
             {
-                "Data": "3rd",
-                "Value": "0"
+                "Data": "2ndRU",
+                "Value": "5"
             }, 
             {
-                "Data": "4th",
-                "Value": "0"
+                "Data": "3rdRU",
+                "Value": "2"
             }, 
             {
-                "Data": "5th",
-                "Value": "0"
+                "Data": "4thRU",
+                "Value": "5"
             }, 
             {
-                "Data": "6th",
+                "Data": "5thRU",
                 "Value": "0"
             }
         ]
     },
     {
         "Team": "Gray",
-        "Total_Score": "0",
+        "Total_Score": "54",
         "Info": [
             {
                 "Data": "Place:",
@@ -111,33 +111,33 @@
             },
             {
                 "Data": "Champion",
+                "Value": "3"
+            }, 
+            {
+                "Data": "1stRU",
                 "Value": "0"
             }, 
             {
-                "Data": "2nd",
-                "Value": "0"
+                "Data": "2ndRU",
+                "Value": "4"
             }, 
             {
-                "Data": "3rd",
-                "Value": "0"
+                "Data": "3rdRU",
+                "Value": "4"
             }, 
             {
-                "Data": "4th",
-                "Value": "0"
+                "Data": "4thRU",
+                "Value": "2"
             }, 
             {
-                "Data": "5th",
-                "Value": "0"
-            }, 
-            {
-                "Data": "6th",
-                "Value": "0"
+                "Data": "5thRU",
+                "Value": "4"
             }
         ]
     },
     {
         "Team": "Violet",
-        "Total_Score": "0",
+        "Total_Score": "70",
         "Info": [
             {
                 "Data": "Place:",
@@ -145,33 +145,33 @@
             },
             {
                 "Data": "Champion",
-                "Value": "0"
+                "Value": "2"
             }, 
             {
-                "Data": "2nd",
-                "Value": "0"
+                "Data": "1stRU",
+                "Value": "4"
             }, 
             {
-                "Data": "3rd",
-                "Value": "0"
+                "Data": "2ndRU",
+                "Value": "5"
             }, 
             {
-                "Data": "4th",
-                "Value": "0"
+                "Data": "3rdRU",
+                "Value": "4"
             }, 
             {
-                "Data": "5th",
-                "Value": "0"
+                "Data": "4thRU",
+                "Value": "2"
             }, 
             {
-                "Data": "6th",
-                "Value": "0"
+                "Data": "5thRU",
+                "Value": "2"
             }
         ]
     },
     {
         "Team": "Brown",
-        "Total_Score": "0",
+        "Total_Score": "77",
         "Info": [
             {
                 "Data": "Place:",
@@ -179,27 +179,27 @@
             },
             {
                 "Data": "Champion",
-                "Value": "0"
+                "Value": "6"
             }, 
             {
-                "Data": "2nd",
-                "Value": "0"
+                "Data": "1stRU",
+                "Value": "5"
             }, 
             {
-                "Data": "3rd",
-                "Value": "0"
+                "Data": "2ndRU",
+                "Value": "2"
             }, 
             {
-                "Data": "4th",
-                "Value": "0"
+                "Data": "3rdRU",
+                "Value": "1"
             }, 
             {
-                "Data": "5th",
-                "Value": "0"
+                "Data": "4thRU",
+                "Value": "1"
             }, 
             {
-                "Data": "6th",
-                "Value": "0"
+                "Data": "5thRU",
+                "Value": "3"
             }
         ]
     }
