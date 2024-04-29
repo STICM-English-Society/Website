@@ -358,23 +358,31 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     margin-right: 10%;
 }
 
-.SF_Button{
+.SF_Button_Row{
     margin: 10px;
     margin-left: 10%;
     margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 10px;
+}
+
+.SF_Button{
     background-color: var(--English-Blue-Level-3);
     border-radius: 25px;
-    width: 150px;
+    width: auto;
     color: white;
     font-family: Roboto;
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     user-select: none;
     cursor: pointer;
     text-align: center;
 }
 
 @media only screen and (max-width: 700px){
-    .SF_Schedule_Day, .SF_Schedule, .SF_Scores, .SF_Title, .SF_Scores_Search, .Branch_Navigation_Status_Text, .SF_Button{
+    .SF_Schedule_Day, .SF_Schedule, .SF_Scores, .SF_Title, .SF_Scores_Search, .Branch_Navigation_Status_Text, .SF_Button_Row{
         margin-left: 0%;
         margin-right: 0%;
         margin: 10px;

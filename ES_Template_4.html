@@ -260,7 +260,7 @@
           <div class="UI_ImagePreview_Close" onclick="Close_ImagePreview()">
             <img class='UI_ImagePreview_Close_Icon' src='Assets/Icons/icon_close.png' draggable='false' loading='lazy'/>
           </div>
-          <img class='UI_ImagePreview_Image' src='Assets/Images/Placeholder.png' draggable='false' loading='lazy' id="UI_ImagePreview_Image"/>
+          <img class='UI_ImagePreview_Image' src='Assets/Images/Placeholder.png' draggable='false' loading='lazy' id="UI_ImagePreview_Image" onload="this.setAttribute('Status', 'Loaded')"/>
         </div>
       </div>
     </template>

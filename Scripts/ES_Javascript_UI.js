@@ -281,9 +281,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const Images = document.querySelectorAll('.Article_Main_Content_Container img');
     Images.forEach(img => {
         img.setAttribute("Cursor", "Pointer");
-        img.addEventListener('click', function() {
-          Open_Image(this.src);
-        });
+        if (img.getAttribute("AltSRC") != null){
+          img.addEventListener('click', function() {
+            Open_Image(img.getAttribute("AltSRC"));
+          });
+        } else {
+          img.addEventListener('click', function() {
+            Open_Image(this.src);
+          });
+        }
+        
     });
   }
   
@@ -291,6 +298,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function Open_Image(URL){
   Header_Hide();
+  document.getElementById("UI_ImagePreview_Image").setAttribute("Status", "Unloaded");
+  document.getElementById("UI_ImagePreview_Image").src = "Assets/Images/Placeholder.png";
   document.getElementById("UI_ImagePreview").setAttribute("State", "Active");
   document.getElementById("UI_ImagePreview_Image").src = URL;
   document.getElementById("UI_ImagePreview_Image").setAttribute("onclick", "window.open('" + URL + "', '_blank')");
@@ -298,5 +307,6 @@ function Open_Image(URL){
 
 function Close_ImagePreview(){
   Header_Show();
+  document.getElementById("UI_ImagePreview_Image").setAttribute("Status", "Unloaded");
   document.getElementById("UI_ImagePreview").setAttribute("State", "Inactive");
 }

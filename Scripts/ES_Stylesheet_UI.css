@@ -397,6 +397,11 @@ a{
 	object-fit: contain;
 	box-shadow: var(--Element-BoxShadow);
 	cursor: pointer;
+	opacity: 0%;
+}
+
+.UI_ImagePreview_Image[Status="Loaded"]{
+	opacity: 100%;
 }
 
 .UI_ImagePreview[State="Active"] > .UI_ImagePreview_Image{
