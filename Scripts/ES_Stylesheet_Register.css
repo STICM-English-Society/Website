@@ -1,0 +1,126 @@
+.Main_Content_Container{
+    background-image: url(../Assets/Images/Placeholder.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.Register{
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 600px;
+    height: auto;
+    background-color: white;
+    border-radius: 7px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+@media only screen and (max-width: 650px){
+    .Register{
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.Register_Page{
+    display: grid;
+    grid-template-rows: 1fr 60px;
+    height: auto;
+    width: calc(100% - 40px);
+    
+}
+
+.Register_Page{
+    /* background-color: red; */
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.Register_Page_Content{
+    
+}
+
+.Register_Page_Controls{
+    /* background-color: blue; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.Register_Page_Controls > p{
+    margin: 0;
+}
+
+.Register_Page_Title{
+    font-family: Gilroy Bold;
+    margin: 0;
+}
+
+.Register_Page_Title[Primary]{
+    font-family: Gilroy Heavy;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.Register_Page_Paragraph{
+    font-family: var(--Text-Font-Paragraph);
+}
+
+.Register_Page_Committees{
+    
+}
+
+.Register_Page_Committees_Item{
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "Icon Title"
+    "Icon Description";
+    margin-bottom: 10px;
+    outline: transparent;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+    outline: solid transparent;
+}
+
+.Register_Page_Committees_Item[State="Active"]{
+    background-color: var(--English-Blue-Level-2L);
+}
+
+.Register_Page_Committees_Item[State="Active"] > h3, .Register_Page_Committees_Item[State="Active"]> p{
+    color:white;
+}
+
+.Register_Page_Committees_Item:hover{
+    outline: solid var(--English-Blue-Level-1D);
+}
+
+.Register_Page_Committees_Item_Icon{
+    width: 65px;
+    grid-area: Icon;
+    background-color: var(--English-Blue-Level-2L);
+    border-radius: 7px;
+}
+
+.Register_Page_Committees_Item_Title{
+    font-family: Gilroy Bold;
+    grid-area: Title;
+    margin: 0;
+}
+
+.Register_Page_Committees_Item > .Register_Page_Paragraph{
+    grid-area: Description;
+    margin: 0;
+}

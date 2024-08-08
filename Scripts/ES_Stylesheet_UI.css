@@ -16,56 +16,6 @@
 	cursor: pointer;
 }
 
-@font-face {
-	font-family: "Hansief";
-	src: url('../Assets/Fonts/Hansief.otf') format("opentype");
-	/* src: url('https://drive.google.com/uc?id=1Ot9Xg1rVe2TlIOizCh2nk8oXFeA2eZ6q') format("opentype"); */
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Raleway";
-	src: url("../Assets/Fonts/Raleway-ExtraBold.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face{
-	font-family: "Roboto";
-	src: url("../Assets/Fonts/Roboto-Regular.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face{
-	font-family: "Gilroy Medium";
-	src: url("../Assets/Fonts/Gilroy-Medium.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face{
-	font-family: "Gilroy Bold";
-	src: url("../Assets/Fonts/Gilroy-Bold.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face{
-	font-family: "Gilroy Heavy";
-	src: url("../Assets/Fonts/Gilroy-Heavy.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face{
-	font-family: "Graduate";
-	src: url("../Assets/Fonts/graduate-regular.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-}
-
 
 *{
 	outline: var(--Debug-ElementOutline);
@@ -111,7 +61,7 @@ a{
 
 .UI_Header{
 	background-color: #264653;
-	background-color: var(--English-Blue-Level-1);
+	background-color: var(--English-Blue-Level-1D);
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -136,7 +86,7 @@ a{
 
 .UI_Header_Hamburger:hover{
 	background-color: #2a9d8f;
-	background-color: var(--English-Blue-Level-3);
+	background-color: var(--English-Blue-Level-2D);
 	cursor: pointer;
 }
 
@@ -227,7 +177,7 @@ a{
 
 .UI_Header_Share:hover{
 	background-color: #2a9d8f;
-	background-color: var(--English-Blue-Level-3);
+	background-color: var(--English-Blue-Level-2D);
 	cursor: pointer;
 }
 
@@ -237,7 +187,7 @@ a{
 
 .UI_Header_Share_Toast{
 	background-color: #264653;
-	background-color: var(--English-Blue-Level-2);
+	background-color: var(--English-Blue-Level-1D);
 	margin-top: 50px;
 	width: auto;
 	padding: 5px;
@@ -259,7 +209,7 @@ a{
 	top: 50px;
 	width: 300px;
 	background-color: #264653;
-	background-color: var(--English-Blue-Level-1);
+	background-color: var(--English-Blue-Level-1D);
 	padding: 10px;
 	padding-right: 20px;
 	display: grid;
@@ -291,7 +241,7 @@ a{
 
 .UI_Sidebar_Main_Item:hover{
 	background-color: #2a9d8f;
-	background-color: var(--English-Blue-Level-3);
+	background-color: var(--English-Blue-Level-2D);
 }
 
 .UI_Sidebar_Main_Item_Text{
@@ -324,7 +274,7 @@ a{
 
 .UI_Sidebar_Secondary_Item:hover{
 	background-color: #2a9d8f;
-	background-color: var(--English-Blue-Level-3);
+	background-color: var(--English-Blue-Level-2D);
 }
 
 .UI_Sidebar_Secondary_Item_Text{
@@ -381,7 +331,7 @@ a{
 }
 
 .UI_ImagePreview_Close:hover{
-	background-color: var(--English-Blue-Level-2);
+	background-color: var(--English-Blue-Level-2D);
 	box-shadow: var(--Element-BoxShadow);
 }
 
@@ -516,7 +466,7 @@ a{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background-color: var(--English-Blue-Level-1);
+	background-color: var(--English-Blue-Base);
 	/* border-radius: 10px; */
 	
 	transition: var(--Element-Transition-Delay);
@@ -524,14 +474,14 @@ a{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background-color: rgb(5, 37, 124);
+	background-color: var(--English-Blue-Level-1D);
 	/* border-radius: 10px; */
 	width: 50px;
 	height: 50px;
 }
 /* Selection color */
 ::selection{
-	background-color: var(--English-Blue-Level-1);
+	background-color: var(--English-Blue-Level-3L);
 }
 
 .ComingSoon{
@@ -604,7 +554,7 @@ a{
 	position: fixed;
 	top: 60px;
 	left: 10px;
-	background-color: var(--English-Blue-Level-1);
+	background-color: var(--English-Blue-Level-1D);
 	align-items: center;
 	transition: var(--Element-Transition-Delay);
 	width: 50px;
@@ -633,4 +583,32 @@ a{
 	color: white;
 	text-wrap: nowrap;
 	margin: 0;
+}
+
+.General_Button{
+	border: none;
+	outline: none;
+	border-radius: 25px;
+	background-color: var(--English-Blue-Level-1D);
+	color: white;
+	font-family: var(--Text-Font-Paragraph);
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.General_Button[Primary]{
+	border: solid transparent 3px;
+	background-color: var(--English-Blue-Level-1D);
+	color: white;
+}
+
+.General_Button[Secondary]{
+	border: solid var(--English-Blue-Level-1D) 3px;
+	background-color: transparent;
+	color: black;
+}
+
+.General_Button:hover{
+	background-color: var(--English-Blue-Level-2D);
+	color: white;
 }

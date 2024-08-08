@@ -323,6 +323,7 @@ a#Featured_4 > .Home_Latest_Item{
     transition: 1s;
     cursor: pointer;
     transition: 0.2s;
+    /* pointer-events: none; */
 }
 
 .Home_Latest_Carousel_Selector_Item:hover{
@@ -334,6 +335,7 @@ a#Featured_4 > .Home_Latest_Item{
     /* min-width: calc(100% - var(--Margin-Left) - var(--Margin-Right)); */
     width: 200px;
     transition: 1s;
+    /* pointer-events: all; */
 }
 
 .Home_Articles_Decoration[Count="1"]{

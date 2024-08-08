@@ -104,12 +104,12 @@
 .Article_Info_Item_Title{
     font-weight: 700;
     font-family: Roboto;
-    color: #264653;
+    color: var(--English-Blue-Level-3D);
 }
 
 .Article_Info_Item_Value{
     font-family: Roboto;
-    color: #264653;
+    color: var(--English-Blue-Level-3D);
 }
 
 .Article_Content_Paragraph{
@@ -133,6 +133,8 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .Article_Content_Images_Item_Image{
@@ -183,6 +185,68 @@
     line-height: 0.85;
 }
 
+.Article_Content_List{
+    font-family: Roboto;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Article_Content_List_Header{
+    margin: 0;
+}
+
+.Article_Content_List > ol, .Article_Content_List > ul{
+    margin: 0;
+}
+
+.Article_Content_Quote{
+    display: grid;
+    grid-template-areas: 
+        "Apostrophe_1 Content Apostrophe_2"
+        "Source Source Source"
+    ;
+    grid-template-columns: auto 1fr auto;
+    font-family: Raleway;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Article_Content_Quote > *{
+    margin: 0;
+}
+
+.Article_Content_Quote_Apostrophe{
+    font-size: 70px;
+    margin: 0;
+    opacity: 50%;
+}
+
+.Apostrophe_1{
+    grid-area: Apostrophe_1;
+}
+
+.Article_Content_Quote_Content{
+    grid-area: Content;
+    font-size: 25px;
+    font-style: italic;
+    font-family: Roboto;
+    color: black;
+    margin-top: 17px;
+}
+
+.Apostrophe_2{
+    grid-area: Apostrophe_2;
+    align-self: flex-end;
+}
+
+.Article_Content_Quote_Source{
+    grid-area: Source;
+    font-family: Roboto;
+    font-style: italic;
+    padding-left: 30px;
+    font-weight: normal;
+}
 
 
 .Article_References_Content_Container{

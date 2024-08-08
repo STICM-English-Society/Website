@@ -1,0 +1,234 @@
+<html>
+  <head>
+    <title>English Society | Register</title>
+    <link rel="stylesheet" href="Scripts/App_Stylesheet_UI.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_UI.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Register.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Animations.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Reference.css" />
+    <link rel="stylesheet" href="Scripts/App_Stylesheet_Animations.css" />
+    <link
+      rel="icon" type="image/png" href="Assets/Icons/favicon.png" sizes="96x96"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+  </head>
+  <script src="Scripts/ES_Javascript.js"></script>
+  <script src="Scripts/ES_Javascript_UI.js"></script>
+  <script src="Scripts/App_Javascript_ERUMAUI.js"></script>
+  <script src="Scripts/App_Javascript_ERUMAUI_Core.js"></script>
+  <body id="pageElement_Body" onload="Load_Template('Template_UI')" ShortenedLinks_HasShortenedLink="true" Header_ChangeTitles="true" Header_ChangeTitles_AltPage_Title="Register" Header_ChangeTitles_AltPage_URL="Top">
+    <div class="Main_Content_Container">
+        <div style="display: none;">
+          <div class="Tab_Horizontal_Container_Selector_Item" State="Selected" id="button_Register_Page_1" onclick="Tabs_ChangeTab(this.id, 'Horizontal')" Tabs_Tab_Target_Container="Register" Tabs_Tab_Target_Tab="Register_Page_1" Tabs_UseRibbon="false" Tabs_Tab_Target_Ribbon="Ribbon_Quizzes" Tabs_UseHeaderTitle="false">
+                <img src="Assets/Icons/placeholder.png" class="Tab_Horizontal_Container_Selector_Item_Icon">
+                <p class="Tab_Horizontal_Container_Selector_Item_Text">
+                    Welcome
+                </p>
+            </div>
+            <div class="Tab_Horizontal_Container_Selector_Item" id="button_Register_Page_2" onclick="Tabs_ChangeTab(this.id, 'Horizontal')" Tabs_Tab_Target_Container="Register" Tabs_Tab_Target_Tab="Register_Page_2" Tabs_UseRibbon="false" Tabs_Tab_Target_Ribbon="Ribbon_Quizzes" Tabs_UseHeaderTitle="false">
+                <img src="Assets/Icons/placeholder.png" class="Tab_Horizontal_Container_Selector_Item_Icon">
+                <p class="Tab_Horizontal_Container_Selector_Item_Text">
+                    Choose committee
+                </p>
+            </div>
+            <div class="Tab_Horizontal_Container_Selector_Item" onclick="Tabs_ChangeTab(this.id, 'Horizontal')" id="button_Register_Page_3" Tabs_Tab_Title = "Title for title bar here" Tabs_Tab_Target_Container = "Tabs_Tab_Target_Container_Horizontal_1" Tabs_Tab_Target_Tab = "HorizontalTab_Hori_Tab_IDHere_3">
+                <img src="Assets/Icons/placeholder.png" class="Tab_Horizontal_Container_Selector_Item_Icon">
+                <p class="Tab_Horizontal_Container_Selector_Item_Text">
+                    Technical Committee
+                </p>
+            </div>
+            <div class="Tab_Horizontal_Container_Selector_Item" onclick="Tabs_ChangeTab(this.id, 'Horizontal')" id="Tabs_Horizontal_Button_4" Tabs_Tab_Title = "Title for title bar here" Tabs_Tab_Target_Container = "Tabs_Tab_Target_Container_Horizontal_1" Tabs_Tab_Target_Tab = "HorizontalTab_Hori_Tab_IDHere_4">
+                <img src="Assets/Icons/placeholder.png" class="Tab_Horizontal_Container_Selector_Item_Icon">
+                <p class="Tab_Horizontal_Container_Selector_Item_Text">
+                    Tab 444444444444444444444444
+                </p>
+            </div>
+        </div>
+      <!-- <div class="Tab_Horizontal_Container_Content" id="Tabs_Tab_Target_Container_Horizontal_1" Tabs_CurrentTab = "">
+          <div class="Tab_Container_Content_Item" id="HorizontalTab_Hori_Tab_IDHere_1">
+              Content 1
+          </div>
+          <div class="Tab_Container_Content_Item" id="HorizontalTab_Hori_Tab_IDHere_2">
+              Content 2
+          </div>
+          <div class="Tab_Container_Content_Item" id="HorizontalTab_Hori_Tab_IDHere_3">
+              Content 3
+          </div>
+          <div class="Tab_Container_Content_Item" id="HorizontalTab_Hori_Tab_IDHere_4">
+              Content 4
+          </div>
+      </div>	  -->
+      <div class="Register" id="Register" Tabs_CurrentTab = "">
+        <div class="Tab_Container_Content_Item Register_Page" id="Register_Page_1">
+            <div class="Register_Page_Content">
+                <h1 class="Register_Page_Title" Primary>
+                    Welcome to the English Society!
+                </h1>
+                <p class="Register_Page_Paragraph">
+                    There are 2 steps in the registration process.
+                </p>
+                <ol class="Register_Page_Paragraph">
+                    <li> 
+                        The first step is through the website, where you will choose the committees you want to join. After this step, you will get a unique code. 
+                    </li>
+                    <li>
+                        The second step is through Microsoft Forms, where you will enter your personal information and paste the code you obtained from the first step.
+                    </li>
+                </ol>
+                <p class="Register_Page_Paragraph">
+                    Click "START" below to begin registering!
+                </p>
+            </div>
+            <div class="Register_Page_Controls">
+                <p class="Register_Page_Paragraph">
+                    English Society 2024 - 2025
+                </p>
+                <button class="General_Button" Primary onclick="document.getElementById('button_Register_Page_2').click();">
+                    Start
+                </button>
+            </div>
+        </div>
+        <div class="Tab_Container_Content_Item Register_Page" id="Register_Page_2" style="display: none;">
+          <div class="Register_Page_Content">
+              <h1 class="Register_Page_Title">
+                  Pick a committee!
+              </h1>
+              <p class="Register_Page_Paragraph">
+                  There are 3 committees that have different activities and responsibilities in the organization. Pick one or more that suits your interests.
+              </p>
+              <p class="Register_Page_Paragraph">
+                <u><i>You can select more than one committee.</i></u> 
+              </p>
+              <div class="Register_Page_Committees">
+                <div class="Register_Page_Committees_Item" id="Register_Committee_Technical" onclick="Buttons_Toggle(this.id)" State="Inactive">
+                  <img class='Register_Page_Committees_Item_Icon' src='Assets/Icons/English Organization Technical Committee Logo 1.png' draggable='false' loading='lazy'/>
+                  <h3 class="Register_Page_Committees_Item_Title">
+                    Technical Committee
+                  </h3>
+                  <p class="Register_Page_Paragraph">
+                    The Technical Committee is responsible for the organization's technical aspects, such as managing its social media presence, documentation, and content production.
+                  </p>
+                </div>
+
+                <div class="Register_Page_Committees_Item" id="Register_Committee_Journalism" onclick="Buttons_Toggle(this.id)" State="Inactive">
+                  <img class='Register_Page_Committees_Item_Icon' src='Assets/Icons/English Organization Journalism Committee Logo 1.png' draggable='false' loading='lazy'/>
+                  <h3 class="Register_Page_Committees_Item_Title">
+                    Journalism Committee
+                  </h3>
+                  <p class="Register_Page_Paragraph">
+                    The Journalism Committee leans more into writing. They are responsible for writing journals, news articles, and event write-ups. It is also responsible for the scripts performed by our hosts during events.
+                  </p>
+                </div>
+
+                <div class="Register_Page_Committees_Item" id="Register_Committee_Promotional" onclick="Buttons_Toggle(this.id)" State="Inactive">
+                  <img class='Register_Page_Committees_Item_Icon' src='Assets/Icons/English Organization Promotional Committee Logo 1.png' draggable='false' loading='lazy'/>
+                  <h3 class="Register_Page_Committees_Item_Title">
+                    Promotional Committee
+                  </h3>
+                  <p class="Register_Page_Paragraph">
+                    The Promotional Committee is responsible for the performances of the organization in different mediums, such as singing, dancing, acting, and hosting. They are comprised of great English speakers that is able to convey the intended emotion and message in a meaningful and efficient way.
+                  </p>
+                </div>
+              </div>
+          </div>
+          <div class="Register_Page_Controls">
+              <button class="General_Button" Secondary onclick="document.getElementById('button_Register_Page_1').click();">
+                  Previous
+              </button>
+              <button class="General_Button" Primary>
+                  Next
+              </button>
+          </div>
+        </div>
+        <div class="Tab_Container_Content_Item Register_Page" id="Register_Page_3" style="display: none;">
+          <div class="Register_Page_Content">
+              <h1 class="Register_Page_Title">
+                  Welcome to the Technical Committee!
+              </h1>
+              <p class="Register_Page_Paragraph">
+                The Technical Committee is responsible for the organization's social media presence (currently, in Facebook, Twitter, and YouTube). It is also responsible for several of the documentation photos taken during STI Marikina's events. It is also responsible for the video productions and short films uploaded in our YouTube channel.
+              </p>
+              <p class="Register_Page_Paragraph">
+                <u><i>You can select more than one on each section.</i></u> 
+              </p>
+
+              <h3 class="Register_Page_Title">
+                Pick your interests.
+              </h3>
+              <div class="Toggle" id="Toggle_1" onclick="Buttons_Toggle(this.id)" State="Active">
+                <div class="Toggle_Indicator"></div>
+                Photography
+              </div>
+              <div class="Toggle" id="Toggle_1" onclick="Buttons_Toggle(this.id)" State="Active">
+                <div class="Toggle_Indicator"></div>
+                Videography
+              </div>
+              <div class="Toggle" id="Toggle_1" onclick="Buttons_Toggle(this.id)" State="Active">
+                <div class="Toggle_Indicator"></div>
+                Video editing
+              </div>
+              <div class="Toggle" id="Toggle_1" onclick="Buttons_Toggle(this.id)" State="Active">
+                <div class="Toggle_Indicator"></div>
+                Graphic design
+              </div>
+              <div class="Toggle" id="Toggle_1" onclick="Buttons_Toggle(this.id)" State="Active">
+                <div class="Toggle_Indicator"></div>
+                Social Media Management
+              </div>
+              <div class="Toggle" id="Toggle_1" onclick="Buttons_Toggle(this.id)" State="Active">
+                <div class="Toggle_Indicator"></div>
+                Content Creation
+              </div>
+              <div class="Toggle" id="Toggle_1" onclick="Buttons_Toggle(this.id)" State="Active">
+                <div class="Toggle_Indicator"></div>
+                Behind the scenes production
+              </div>
+
+              <h3 class="Register_Page_Title">
+                Pick the devices you own.
+              </h3>
+              <div class="Toggle" id="Toggle_1" onclick="Buttons_Toggle(this.id)" State="Active">
+                <div class="Toggle_Indicator"></div>
+                Cellphone
+              </div>
+              <div class="Toggle" id="Toggle_1" onclick="Buttons_Toggle(this.id)" State="Active">
+                <div class="Toggle_Indicator"></div>
+                DSLR / Big boi camera
+              </div>
+              <div class="Toggle" id="Toggle_1" onclick="Buttons_Toggle(this.id)" State="Active">
+                <div class="Toggle_Indicator"></div>
+                Laptop
+              </div>
+              <div class="Toggle" id="Toggle_1" onclick="Buttons_Toggle(this.id)" State="Active">
+                <div class="Toggle_Indicator"></div>
+                Microphone
+              </div>
+              <div class="Toggle" id="Toggle_1" onclick="Buttons_Toggle(this.id)" State="Active">
+                <div class="Toggle_Indicator"></div>
+                Tripod
+              </div>
+
+
+          </div>
+          <div class="Register_Page_Controls">
+              <button class="General_Button" Secondary onclick="document.getElementById('button_Register_Page_1').click();">
+                  Previous
+              </button>
+              <button class="General_Button" Primary>
+                  Next
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

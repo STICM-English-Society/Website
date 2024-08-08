@@ -1,7 +1,52 @@
-/*
-	DL_Stylesheet_Reference.css
-	This file contains all the default css variable configurations for Doodle Launcher
-*/
+@font-face {
+	font-family: "Hansief";
+	src: url('../Assets/Fonts/Hansief.otf') format("opentype");
+	/* src: url('https://drive.google.com/uc?id=1Ot9Xg1rVe2TlIOizCh2nk8oXFeA2eZ6q') format("opentype"); */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("../Assets/Fonts/Raleway-ExtraBold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto";
+	src: url("../Assets/Fonts/Roboto-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Gilroy Medium";
+	src: url("../Assets/Fonts/Gilroy-Medium.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Gilroy Bold";
+	src: url("../Assets/Fonts/Gilroy-Bold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Gilroy Heavy";
+	src: url("../Assets/Fonts/Gilroy-Heavy.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Graduate";
+	src: url("../Assets/Fonts/graduate-regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
 
 :root{
 	--Margin-Left: 12%;
@@ -9,11 +54,19 @@
 	--Full-Width-Marginned: calc(100% - var(--Margin-Left) - var(--Margin-Right));
 	--UI-Pallete-Level-1: #5390d9;
 	--UI-Pallete-Level-2: #5e60ce;
-	--English-Blue-Level-1: #0936af;
+	/* --English-Blue-Level-1: #0936af;
 	--English-Blue-Level-2: #0e35a1;
 	--English-Blue-Level-3: #06257a;
-	--English-Blue-Level-4: #06194d;
+	--English-Blue-Level-4: #06194d; */
 	
+	--English-Blue-Level-3L: #0057ff;
+	--English-Blue-Level-2L: #003ffe;
+	--English-Blue-Level-1L: #0132cc;
+	--English-Blue-Base: #0936af;
+	--English-Blue-Level-1D: #0e35a1;
+	--English-Blue-Level-2D: #06257a;
+	--English-Blue-Level-3D: #06194d;
+
 
 	--Home-Featured-Image-0: url("../Assets/Images/Home/Latest/1.png");
 	--Home-Featured-Image-1: url("../Assets/Images/Home/Latest/2.png");
@@ -38,9 +91,10 @@
 	--Element-Icon-Brightness-Focus: brightness(0);
 	--Element-BackdropBlur: blur(10px);
 	
-	--Text-Color: white; /* Global text color */
-	--Text-Font-Primary: Raleway; /* Titles */
-	--Text-Font-Secondary: Roboto; /* Paragraphs, list items */
+	--Text-Color: black; /* Global text color */
+	--Text-Font-BranchNavigation: Gilroy Heavy;
+	--Text-Font-Primary: Gilroy Medium; /* Titles */
+	--Text-Font-Secondary: Raleway; /* Paragraphs, list items */
 	--Text-Font-Paragraph: Roboto;
 	--Text-Font-Numbers: Roboto; /* For elements mostly composed of numbers */
 	

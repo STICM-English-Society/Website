@@ -1,0 +1,49 @@
+{
+  "Metadata": {
+    "Article_Banner": "https://sticm-english-society.github.io/Website/Assets/Images/Articles/ESA_STIMTS23/ESA_STIMTS23_1.png",
+    "Article_Title": "Article Title",
+    "Article_Title_Height": "122px",
+    "Article_Author": "Article Author",
+    "Article_Category": "Article Category",
+    "Article_PublishingDate": "Article Publishing Date"
+  },
+  "Contents": [
+    {
+      "Type": "Primary_Title",
+      "Content": "Primary Title"
+    },
+    {
+      "Type": "Secondary_Title",
+      "Content": "Secondary Title"
+    },
+    {
+      "Type": "Paragraph",
+      "Content": "Paragraph"
+    },
+    {
+      "Type": "Image",
+      "Source": "https://sticm-english-society.github.io/Website/Assets/Images/Articles/ESA_STIMTS23/ESA_STIMTS23_2.png",
+      "Description": "Image Description",
+      "Credits": "Image Credits"
+    },
+    {
+      "Type": "Numbered_List",
+      "Header": "Numbered List Header",
+      "Content": "List Item 1\nList Item 2\nList Item 3\nList Item 4\nList Item 5"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "Bulleted List Header",
+      "Content": "List Item 1\nList Item 2\nList Item 3\nList Item 4\nList Item 5"
+    },
+    {
+      "Type": "Quote",
+      "Content": "Quote Content",
+      "Source": "Quote source"
+    },
+    {
+      "Type": "Video",
+      "Source": "https://www.youtube.com/embed/X9-PkmIVoDc?si=YAfKSCx3xiBYg7Os"
+    }
+  ]
+}
