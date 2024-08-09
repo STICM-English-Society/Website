@@ -1,15 +1,33 @@
 body{
-    background-color: #004cff;
+    /* background-color: #004cff; */
+    background-color: var(--English-Blue-Level-2L);
+}
+
+.Curtain_Item{
+    background-color: var(--English-Blue-Level-2L);
+}
+
+.Branch_Title{
+    background-color: white;
+}
+
+.Branch_Title_Text{
+    margin-left: 10%;
+    color: var(--English-Blue-Level-2L);
+}
+
+.Stitches_Item{
+    background-color: white;
 }
 
 .Socials_Title{
-    font-family: Hansief;
-    color: white;
-    font-size: 60;
+    font-family: Gilroy Heavy;
+    /* color: white; */
+    /* font-size: 60; */
     margin: 0;
     margin-left: 10%;
     padding-left: 30px;
-    color: white;
+    /* color: white; */
 }
 
 .Socials{

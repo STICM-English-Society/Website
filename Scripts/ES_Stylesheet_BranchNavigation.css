@@ -1,11 +1,106 @@
+.Curtain{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    /* background-color: red; */
+    /* display: grid;
+    grid-template-columns: repeat(20, 1fr); */
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    /* transform: translate(-80px, -50px) rotate(-5deg); */
+}
+
+.Curtain_Item{
+    width: 80px;
+    height: 100%;
+    background-color: white;
+    animation-name: Curtain_Reveal;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes Curtain_Reveal{
+    0%{
+        width: 80px;
+        /* transform: translateX(0px); */
+        margin-right: 0px;
+        opacity: 100%;
+    }
+    100%{
+        width: 0px;
+        /* transform: translateX(-80px); */
+        margin-right: 80px;
+        opacity: 0%;
+    }
+}
+
 .Branch_Title{
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    padding-left: 20px;
+    align-items: center;
+    background-color: var(--English-Blue-Level-1L);
+    overflow: hidden;
+    height: 77px;
+    user-select: none;
+    border-top: solid var(--English-Blue-Level-2D) 3px;
+}
+
+.Branch_Title_Text{
     font-family: var(--Text-Font-BranchNavigation);
-    color: #0936af;
-    font-size: 70;
+    color: white;
+    font-size: 80px;
+    text-transform: uppercase;
     margin: 0;
+    margin-right: 10px;
     margin-left: 10%;
-    margin-right: 10%;
-    padding: 10px;
+    position: absolute;
+    top: -2px;
+    opacity: 0%;
+    animation-name: Branch_Title_Text_Reveal;
+    animation-duration: 0.60s;
+    animation-delay: 2.1s;
+    animation-timing-function: cubic-bezier(0.14, 0.82, 0.12, 0.93);
+    animation-fill-mode: forwards;
+}
+
+@keyframes Branch_Title_Text_Reveal{
+    0%{
+        opacity: 0%;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+.Stitches{
+    width: 100%;
+    height: 30px;
+    /* background-color: var(--English-Orange-Base); */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; */
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Stitches_Item{
+    /* width: 120px; */
+    height: 20px;
+    /* margin-right: 10px; */
+    background-color: var(--English-Orange-Base);
 }
 
 .Branch_Content{
@@ -15,11 +110,12 @@
     grid-gap: 10px;
     margin-left: 10%;
     margin-right: 10%;
+    /* margin-top: 10px; */
 }
 
 .Branch_Content_Title{
     font-family: var(--Text-Font-BranchNavigation);
-    color: #0936af;
+    color: var(--English-Blue-Base);
     margin: 0;
 }
 
@@ -38,6 +134,7 @@
 .Branch_Navigation{
     grid-area: 1 / 1 / 2 / 2;
     padding: 10px;
+    padding-top: 0px;
 }
 
 @media only screen and (max-width: 700px){
@@ -49,6 +146,7 @@
         margin-left: 0%;
         margin-right: 0%;
         padding: 10px;
+        /* padding-top: 0px; */
     }
 
     .Branch_Featured{
@@ -64,9 +162,12 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     .Branch_Title{
-        margin-left: 10px;
-        margin-right: 10px;
+        /* margin-left: 10px;
+        margin-right: 10px; */
         font-size: 3.5rem;
+    }
+    .Branch_Title_Text{
+        margin-left: 10px;
     }
 }
 
@@ -107,6 +208,7 @@
     opacity: 100%;
     padding: 5px;
     transition: var(--Element-Transition-Delay);
+    margin-bottom: 10px;
 }
 
 .Branch_Navigation_Grid_Item:hover{

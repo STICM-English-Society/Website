@@ -112,6 +112,22 @@
     color: var(--English-Blue-Level-3D);
 }
 
+.Article_Content > *{
+    opacity: 0%;
+    transform: translateY(150px);
+}
+
+@keyframes Article_Content_Appear{
+    0%{
+        transform: translateY(150px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
 .Article_Content_Paragraph{
     font-family: Roboto;
     margin: 0;

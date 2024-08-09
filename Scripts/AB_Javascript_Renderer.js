@@ -23,6 +23,7 @@ function AB_Renderer_Article_Render(Data){
                 </h1>
             `;
             var Element = document.createElement('span');
+            Element.setAttribute('class', 'Element');
             Element.innerHTML = Element_InnerHTML;
             document.getElementById("Article_Content").appendChild(Element);
         }
@@ -33,6 +34,7 @@ function AB_Renderer_Article_Render(Data){
                 </h2>
             `;
             var Element = document.createElement('span');
+            Element.setAttribute('class', 'Element');
             Element.innerHTML = Element_InnerHTML;
             document.getElementById("Article_Content").appendChild(Element);
         }
@@ -43,6 +45,7 @@ function AB_Renderer_Article_Render(Data){
                 </p>
             `;
             var Element = document.createElement('span');
+            Element.setAttribute('class', 'Element');
             Element.innerHTML = Element_InnerHTML;
             document.getElementById("Article_Content").appendChild(Element);
         }
@@ -59,6 +62,7 @@ function AB_Renderer_Article_Render(Data){
             `;
 
             var Element = document.createElement('span');
+            Element.setAttribute('class', 'Element');
             Element.innerHTML = Element_InnerHTML;
             document.getElementById("Article_Content").appendChild(Element);
 
@@ -83,6 +87,7 @@ function AB_Renderer_Article_Render(Data){
             `;
 
             var Element = document.createElement('span');
+            Element.setAttribute('class', 'Element');
             Element.innerHTML = Element_InnerHTML;
             document.getElementById("Article_Content").appendChild(Element);
 
@@ -112,6 +117,7 @@ function AB_Renderer_Article_Render(Data){
                 </div>
             `;
             var Element = document.createElement('span');
+            Element.setAttribute('class', 'Element');
             Element.innerHTML = Element_InnerHTML;
             document.getElementById("Article_Content").appendChild(Element);
         }
@@ -130,6 +136,7 @@ function AB_Renderer_Article_Render(Data){
                 </div>
             `;
             var Element = document.createElement('span');
+            Element.setAttribute('class', 'Element');
             Element.innerHTML = Element_InnerHTML;
             document.getElementById("Article_Content").appendChild(Element);
         }
@@ -138,9 +145,29 @@ function AB_Renderer_Article_Render(Data){
                 <iframe class="Article_Content_EmbeddedVideo" src="${Content_Data.Source}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
             `;
             var Element = document.createElement('span');
+            Element.setAttribute('class', 'Element');
             Element.innerHTML = Element_InnerHTML;
             document.getElementById("Article_Content").appendChild(Element);
         }
     }
+    if (document.querySelectorAll('.Article_Main_Content_Container img') != null){
+        const Images = document.querySelectorAll('.Article_Main_Content_Container img');
+        Images.forEach(img => {
+            img.setAttribute("Cursor", "Pointer");
+            if (img.getAttribute("AltSRC") != null){
+            img.addEventListener('click', function() {
+                Open_Image(img.getAttribute("AltSRC"));
+            });
+            } else {
+            img.addEventListener('click', function() {
+                Open_Image(this.src);
+            });
+            }
+            
+        });
+    }
+    setTimeout(function(){
+        Element_Style_Animate_Batch_QuerySelector(".Element", "Article_Content_Appear", "0.5s", "forwards", "1", 200);
+    }, 2000);
 }
 
