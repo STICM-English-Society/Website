@@ -624,6 +624,7 @@ a{
     display: flex;
     flex-direction: row;
     overflow: hidden;
+	pointer-events: none;
     /* transform: translate(-80px, -50px) rotate(-5deg); */
 }
 
@@ -636,6 +637,7 @@ a{
     animation-delay: 2s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: forwards;
+	pointer-events: none;
 }
 
 @keyframes Curtain_Reveal{

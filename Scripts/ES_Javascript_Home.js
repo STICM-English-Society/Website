@@ -161,7 +161,7 @@ function Home_PageData_Load(){
     }
     // Gallery List
     for(a = 0; a < 3; a++){
-        document.getElementById("InPhotos_" + a).querySelector(".Home_InPhotos_Item_Image").style.backgroundImage = "url(../" + Home_PageElements.InPhotos[a].Image + ")";
+        document.getElementById("InPhotos_" + a).querySelector(".Home_InPhotos_Item_Image").style.backgroundImage = "url(./" + Home_PageElements.InPhotos[a].Image + ")";
         document.getElementById("InPhotos_" + a).querySelector(".Home_InPhotos_Item_Title_Text").innerText = Home_PageElements.InPhotos[a].Title;
         document.getElementById("InPhotos_" + a).setAttribute("href", Home_PageElements.InPhotos[a].Link);
     }
