@@ -241,6 +241,12 @@ function BranchNavigation_Generate_BranchList_Articles(){
     }
     document.getElementById("Branch_Navigation_Status").style.display = "none";
     document.getElementById("Branch_Navigation_Status_Container").style.maxHeight = "0px";
+    // setTimeout(function(){
+    //     Element_Style_Animate_Batch_QuerySelector(".Curtain > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
+    //     Element_Style_Animate_Batch_QuerySelector(".Branch_Title_Text", "Branch_Title_Text_Reveal", "1s", "forwards", "1", 0);
+    //     Element_Style_Animate_Batch_QuerySelector(".Branch_Title_Icon", "Branch_Title_Text_Reveal", "1s", "forwards", "1", 0);
+    // }, 2000);
+    
     BranchNavigation_Search_SetDataToUppercase();
 }
 

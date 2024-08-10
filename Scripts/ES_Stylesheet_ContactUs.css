@@ -7,17 +7,35 @@ body{
     background-color: var(--English-Blue-Level-2L);
 }
 
+@keyframes Curtain_Reveal{
+    0%{
+        background-color: white;
+        width: 100%;
+    }
+    100%{
+        background-color: white;
+        width: 0%;
+    }
+}
+
 .Branch_Title{
-    background-color: white;
+    /* background-color: white; */
 }
 
 .Branch_Title_Text{
     margin-left: 10%;
-    color: var(--English-Blue-Level-2L);
+    color: white;
+    text-shadow: 2px 2px var(--English-Blue-Level-2L), 4px 4px var(--English-Orange-Base);
 }
 
 .Stitches_Item{
     background-color: white;
+}
+
+.Branch_Title{
+    display: flex;
+    justify-content: center;
+    padding-left: unset;
 }
 
 .Socials_Title{
@@ -25,8 +43,9 @@ body{
     /* color: white; */
     /* font-size: 60; */
     margin: 0;
-    margin-left: 10%;
-    padding-left: 30px;
+    /* margin-left: 10%; */
+    /* padding-left: 30px; */
+    text-align: center;
     /* color: white; */
 }
 

@@ -172,6 +172,7 @@ var Home_Section_State_3 = 0;
 var Home_Section_State_4 = 0;
 var Home_Section_State_5 = 0;
 
+
 document.addEventListener('DOMContentLoaded', function() {
     var Main_Content_Container = document.querySelector(".Home");
     Main_Content_Container.onscroll = function() {scrollFunction()};
@@ -181,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Home_Featured
             if (Home_Section_State_2 == 0){
                 Home_Section_State_2 = 1;
-                Element_Style_Animate_Batch_QuerySelector(".Curtain_2 > .Curtain_Item", "Curtain_Reveal", "3s", "forwards", "1", 0);
+                Element_Style_Animate_Batch_QuerySelector(".Curtain_2 > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
                 Element_Style_Animate_Batch_QuerySelector(".Section_2", "Section_Reveal", "0.60s", "forwards", "1", 0);
                 Element_Style_Animate_Batch_QuerySelector(".Home_Featured", "Section_Reveal", "0.60s", "forwards", "1", 100);
             }
@@ -191,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Home_Articles
             if (Home_Section_State_3 == 0){
                 Home_Section_State_3 = 1;
-                Element_Style_Animate_Batch_QuerySelector(".Curtain_3 > .Curtain_Item", "Curtain_Reveal", "3s", "forwards", "1", 0);
+                Element_Style_Animate_Batch_QuerySelector(".Curtain_3 > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
                 Element_Style_Animate_Batch_QuerySelector(".Section_3", "Section_Reveal", "0.60s", "forwards", "1", 0);
                 Element_Style_Animate_Batch_QuerySelector(".Home_Articles", "Section_Reveal", "0.60s", "forwards", "1", 100);
             }
@@ -201,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Home_InPhotos
             if (Home_Section_State_4 == 0){
                 Home_Section_State_4 = 1;
-                Element_Style_Animate_Batch_QuerySelector(".Curtain_4 > .Curtain_Item", "Curtain_Reveal", "3s", "forwards", "1", 0);
+                Element_Style_Animate_Batch_QuerySelector(".Curtain_4 > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
                 Element_Style_Animate_Batch_QuerySelector(".Section_4", "Section_Reveal", "0.60s", "forwards", "1", 0);
                 Element_Style_Animate_Batch_QuerySelector(".Home_InPhotos", "Section_Reveal", "0.60s", "forwards", "1", 100);
             }
@@ -211,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Home_Footer
             if (Home_Section_State_5 == 0){
                 Home_Section_State_5 = 1;
-                Element_Style_Animate_Batch_QuerySelector(".Curtain_5 > .Curtain_Item", "Curtain_Reveal", "3s", "forwards", "1", 0);
+                Element_Style_Animate_Batch_QuerySelector(".Curtain_5 > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
                 Element_Style_Animate_Batch_QuerySelector(".Home_Footer", "Section_Reveal", "0.60s", "forwards", "1", 100);
             }
         }

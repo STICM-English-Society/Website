@@ -4,70 +4,103 @@
     height: 80px;
     z-index: 10;
     /* background-color: red; */
-    /* display: grid;
-    grid-template-columns: repeat(20, 1fr); */
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(80px, 100px));
+    grid-template-rows: repeat(auto-fit, minmax(80px, 100px));
+    /* display: flex;
+    flex-direction: row; */
     overflow: hidden;
+    
     /* transform: translate(-80px, -50px) rotate(-5deg); */
 }
 
 .Curtain_Item{
-    width: 80px;
+    width: 100%;
     height: 100%;
     background-color: white;
     animation-name: Curtain_Reveal;
-    animation-duration: 3s;
+    animation-duration: 0.6s;
     animation-delay: 2s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: forwards;
 }
 
+/* @media only screen and (max-width: 700px){
+    .Curtain
+} */
+
 @keyframes Curtain_Reveal{
     0%{
-        width: 80px;
-        /* transform: translateX(0px); */
-        margin-right: 0px;
-        opacity: 100%;
+        background-color: white;
+        width: 100%;
     }
     100%{
-        width: 0px;
-        /* transform: translateX(-80px); */
-        margin-right: 80px;
-        opacity: 0%;
+        background-color: var(--English-Blue-Level-1L);
+        width: 0%;
     }
 }
 
 .Branch_Title{
     display: flex;
     flex-direction: row;
+    /* display: grid;
+    grid-template-columns: 1fr auto; */
     /* margin-left: 10%;
     margin-right: 10%; */
     padding-left: 20px;
     align-items: center;
-    background-color: var(--English-Blue-Level-1L);
+    /* background-color: var(--English-Blue-Level-1L); */
     overflow: hidden;
     height: 77px;
     user-select: none;
-    border-top: solid var(--English-Blue-Level-2D) 3px;
+    margin-bottom: 10px;
+    /* border-top: solid var(--English-Blue-Level-2D) 3px; */
 }
 
 .Branch_Title_Text{
     font-family: var(--Text-Font-BranchNavigation);
-    color: white;
+    color: var(--English-Blue-Level-1L);
+    font-style: italic;
     font-size: 80px;
     text-transform: uppercase;
     margin: 0;
     margin-right: 10px;
     margin-left: 10%;
     position: absolute;
-    top: -2px;
+    /* -webkit-text-stroke: 3px white; */
+    text-shadow: 2px 2px white, 4px 4px var(--English-Orange-Base);
+    /* top: -2px; */
     opacity: 0%;
     animation-name: Branch_Title_Text_Reveal;
-    animation-duration: 0.60s;
-    animation-delay: 2.1s;
+    animation-duration: 1s;
+    animation-delay: 1.75s;
     animation-timing-function: cubic-bezier(0.14, 0.82, 0.12, 0.93);
     animation-fill-mode: forwards;
+}
+
+.Branch_Title_Icon{
+    background-color: var(--English-Blue-Level-1L);
+    position: absolute;
+    top: 0;
+    right: calc(10% + 10px);
+    width: 80px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 0px 0px white, 2px 0px 0px 0px white, 5px 5px 0px 0px var(--English-Orange-Base), 5px 0px 0px 0px var(--English-Orange-Base);
+    opacity: 0%;
+    animation-name: Branch_Title_Text_Reveal;
+    animation-duration: 1s;
+    animation-delay: 1.75s;
+    animation-timing-function: cubic-bezier(0.14, 0.82, 0.12, 0.93);
+    animation-fill-mode: forwards;
+}
+
+.Branch_Title_Icon_Icon{
+    width: 70px;
+    height: 70px;
 }
 
 @keyframes Branch_Title_Text_Reveal{
@@ -170,6 +203,9 @@
         margin-left: 10px;
 		font-size: 65px;
     }
+    .Branch_Title_Icon{
+        display: none;
+    }
 }
 
 .Branch_Navigation_Status{
@@ -215,7 +251,7 @@
 .Branch_Navigation_Grid_Item:hover{
     border-color: var(--English-Blue-Level-2D);
     outline-color: white;
-    box-shadow: 10px 10px 0px 0px var(--English-Blue-Level-2D);
+    box-shadow: 10px 10px 0px 0px var(--English-Orange-Base);
     z-index: 50;
 }
 

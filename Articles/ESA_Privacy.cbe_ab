@@ -1,0 +1,54 @@
+{
+  "Metadata": {
+    "Article_Banner": "Assets/Images/Link_Preview.png",
+    "Article_Title": "Privacy",
+    "Article_Title_Height": "122px",
+    "Article_Author": "English Society",
+    "Article_Category": "Statement",
+    "Article_PublishingDate": "1 April 2023"
+  },
+  "Contents": [
+    {
+      "Type": "Secondary_Title",
+      "Content": "Photos and Documentation"
+    },
+    {
+      "Type": "Paragraph",
+      "Content": "Since its foundation back in 2022, the English Society has committed on documenting the numerous activities and events of the organization, and STI College Marikina. As part of this documentation, we may take photos of people taking part on these activities and upload them on our social media and website."
+    },
+    {
+      "Type": "Secondary_Title",
+      "Content": "Request for Photo / Name Removal"
+    },
+    {
+      "Type": "Paragraph",
+      "Content": "We understand that certain individuals may not like to have their photos or names uploaded online in some shape or form."
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "If you find a photo of yourself uploaded by us through out our social media pages and website that you would like to be removed, you may send us a private message on our <a href=\"https://www.facebook.com/STIM.EnglishOrg/\">Facebook page</a> with the following             details:",
+      "Content": "Your name.\nA screenshot of the photo you would like to be removed.\nA short explanation for your request.\nIf possible, you can also provide a link to the said post to make it easier to locate."
+    },
+    {
+      "Type": "Paragraph",
+      "Content": "Once your message is received, we will take the proper steps in removing the photo from our social media pages and website."
+    },
+    {
+      "Type": "Secondary_Title",
+      "Content": "How your data is stored"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "",
+      "Content": "Data collected such as responses, photos, and videos are strictly used for content creation of the organization on its social media pages and website.\nThese contents include publishing materials (such as graphics and cards), photo documentation (such as In Photos), article materials, and other content (such as video).\nThese data and contents are solely used for the purposes of the English Society in its social media pages and website."
+    },
+    {
+      "Type": "Secondary_Title",
+      "Content": "Contact Us"
+    },
+    {
+      "Type": "Paragraph",
+      "Content": "If you have any questions, concerns, or feedback regarding the contents of this page, please contact us through our <a href=\"https://bit.ly/ES-Socials\">social media accounts </a>."
+    }
+  ]
+}
