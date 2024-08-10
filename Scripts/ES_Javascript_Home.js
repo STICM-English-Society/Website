@@ -105,21 +105,21 @@ let Home_PageElements = {
             Image: "Assets/Images/Articles/ESA_STIMTS23/ESA_STIMTS23_1.png",
             Title: "STI College Marikina Talent Search 2023",
             Author: "Adriene Dillo & Trisha Bravo",
-            Link: "Articles/ES_Article_Renderer.html?article=ESA_STIMTS23"
+            Link: "ES_Article_Renderer.html?article=ESA_STIMTS23"
         },
         {
             Name: "Article_2",
             Image: "Assets/Images/Articles/ESA_POC23/ESA_POC23_1.png",
             Title: "Parade of Characters 2023",
             Author: "Adriene Dillo & Trisha Bravo",
-            Link: "Articles/ES_Article_Renderer.html?article=ESA_POC23"
+            Link: "ES_Article_Renderer.html?article=ESA_POC23"
         },
         {
             Name: "Article_3",
             Image: "Assets/Images/Articles/ESA_DTR23/ESA_DTR23_15.png",
             Title: "Year-End Events 2023",
             Author: "Elmer Felisilda",
-            Link: "Articles/ES_Article_Renderer.html?article=ESA_DTR23"
+            Link: "ES_Article_Renderer.html?article=ESA_DTR23"
         },
     ],
     InPhotos: [
