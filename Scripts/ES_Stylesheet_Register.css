@@ -1,5 +1,5 @@
 .Main_Content_Container{
-    background-image: url(../Assets/Images/Placeholder.png);
+    background-image: url(../Assets/Images/Generic_Cogs.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -32,7 +32,7 @@
 .Register_Page{
     display: grid;
     grid-template-rows: 1fr 60px;
-    height: auto;
+    /* height: auto; */
     width: calc(100% - 40px);
     
 }
@@ -49,10 +49,10 @@
 
 .Register_Page_Controls{
     /* background-color: blue; */
-    padding: 10px;
+    /* padding: 10px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
     align-items: center;
 }
 
@@ -73,6 +73,7 @@
 
 .Register_Page_Paragraph{
     font-family: var(--Text-Font-Paragraph);
+    text-align: justify;
 }
 
 .Register_Page_Committees{
@@ -88,7 +89,7 @@
     "Icon Description";
     margin-bottom: 10px;
     outline: transparent;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
     user-select: none;
     border-radius: 10px;
@@ -96,7 +97,11 @@
 }
 
 .Register_Page_Committees_Item[State="Active"]{
-    background-color: var(--English-Blue-Level-2L);
+    background-color: var(--English-Blue-Level-1D);
+}
+
+.Register_Page_Committees_Item[State="Active"]:hover{
+    outline-color: var(--English-Orange-Base);
 }
 
 .Register_Page_Committees_Item[State="Active"] > h3, .Register_Page_Committees_Item[State="Active"]> p{
@@ -123,4 +128,12 @@
 .Register_Page_Committees_Item > .Register_Page_Paragraph{
     grid-area: Description;
     margin: 0;
+}
+
+.Toggle{
+    font-family: Roboto;
+}
+
+.Toggle[State = Active] > .Toggle_Indicator{
+    background-color: var(--English-Blue-Level-1D);
 }
