@@ -65,6 +65,12 @@
                   Choices
               </p>
             </div>
+            <div class="Tab_Horizontal_Container_Selector_Item" onclick="Tabs_ChangeTab(this.id, 'Horizontal')" id="button_Register_Page_7" Tabs_Tab_Title = "Title for title bar here" Tabs_Tab_Target_Container = "Register" Tabs_Tab_Target_Tab = "Register_Page_7">
+              <img src="Assets/Icons/placeholder.png" class="Tab_Horizontal_Container_Selector_Item_Icon">
+              <p class="Tab_Horizontal_Container_Selector_Item_Text">
+                  Second step
+              </p>
+            </div>
             <div class="Tab_Horizontal_Container_Selector_Item" onclick="Tabs_ChangeTab(this.id, 'Horizontal')" id="Tabs_Horizontal_Button_4" Tabs_Tab_Title = "Title for title bar here" Tabs_Tab_Target_Container = "Tabs_Tab_Target_Container_Horizontal_1" Tabs_Tab_Target_Tab = "HorizontalTab_Hori_Tab_IDHere_4">
                 <img src="Assets/Icons/placeholder.png" class="Tab_Horizontal_Container_Selector_Item_Icon">
                 <p class="Tab_Horizontal_Container_Selector_Item_Text">
@@ -88,10 +94,14 @@
       </div>	  -->
       <div class="Register" id="Register" Tabs_CurrentTab = "">
         <div class="Tab_Container_Content_Item Register_Page" id="Register_Page_1">
+          <div class="Register_Page_Container">
             <div class="Register_Page_Content">
                 <h1 class="Register_Page_Title" Primary>
                     Welcome to the English Society!
                 </h1>
+                <p class="Register_Page_Paragraph">
+                    Thank you for expressing your interest on joining this organization. This registration form acts as your official recruitment in the English Society.
+                </p>
                 <p class="Register_Page_Paragraph">
                     There are 2 steps in the registration process.
                 </p>
@@ -109,15 +119,17 @@
             </div>
             <div class="Register_Page_Controls">
                 <p class="Register_Page_Paragraph">
-                    English Society 2024 - 2025 | First Semester
+                    English Society 2024 - 2025 <br>First Semester
                 </p>
                 <button class="General_Button" Primary onclick="document.getElementById('button_Register_Page_2').click();">
                     Start
                 </button>
             </div>
+          </div>
         </div>
         <div class="Tab_Container_Content_Item Register_Page" id="Register_Page_2" style="display: none;">
-          <div class="Register_Page_Content">
+          <div class="Register_Page_Container">
+            <div class="Register_Page_Content">
               <h1 class="Register_Page_Title">
                   Pick a committee!
               </h1>
@@ -167,9 +179,12 @@
                   Next
               </button>
           </div>
+          </div>
+          
         </div>
         <div class="Tab_Container_Content_Item Register_Page" id="Register_Page_3" style="display: none;">
-          <div class="Register_Page_Content">
+          <div class="Register_Page_Container">
+            <div class="Register_Page_Content">
               <h1 class="Register_Page_Title">
                   Welcome to the Technical Committee!
               </h1>
@@ -266,9 +281,12 @@
                   Next
               </button>
           </div>
+          </div>
+          
         </div>
         <div class="Tab_Container_Content_Item Register_Page" id="Register_Page_4" style="display: none;">
-          <div class="Register_Page_Content">
+          <div class="Register_Page_Container">
+            <div class="Register_Page_Content">
               <h1 class="Register_Page_Title">
                   Welcome to the Journalism Committee!
               </h1>
@@ -303,9 +321,12 @@
                   Next
               </button>
           </div>
+          </div>
+          
         </div>
         <div class="Tab_Container_Content_Item Register_Page" id="Register_Page_5" style="display: none;">
-          <div class="Register_Page_Content">
+          <div class="Register_Page_Container">
+            <div class="Register_Page_Content">
               <h1 class="Register_Page_Title">
                   Welcome to the Promotional Committee!
               </h1>
@@ -344,25 +365,64 @@
                   Next
               </button>
           </div>
+          </div>
+          
         </div>
         <div class="Tab_Container_Content_Item Register_Page" id="Register_Page_6" style="display: none;">
-          <div class="Register_Page_Content">
+          <div class="Register_Page_Container">
+            <div class="Register_Page_Content">
               <h1 class="Register_Page_Title">
                   Your code!
               </h1>
               <p class="Register_Page_Paragraph">
                 The code below is generated based on your choices. Please copy and paste the code on the Microsoft Forms for the second step of the registration.
               </p>
-              
+              <div class="Register_Page_Code" onclick="Register_Copy_Code()">
+                <h1 class="Register_Page_Code_Text" id="Register_Page_Code_Text">
+                  CODE
+                </h1>
+              </div>
+              <p class="Register_Page_Code_Toast" id="Register_Page_Code_Toast">
+                Code copied!
+              </p>
+              <p class="Register_Page_Paragraph">
+                Click the code above to copy it to your clipboard.
+              </p>
+              <br>
           </div>
           <div class="Register_Page_Controls">
               <button class="General_Button" Secondary onclick="Register_Identify_PreviousPage('Choices')">
                   Previous
               </button>
-              <button class="General_Button" Primary onclick="Register_Identify_NextPage('Promotional')">
+              <button class="General_Button" Primary onclick="document.getElementById('button_Register_Page_7').click();">
                   Next
               </button>
           </div>
+          </div>
+          
+        </div>
+        <div class="Tab_Container_Content_Item Register_Page" id="Register_Page_7" style="display: none;">
+          <div class="Register_Page_Container">
+            <div class="Register_Page_Content">
+              <h1 class="Register_Page_Title" Primary>
+                Time for Step Two!
+              </h1>
+              <p class="Register_Page_Paragraph">
+                Click "Next" to open the Microsoft Form.
+              </p>
+          </div>
+          <div class="Register_Page_Controls">
+              <button class="General_Button" Secondary onclick="document.getElementById('button_Register_Page_6').click();">
+                  Previous
+              </button>
+              <button class="General_Button" Primary onclick="Page_ChangePage('https://forms.office.com/r/p5TtFmeiiL')">
+                Next
+              </button>
+
+              
+          </div>
+          </div>
+          
         </div>
       </div>
     </div>

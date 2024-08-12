@@ -34,13 +34,19 @@
     grid-template-rows: 1fr 60px;
     /* height: auto; */
     width: calc(100% - 40px);
-    
+    height: calc(100% - 40px);
 }
 
 .Register_Page{
     /* background-color: red; */
     padding: 20px;
     overflow-y: auto;
+}
+
+.Register_Page_Container{
+    display: grid;
+    grid-template-rows: 1fr 60px;
+    height: 100%;
 }
 
 .Register_Page_Content{
@@ -123,6 +129,59 @@
     font-family: Gilroy Bold;
     grid-area: Title;
     margin: 0;
+}
+
+.Register_Page_Code{
+    border: solid var(--English-Blue-Level-1D) 3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Register_Page_Code:hover{
+    background-color: var(--English-Blue-Level-1D);
+    border-color: var(--English-Orange-Base);
+}
+
+.Register_Page_Code:hover > .Register_Page_Code_Text{
+    color: white;
+}
+
+.Register_Page_Code:active{
+    background-color: var(--English-Blue-Level-2D);
+}
+
+.Register_Page_Code:active > .Register_Page_Code_Text{
+    transform: scale(0.9);
+}
+
+.Register_Page_Code_Text{
+    margin: 0;
+    font-family: Gilroy Bold;
+    /* width: 95%; */
+    font-size: 25px;
+}
+
+.Register_Page_Code_Toast{
+    font-family: var(--Text-Font-Paragraph);
+    margin: 0px;
+    opacity: 0%;
+    max-height: 0%;
+}
+
+.Register_Page_Code_Toast[State = "Visible"]{
+    margin: 10px;
+    margin-left: 0px;
+    opacity: 100%;
+    max-height: 100%;
+}
+
+.Register_Page_Code_Toast[State = "Hidden"]{
+    margin: 0px;
+    opacity: 0%;
+    max-height: 0%;
 }
 
 .Register_Page_Committees_Item > .Register_Page_Paragraph{
