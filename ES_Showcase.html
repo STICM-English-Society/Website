@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <title>English Society</title>
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_UI.css" />
+    <!-- <link rel="stylesheet" href="Scripts/ES_Stylesheet_Home.css" /> -->
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Article.css" />
+    <!-- <link rel="stylesheet" href="Scripts/ES_Stylesheet.css"> -->
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Animations.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Reference.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Showcase.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Assets/Icons/favicon.png"
+      sizes="96x96"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta
+      property="og:image" 
+      content="https://sticm-english-society.github.io/Website/Assets/Images/Link_Preview.png"
+    />
+    <meta
+      property="og:title"
+      content="English Society"
+    />
+    <meta
+      property="og:description"
+      content="The official website of STI College Marikina English Society"
+    />
+  </head>
+  <script src="Scripts/App_Javascript_ERUMAUI_Core.js"></script>
+  <script src="Scripts/ES_Javascript.js"></script>
+  <script src="Scripts/ES_Javascript_UI.js"></script>
+  <!-- <script src="Scripts/ES_Javascript_Home.js"></script> -->
+  <script src="Scripts/ES_Javascript_Showcase.js"></script>
+  <body class="Home" id="pageElement_Body" style="overflow-x: hidden" onload="Home_PageData_Load()">
+    <div class="Home_Featured">
+        <div class="Home_MainTitle">
+            <div class="Home_Latest_Item_Overlay"></div>
+            <h1 class="Home_MainTitle_Title">
+                ENGLISH
+            </h1>
+            <h1 class="Home_MainTitle_Title">
+                SOCIETY
+            </h1>
+            <h3 class="Home_MainTitle_Subtitle">
+                Express. Create. Educate.
+            </h3>
+        </div>
+        
+        <div class="Home_Latest" id="pageElement_Carousel">
+          <a href="1">
+            <div class="Home_Latest_Item" id="Featured_0" style="opacity: 1">
+              <div class="Home_Latest_Item_Overlay"></div>
+              <h1 class="Home_Latest_Item_Title">Image 1</h1>
+            </div>
+          </a>
+          
+          <a href="2">
+            <div class="Home_Latest_Item" id="Featured_1">
+              <div class="Home_Latest_Item_Overlay"></div>
+              <h1 class="Home_Latest_Item_Title">Image 2</h1>
+            </div>
+          </a>
+          
+          <a href="3">
+            <div class="Home_Latest_Item" id="Featured_2">
+              <div class="Home_Latest_Item_Overlay"></div>
+              <h1 class="Home_Latest_Item_Title">Image 3</h1>
+            </div>
+          </a>
+          
+          <a href="4">
+            <div class="Home_Latest_Item" id="Featured_3">
+              <div class="Home_Latest_Item_Overlay"></div>
+              <h1 class="Home_Latest_Item_Title">Image 4</h1>
+            </div>
+          </a>
+          
+          <a href="5">
+            <div class="Home_Latest_Item" id="Featured_4">
+              <div class="Home_Latest_Item_Overlay"></div>
+              <h1 class="Home_Latest_Item_Title">Image 5</h1>
+            </div>
+          </a>
+          
+          <!-- <div class="Home_Latest_Item"></div> -->
+        </div>
+       </div>
+       <div class="Home_Featured_Selector">
+        <div class="Home_Latest_Carousel_Selector" id="pageElement_Carousel_Selector">
+          <div class="Home_Latest_Carousel_Selector_Item" onclick="Slideshow_Change_Image(0)"></div>
+          <div class="Home_Latest_Carousel_Selector_Item" onclick="Slideshow_Change_Image(1)"></div>
+          <div class="Home_Latest_Carousel_Selector_Item" onclick="Slideshow_Change_Image(2)"></div>
+          <div class="Home_Latest_Carousel_Selector_Item" onclick="Slideshow_Change_Image(3)"></div>
+          <div class="Home_Latest_Carousel_Selector_Item" onclick="Slideshow_Change_Image(4)"></div>
+        </div>
+       </div>
+  </body>
+</html>

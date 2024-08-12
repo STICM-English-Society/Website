@@ -126,7 +126,7 @@ function Register_Generate_Code(){
     if (Committees.Journalism == true){
         Generated_Code.push("J");
         // Interests
-        for (a = 1; a != 4; a++){
+        for (a = 1; a != 5; a++){
             if (Element_Attribute_Get("JC_Interests_" + a, "State") == "Active"){
                 Generated_Code.push(Generated_Code_Definitions.Journalism.Interests[a]);
             }

@@ -126,6 +126,9 @@
                     </li>
                 </ol>
                 <p class="Register_Page_Paragraph">
+                    For issues and concerns regarding the registration, don't hesitate to contact us through our <a href="https://www.facebook.com/STIM.EnglishOrg/">Facebook  page.</a>
+                </p>
+				<p class="Register_Page_Paragraph">
                     Click "START" below to begin registering!
                 </p>
             </div>
@@ -272,7 +275,7 @@
               </div>
 
               <h3 class="Register_Page_Title">
-                Which device do you usually operate in?
+                What device do you usually use?
               </h3>
               <div class="Toggle" id="TC_Operation_1" onclick="Buttons_Toggle(this.id)" State="Inactive">
                 <div class="Toggle_Indicator"></div>
@@ -323,6 +326,10 @@
               <div class="Toggle" id="JC_Interests_3" onclick="Buttons_Toggle(this.id)" State="Inactive">
                 <div class="Toggle_Indicator"></div>
                 Script writing
+              </div>
+              <div class="Toggle" id="JC_Interests_4" onclick="Buttons_Toggle(this.id)" State="Inactive">
+                <div class="Toggle_Indicator"></div>
+                Technical writing
               </div>
           </div>
           <div class="Register_Page_Controls">
@@ -406,7 +413,7 @@
               <button class="General_Button" Secondary onclick="Register_Identify_PreviousPage('Choices')">
                   Previous
               </button>
-              <button class="General_Button" Primary onclick="document.getElementById('button_Register_Page_7').click();">
+              <button class="General_Button" Primary onclick="document.getElementById('button_Register_Page_7').click(); Register_Copy_Code();">
                   Next
               </button>
           </div>

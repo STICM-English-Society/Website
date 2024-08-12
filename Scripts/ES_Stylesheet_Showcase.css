@@ -1,0 +1,197 @@
+.Home_MainTitle{
+    width: 100%;
+    /* max-width: 993px; */
+    height: 350px;
+    /* margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right); */
+    /* background-color: #004cff; */
+    padding: 30px;
+    user-select: none;
+    overflow: hidden;
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 15px;
+}
+
+.Home_MainTitle > .Home_Latest_Item_Overlay{
+    background: linear-gradient(rgba(0,0,0,75) 100%, 180deg, rgba(0,0,0,0) 50%);
+    /* background-color: red; */
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    bottom: 0;
+	content: "";
+}
+
+.Home_MainTitle_Title{
+    font-family: Gilroy Heavy;
+    color: white;
+    margin: 0;
+    line-height: 0.85;
+    font-size: 7em;
+    letter-spacing: -4px;
+    z-index: 2;
+    position: relative;
+    z-index: 11;
+}
+
+.Home_MainTitle_Subtitle{
+    font-family: Gilroy Bold;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    line-height: 0.85;
+    font-size: 2em;
+    letter-spacing: -2px;
+    z-index: 2;
+    position: relative;
+    z-index: 12;
+}
+
+.Home_Featured{
+    width: 100%;
+    height: 650px;
+    height: calc(100% - 0px);
+    /* margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right); */
+    background-color: #004cff;
+    transform: translateY(-40px);
+}
+
+.Home_Latest_Item{
+    /* width: calc(100% - 20%); */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    /* background-size: 100%; */
+    /* border: solid white; */
+    opacity: 100%;
+    transition: 1s;
+    cursor: pointer;
+    background-color: gray;
+}
+
+.Home_Latest_Item[Clickable = "false"]{
+    pointer-events: none;
+}
+
+a#Featured_0 > .Home_Latest_Item{
+    background-image: var(--Home-Featured-Image-0);
+}
+
+a#Featured_1 > .Home_Latest_Item{
+    background-image: var(--Home-Featured-Image-1);
+}
+
+a#Featured_2 > .Home_Latest_Item{
+    background-image: var(--Home-Featured-Image-2);
+}
+
+a#Featured_3 > .Home_Latest_Item{
+    background-image: var(--Home-Featured-Image-3);
+}
+
+a#Featured_4 > .Home_Latest_Item{
+    background-image: var(--Home-Featured-Image-4);
+}
+
+/* .Home_Latest_Item:nth-child(1){
+    background-image: var(--Home-Featured-Image-1);
+}
+
+.Home_Latest_Item:nth-child(2){
+    background-image: var(--Home-Featured-Image-2);
+}
+
+.Home_Latest_Item:nth-child(3){
+    background-image: var(--Home-Featured-Image-3);
+}
+
+.Home_Latest_Item:nth-child(4){
+    background-image: var(--Home-Featured-Image-4);
+}
+
+.Home_Latest_Item:nth-child(5){
+    background-image: var(--Home-Featured-Image-5);
+} */
+
+.Home_Latest_Item_Overlay{
+    background: linear-gradient(178deg, rgba(0,0,0,0) 50%, rgba(0,0,0,75) 100%);
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    bottom: 0;
+	content: "";
+}
+
+.Home_Latest_Item_Title{
+    font-family: Gilroy Bold;
+    color: white;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+
+.Home_Featured_Selector{
+    background-color: #e76740;
+    margin-top: 10px;
+    transform: translateY(-40px);
+    width: 100%;
+    /* margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right); */
+    display: flex;
+    justify-content: center;
+    transition: var(--Element-Transition-Delay);
+}
+
+.Home_Featured_Selector:hover{
+    background-color: unset;
+}
+
+.Home_Latest_Carousel_Selector{
+    /* background-color: #264653; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    background-color: white;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Home_Latest_Carousel_Selector_Item{
+    height: 20px;
+    width: 50px;
+    /* min-width: 50px; */
+    background-color: #e76740;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    transition: 1s;
+    cursor: pointer;
+    transition: 0.2s;
+    /* pointer-events: none; */
+}
+
+.Home_Latest_Carousel_Selector_Item:hover{
+    transition: 0.2s;
+    /* transform: scale(1.3); */
+}
+
+.Home_Latest_Carousel_Selector_Item[data-id = "Selected"]{
+    /* min-width: calc(100% - var(--Margin-Left) - var(--Margin-Right)); */
+    width: 200px;
+    transition: 1s;
+    /* pointer-events: all; */
+}
