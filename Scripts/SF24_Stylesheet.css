@@ -22,6 +22,11 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     box-shadow: none;
 }
 
+.Article_Content > *{
+    opacity: 100%;
+    transform: unset;
+}
+
 .Branch_Navigation_Grid_Item:hover{
     box-shadow: unset;
 }
@@ -379,6 +384,13 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     user-select: none;
     cursor: pointer;
     text-align: center;
+}
+
+.Branch_Title_Text{
+    font-family: Graduate;
+    font-size: 57px;
+    font-style: unset;
+    text-shadow: unset;
 }
 
 @media only screen and (max-width: 700px){
