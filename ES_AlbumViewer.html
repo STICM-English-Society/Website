@@ -20,12 +20,12 @@
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
   </head>
-  <script src="Scripts/ES_Javascript.js"></script>
+  <!-- <script src="Scripts/ES_Javascript.js"></script> -->
   <script src="Scripts/ES_Javascript_UI.js"></script>
   <script src="Scripts/ES_Javascript_Gallery.js"></script>
   <body id="pageElement_Body" onload="Load_Template('Template_UI'), Gallery_IndexFinder()"  Branch_BackToParent="true" Branch_BackToParent_URL="ES_Gallery.html" ShortenedLinks_HasShortenedLink="true" Header_ChangeTitles="true" Header_ChangeTitles_AltPage_Title="Gallery" Header_ChangeTitles_AltPage_URL="ES_Gallery.html">
     <div class="Main_Subwindows_Container" id="pageElement_Subwindows" style="display: none">
-      <div class="Gallery_ImageView" id="subwindow_ImageView">
+      <!-- <div class="Gallery_ImageView" id="subwindow_ImageView">
         <div class="Gallery_ImageView_Top">
           <h1 class="Gallery_ImageView_Top_Title" id="Gallery_Album_ImageView_Title">
             Loading album...
@@ -35,21 +35,21 @@
         <div class="Gallery_ImageView_Preview">
           <div class="Gallery_ImageView_Preview_Image" loading="lazy" id="Gallery_ImageView_Image"></div>
         </div>
-      </div>
+      </div> -->
     </div>
-    <div class="Main_Content_Container">
+    <div class="Main_Content_Container" id="pageElement_Content">
       <div class="Page_BackButton">
         <img src="Assets/Icons/icon_leftArrow.png" class="Page_BackButton_Icon"/>
         <p class="Page_BackButton_Text">
           Back to previous page
         </p>
       </div>
-      <img class="Gallery_Header_Blur" id="Gallery_Album_Blur" onload="this.style.opacity = '60%'"/>
+      <img class="Gallery_Header_Blur" id="Gallery_Album_Blur" onload="this.style.opacity = '40%'"/>
       <h1 class="Gallery_Title" id="Gallery_Album_Title">
         Loading album...
       </h1>
       <p class="Gallery_Description" id="Gallery_Album_Description">
-        Please wait...
+        
       </p>
       <div class="Gallery_Information" id="Gallery_Album_Information">
         <!-- <div class="Gallery_Information_Item" id="Gallery_Album_Information_1">
@@ -61,33 +61,14 @@
           </p>
         </div> -->
       </div>
-      <p class="Gallery_Description">
-        Click an image to view it in full resolution.
-      </p>
       <!-- <div class="Gallery_Album_Loader"></div> -->
       <div class="Gallery_Album" id="Gallery_Album">
-        <!-- <div class="Gallery_Album_Item">
-          <img src="Assets/Images/Gallery/ES_Template_Photos/1.png" class="Gallery_Album_Item_Image" draggable="false" State="Loaded"/>
-        </div> -->
-        <!-- <div class="Gallery_Album_Item" onclick="Subwindows_Open('ImageView')"></div>
-        <div class="Gallery_Album_Item"></div>
-        <div class="Gallery_Album_Item"></div>
-        <div class="Gallery_Album_Item"></div>
-        <div class="Gallery_Album_Item"></div>
-        <div class="Gallery_Album_Item"></div>
-        <div class="Gallery_Album_Item"></div>
-        <div class="Gallery_Album_Item"></div>
-        <div class="Gallery_Album_Item"></div>
-        <div class="Gallery_Album_Item"></div>
-        <div class="Gallery_Album_Item"></div>
-        <div class="Gallery_Album_Item"></div> -->
+        
       </div>
-      <div class="Gallery_Album_EndOfAlbum">
+      <div class="Gallery_Album_EndOfAlbum" onclick="scrollToPosition('top')">
         You've reached the end of the album. 
       </div>
-      <!-- <div class="Gallery_Album_Loader" id="Gallery_Album_Loader" onclick="Gallery_Generate_Album()">
-        Load more images
-      </div> -->
+      
     </div>
   </body>
 </html>

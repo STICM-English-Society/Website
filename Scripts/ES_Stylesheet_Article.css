@@ -12,7 +12,7 @@
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-    filter: blur(5px);
+    filter:blur(2px);
     transform: scale(2);
 }
 
@@ -46,8 +46,9 @@
     max-width: 700px;
     height: auto;
     min-height: 500px;
-    background-color: white;
-    box-shadow: var(--Element-BoxShadow);
+    background-color: rgba(255, 255, 255, 0.10);
+    backdrop-filter: var(--Element-BackdropBlur);
+    /* box-shadow: var(--Element-BoxShadow); */
     padding: 20px;
     border-radius: 5px;
 }

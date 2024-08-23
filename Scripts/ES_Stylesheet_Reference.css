@@ -97,7 +97,7 @@
 	--Element-BoxShadow: 0cm 0cm 0.28218705792108cm 0.03527338224013cm rgb( 0, 0, 0, 0.50); /*Box shadow property */
 	--Element-Icon-Brightness: brightness(1);
 	--Element-Icon-Brightness-Focus: brightness(0);
-	--Element-BackdropBlur: blur(10px);
+	--Element-BackdropBlur: blur(20px);
 	
 	--Text-Color: black; /* Global text color */
 	--Text-Font-BranchNavigation: Gilroy Heavy;

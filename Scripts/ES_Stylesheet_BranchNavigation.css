@@ -61,7 +61,7 @@
 .Branch_Title_Text{
     font-family: var(--Text-Font-BranchNavigation);
     color: var(--English-Blue-Level-1L);
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 80px;
     text-transform: uppercase;
     margin: 0;
@@ -220,7 +220,7 @@
 }
 
 .Branch_Navigation_Status_Text{
-    font-family: var(--Text-Font-Secondary);
+    font-family: Gilroy Bold;
     color: var(--English-Blue-Level-2D);
     margin: 0;
 }
@@ -256,12 +256,12 @@
 }
 
 a:nth-child(odd):hover > .Branch_Navigation_Grid_Item{
-    transform: scale(1.02) rotate(-3deg);
+    transform: scale(1.02);
     /* box-shadow: var(--Element-BoxShadow); */
 }
 
 a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
-    transform: scale(1.02) rotate(3deg);
+    transform: scale(1.02);
     /* box-shadow: var(--Element-BoxShadow); */
 }
 

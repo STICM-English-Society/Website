@@ -1,10 +1,14 @@
 .Gallery_Title{
     font-family: Hansief;
     color: #264653;
+    color: black;
+    color: var(--English-Blue-Level-2D);
     text-transform: uppercase;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     margin-left: 10%;
     margin-right: 10%;
+    font-size: 50px;
+    line-height: 0.85;
 }
 
 .Gallery_Description{
@@ -13,11 +17,12 @@
     margin-right: 10%;
     font-family: Roboto;
     color: #264653;
+    color: var(--English-Blue-Level-2D);
     text-align: justify;
 }
 
 .Gallery_Information{
-    width: calc(100% - 20%);
+    /* width: calc(100% - 20%); */
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 10px;
@@ -25,6 +30,9 @@
     grid-gap: 10px;
     flex-wrap: wrap;
     /* background-color: gray; */
+    border-top: solid var(--English-Blue-Level-2D) 3px;
+    border-bottom: solid var(--English-Blue-Level-2D) 3px;
+    padding: 10px;
 }
 
 .Gallery_Information_Item{
@@ -32,8 +40,8 @@
     display: flex;
     flex-direction: row;
     grid-gap: 5px;
-    padding: 10px;
-    background-color: #dbdbdb;
+    /* padding: 10px; */
+    /* background-color: #dbdbdb; */
     border-radius: 7px;
 }
 
@@ -45,11 +53,13 @@
     font-weight: 700;
     font-family: Roboto;
     color: #264653;
+    color: var(--English-Blue-Level-2D);
 }
 
 .Gallery_Information_Item_Value{
     font-family: Roboto;
     color: #264653;
+    color: var(--English-Blue-Level-2D);
 }
 
 .Gallery_Album{
@@ -63,6 +73,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     /* padding: 20px; */
+    /* background-color: white; */
 }
 
 .Gallery_Album_Loader{
@@ -91,6 +102,12 @@
     }
     .Gallery_Title{
         margin-top: 70px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Gallery_Description, .Gallery_Information{
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .Gallery_ImageView_Top_Title{
         display: none;
@@ -102,7 +119,7 @@
     width: 100%;
     aspect-ratio: 1/1;
     /* background-color: var(--UI-Pallete-Level-1); */
-    background-color: var(--UI-Pallete-Level-2);
+    background-color: var(--English-Orange-Base);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 190%;
@@ -123,14 +140,14 @@
 .Gallery_Album_Item[State="Loaded"]{
     animation-name: unset;
     transition: var(--Element-Transition-Delay);
-    background-color: white;
+    /* background-color: var(--English-Orange-Base); */
 }
 
 .Gallery_Album_Item:hover{
     background-size: 120%;
     cursor: pointer;
-    transform: scale(1.1);
-    box-shadow: var(--Element-BoxShadow);
+    transform: scale(0.95);
+    /* box-shadow: var(--Element-BoxShadow); */
 }
 
 .Gallery_Album_Item:active{
@@ -152,17 +169,17 @@
 }
 
 .Gallery_Album_Item:nth-child(odd):hover > .Gallery_Album_Item_Image{
-    transform: scale(0.75) rotate(5deg);
+    /* transform: scale(0.75) rotate(5deg); */
     box-shadow: var(--Element-BoxShadow);
 }
 
 .Gallery_Album_Item:nth-child(even):hover > .Gallery_Album_Item_Image{
-    transform: scale(0.75) rotate(-5deg);
+    /* transform: scale(0.75) rotate(-5deg); */
     box-shadow: var(--Element-BoxShadow);
 }
 
 .Gallery_Album_Item:active > .Gallery_Album_Item_Image{
-    transform: scale(0.6);
+    transform: scale(0.9);
 }
 
 @keyframes Image_Loading{
@@ -252,7 +269,7 @@
 
 .Gallery_ImageView_Top{
     display: grid;
-    grid-template-columns: 1fr 50px;
+    grid-template-columns: 1fr;
     align-items: center;
 }
 
@@ -301,7 +318,7 @@
 } */
 
 .Gallery_Album_EndOfAlbum{
-    background-color: #dbdbdb;
+    /* background-color: #dbdbdb; */
     width: calc(100% - 20% - 20px);
     margin-left: 10%;
     margin-right: 10%;
@@ -309,10 +326,15 @@
     margin-bottom: 20px;
     padding: 10px;
     font-family: Roboto;
-    color: #0936af;
+    color: var(--English-Blue-Level-1D);
     text-align: center;
     cursor: pointer;
-    border-radius: 7px;
+    /* border-radius: 7px; */
+}
+
+.Gallery_Album_EndOfAlbum:hover{
+    background-color: var(--English-Blue-Level-2D);
+    color: white;
 }
 
 .Gallery_Header_Blur{
@@ -320,8 +342,9 @@
     width: 100%;
     /* height: 60%; */
     z-index: -1;
-    filter: blur(40px);
+    filter: blur(50px);
     transform: translateX(-120px) translateY(-120px) rotate(10deg);
     opacity: 0%;
     transition: opacity 1s;
+    user-select: none;
 }
