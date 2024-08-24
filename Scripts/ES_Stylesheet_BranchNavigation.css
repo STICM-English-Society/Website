@@ -285,7 +285,7 @@ a:focus > .Branch_Navigation_Grid_Item{
 .Branch_Navigation_Grid_Item_Thumbnail{
     background-color: rgb(175, 175, 175);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     height: 200px;
     /* border-radius: 7px 7px 0px 0px; */
 }

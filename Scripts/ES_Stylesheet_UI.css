@@ -221,6 +221,14 @@ a{
 	transition: var(--Element-Transition-Delay);
 }
 
+.UI_Sidebar[State = "Collapsed"]{
+	transform: translateX(-100%);
+}
+
+.UI_Sidebar[State = "Expanded"]{
+	transform: translateX(0%);
+}
+
 .UI_Sidebar_Logo{
 	width: 300px;
 	/* background-color: red; */
@@ -297,6 +305,26 @@ a{
 	font-size: 10;
 	text-decoration: none;
 	padding-left: 5px;
+}
+
+.UI_Sidebar_Background{
+	background-color: var(--English-Blue-Level-2D);
+	width: 100%;
+	height: calc(100% - 50px);
+	position: fixed;
+	top: 50px;
+	opacity: 0%;
+	pointer-events: none;
+}
+
+.UI_Sidebar_Background[State = "Collapsed"]{
+	opacity: 0%;
+	pointer-events: none;
+}
+
+.UI_Sidebar_Background[State = "Expanded"]{
+	opacity: 75%;
+	pointer-events: all;
 }
 
 .UI_ImagePreview{
