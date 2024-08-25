@@ -40,59 +40,83 @@ function BranchNavigation_Generate_List_Gallery(){
 function BranchNavigation_Generate_BranchList_Gallery(){
     for (a = 6; a != BranchList_Album_Name.length; a++){
         console.log("Processing item " + a + "...");
+        var BranchList_Item_InnerHTML = `
+            <div class="Branch_Navigation_Grid_Item">
+              <div class="Branch_Navigation_Grid_Item_Thumbnail">
+                <img class='Branch_Navigation_Grid_Item_Thumbnail_Image' src='${BranchList_Album_Thumbnail[a]}' draggable='false' loading='lazy'/>
+              </div>
+              <h2 class="Branch_Navigation_Grid_Item_Title">
+                ${BranchList_Album_Name[a]}
+              </h2>
+              <div class="Branch_Navigation_Grid_Item_Details">
+                <div class="Branch_Navigation_Grid_Item_Details_Author">
+                  ${BranchList_Album_Author[a]}
+                </div>
+                <div class="Branch_Navigation_Grid_Item_Details_Category">
+                  ${BranchList_Album_Category[a]}
+                </div>
+                <div class="Branch_Navigation_Grid_Item_Details_Date">
+                  ${BranchList_Album_Date_Published[a]}
+                </div>
+              </div>
+            </div>
+        `;
         // Anchor
         var BranchList_Item_Anchor = document.createElement('a');
+        BranchList_Item_Anchor.innerHTML = BranchList_Item_InnerHTML;
         BranchList_Item_Anchor.setAttribute("href", "ES_AlbumViewer.html?albumName=" + BranchList_Album_IndexFileName[a]);
         BranchList_Item_Anchor.setAttribute("id", "BranchList_Main_Item_Anchor_" + a);
         document.getElementById("Branch_Navigation_Main").appendChild(BranchList_Item_Anchor);
 
+        
+
         // Item Container
-        var BranchList_Item_Div = document.createElement('div');
-        BranchList_Item_Div.setAttribute('id','BranchList_Main_Item_Div_' + a);
-        BranchList_Item_Div.className = "Branch_Navigation_Grid_Item";
-        document.getElementById("BranchList_Main_Item_Anchor_" + a).appendChild(BranchList_Item_Div);
+        // var BranchList_Item_Div = document.createElement('div');
+        // BranchList_Item_Div.setAttribute('id','BranchList_Main_Item_Div_' + a);
+        // BranchList_Item_Div.className = "Branch_Navigation_Grid_Item";
+        // document.getElementById("BranchList_Main_Item_Anchor_" + a).appendChild(BranchList_Item_Div);
 
         // Item Thumbnail
-        var BranchList_Item_Thumbnail = document.createElement('div');
-        BranchList_Item_Thumbnail.setAttribute('style', 'background-image: url("' + BranchList_Album_Thumbnail[a] + '")');
-        BranchList_Item_Thumbnail.className = "Branch_Navigation_Grid_Item_Thumbnail";
-        document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Thumbnail);
+        // var BranchList_Item_Thumbnail = document.createElement('div');
+        // BranchList_Item_Thumbnail.setAttribute('style', 'background-image: url("' + BranchList_Album_Thumbnail[a] + '")');
+        // BranchList_Item_Thumbnail.className = "Branch_Navigation_Grid_Item_Thumbnail";
+        // document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Thumbnail);
 
         // Item Title
-        var BranchList_Item_Title = document.createElement('h2');
-        BranchList_Item_Title.innerHTML = BranchList_Album_Name[a];
-        BranchList_Item_Title.className = "Branch_Navigation_Grid_Item_Title";
-        document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Title);
+        // var BranchList_Item_Title = document.createElement('h2');
+        // BranchList_Item_Title.innerHTML = BranchList_Album_Name[a];
+        // BranchList_Item_Title.className = "Branch_Navigation_Grid_Item_Title";
+        // document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Title);
 
         // Item Detail Container
-        var BranchList_Item_Details = document.createElement('div');
-        BranchList_Item_Details.setAttribute('id', 'BranchList_Main_Item_Details_' + a);
-        BranchList_Item_Details.className = "Branch_Navigation_Grid_Item_Details";
-        document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Details);
+        // var BranchList_Item_Details = document.createElement('div');
+        // BranchList_Item_Details.setAttribute('id', 'BranchList_Main_Item_Details_' + a);
+        // BranchList_Item_Details.className = "Branch_Navigation_Grid_Item_Details";
+        // document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Details);
 
         // Item Detail Author
-        var BranchList_Item_Details_Item = document.createElement('div');
-        BranchList_Item_Details_Item.innerHTML = BranchList_Album_Author[a];
-        BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
-        BranchList_Item_Details_Item.classList.add("Detail_Type_Author");
-        BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
-        document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
+        // var BranchList_Item_Details_Item = document.createElement('div');
+        // BranchList_Item_Details_Item.innerHTML = BranchList_Album_Author[a];
+        // BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
+        // BranchList_Item_Details_Item.classList.add("Detail_Type_Author");
+        // BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
+        // document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
 
         // Item Detail Category
-        var BranchList_Item_Details_Item = document.createElement('div');
-        BranchList_Item_Details_Item.innerHTML = BranchList_Album_Category[a];
-        BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
-        BranchList_Item_Details_Item.classList.add("Detail_Type_Category");
-        BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
-        document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
+        // var BranchList_Item_Details_Item = document.createElement('div');
+        // BranchList_Item_Details_Item.innerHTML = BranchList_Album_Category[a];
+        // BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
+        // BranchList_Item_Details_Item.classList.add("Detail_Type_Category");
+        // BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
+        // document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
 
         // Item Detail Publishing Date
-        var BranchList_Item_Details_Item = document.createElement('div');
-        BranchList_Item_Details_Item.innerHTML = BranchList_Album_Date_Published[a];
-        BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
-        BranchList_Item_Details_Item.classList.add("Detail_Type_DatePublished");
-        BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
-        document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
+        // var BranchList_Item_Details_Item = document.createElement('div');
+        // BranchList_Item_Details_Item.innerHTML = BranchList_Album_Date_Published[a];
+        // BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
+        // BranchList_Item_Details_Item.classList.add("Detail_Type_DatePublished");
+        // BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
+        // document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
 
         console.log("Done processing item " + a + ".");
     }
@@ -103,6 +127,12 @@ function BranchNavigation_Generate_BranchList_Gallery(){
 
 var BranchList = {};
 var BranchList_Searchable = [];
+var BranchList_Item_Name = [];
+var BranchList_Item_Author = [];
+var BranchList_Item_Category = [];
+var BranchList_Item_Date_Published = [];
+var BranchList_Item_URL = [];
+var BranchList_Item_Thumbnail = [];
 
 function BranchNavigation_Generate_List(FileURL){
     const request = new XMLHttpRequest();
@@ -114,12 +144,12 @@ function BranchNavigation_Generate_List(FileURL){
     BranchList = JSON.parse(messages)
     console.log(BranchList);
     for (a = 0; a != BranchList.length; a++){
-        BranchList_Article_Name[a] = BranchList[a].Title;
-        BranchList_Article_Author[a] = BranchList[a].Authors;
-        BranchList_Article_Category[a] = BranchList[a].Category;
-        BranchList_Article_Date_Published[a] = BranchList[a].Date_Published;
-        BranchList_Article_URL[a] = BranchList[a].Link;
-        BranchList_Article_Thumbnail[a] = BranchList[a].Thumbnail;
+        BranchList_Item_Name[a] = BranchList[a].Title;
+        BranchList_Item_Author[a] = BranchList[a].Authors;
+        BranchList_Item_Category[a] = BranchList[a].Category;
+        BranchList_Item_Date_Published[a] = BranchList[a].Date_Published;
+        BranchList_Item_URL[a] = BranchList[a].Link;
+        BranchList_Item_Thumbnail[a] = BranchList[a].Thumbnail;
         BranchList_Searchable[a] = "<" + BranchList[a].Title + " & " + BranchList[a].Authors + " & " + BranchList[a].Category + " & " + BranchList[a].Date_Published +">";
     }
     // for (a = 6; a != messages.length; a++){
@@ -137,115 +167,47 @@ function BranchNavigation_Generate_List(FileURL){
     //     }
     //     console.log("Done processing item " + a + ".");
     // }
-    BranchNavigation_Generate_BranchList_Articles();
+    BranchNavigation_Generate_BranchList();
 }
 
-function BranchNavigation_Generate_BranchList_Articles_Depracated(){
-    for (a = 6; a != BranchList_Article_Name.length; a++){
-        var BranchList_Item_Div = document.createElement('a');
-        BranchList_Item_Div.setAttribute("href", "Articles/" + BranchList_Article_URL[a]);
-        BranchList_Item_Div.setAttribute("id", "Branch_Navigation_Link_"+a);
-        document.getElementById("Branch_Navigation").appendChild(BranchList_Item_Div);
-        
-        var BranchList_Item_Div = document.createElement('div');
-        BranchList_Item_Div.setAttribute("id", "BranchList_Item_"+a);
-        BranchList_Item_Div.classList.add("Branch_Navigation_Item");
-        document.getElementById("Branch_Navigation_Link_"+a).appendChild(BranchList_Item_Div);
 
-        var BranchList_Item_Title = document.createElement("h2");
-        BranchList_Item_Title.innerHTML = BranchList_Article_Name[a];
-        BranchList_Item_Title.classList.add("Branch_Navigation_Item_Title");
-        document.getElementById("BranchList_Item_"+a).appendChild(BranchList_Item_Title);
 
-        var BranchList_Item_Details = document.createElement("div");
-        BranchList_Item_Details.setAttribute("id", "BranchList_Item_Details_"+a);
-        BranchList_Item_Details.classList.add("Branch_Navigation_Item_Details");
-        document.getElementById("BranchList_Item_"+a).appendChild(BranchList_Item_Details);
-
-        var BranchList_Item_Details_Text_Author = document.createElement("p");
-        BranchList_Item_Details_Text_Author.innerHTML = "Author: " + BranchList_Article_Author[a];
-        BranchList_Item_Details_Text_Author.classList.add("Branch_Navigation_Item_Details_Text");
-        document.getElementById("BranchList_Item_Details_"+a).appendChild(BranchList_Item_Details_Text_Author);
-        
-        var BranchList_Item_Details_Text_Category = document.createElement("p");
-        BranchList_Item_Details_Text_Category.innerHTML = "Category: " + BranchList_Article_Category[a];
-        BranchList_Item_Details_Text_Category.classList.add("Branch_Navigation_Item_Details_Text");
-        document.getElementById("BranchList_Item_Details_"+a).appendChild(BranchList_Item_Details_Text_Category);
-
-        var BranchList_Item_Details_Text_Date_Published = document.createElement("p");
-        BranchList_Item_Details_Text_Date_Published.innerHTML = "Date Published: " + BranchList_Article_Date_Published[a];
-        BranchList_Item_Details_Text_Date_Published.classList.add("Branch_Navigation_Item_Details_Text");
-        document.getElementById("BranchList_Item_Details_"+a).appendChild(BranchList_Item_Details_Text_Date_Published);
-
-    }
-}
-
-function BranchNavigation_Generate_BranchList_Articles(){
-    for (a = 0; a != BranchList_Article_Name.length; a++){
+function BranchNavigation_Generate_BranchList(){
+    for (a = 0; a != BranchList_Item_Name.length; a++){
         console.log("Processing item " + a + "...");
+        var BranchList_Item_InnerHTML = `
+            <div class="Branch_Navigation_Grid_Item">
+              <div class="Branch_Navigation_Grid_Item_Thumbnail">
+                <img class='Branch_Navigation_Grid_Item_Thumbnail_Image' src='${BranchList_Item_Thumbnail[a]}' draggable='false' loading='lazy' onload="this.style.opacity = '100%';"/>
+              </div>
+              <h2 class="Branch_Navigation_Grid_Item_Title">
+                ${BranchList_Item_Name[a]}
+              </h2>
+              <div class="Branch_Navigation_Grid_Item_Details">
+                <div class="Branch_Navigation_Grid_Item_Details_Author">
+                  ${BranchList_Item_Author[a]}
+                </div>
+                <div class="Branch_Navigation_Grid_Item_Details_Category">
+                  ${BranchList_Item_Category[a]}
+                </div>
+                <div class="Branch_Navigation_Grid_Item_Details_Date">
+                  ${BranchList_Item_Date_Published[a]}
+                </div>
+              </div>
+            </div>
+        `;
         // Anchor
         var BranchList_Item_Anchor = document.createElement('a');
-        BranchList_Item_Anchor.setAttribute("href", BranchList_Article_URL[a]);
+        BranchList_Item_Anchor.innerHTML = BranchList_Item_InnerHTML;
+        BranchList_Item_Anchor.setAttribute("href", BranchList_Item_URL[a]);
         BranchList_Item_Anchor.setAttribute("id", "BranchList_Main_Item_Anchor_" + a);
         document.getElementById("Branch_Navigation_Main").appendChild(BranchList_Item_Anchor);
 
-        // Item Container
-        var BranchList_Item_Div = document.createElement('div');
-        BranchList_Item_Div.setAttribute('id','BranchList_Main_Item_Div_' + a);
-        BranchList_Item_Div.className = "Branch_Navigation_Grid_Item";
-        document.getElementById("BranchList_Main_Item_Anchor_" + a).appendChild(BranchList_Item_Div);
-
-        // Item Thumbnail
-        var BranchList_Item_Thumbnail = document.createElement('div');
-        BranchList_Item_Thumbnail.setAttribute('style', 'background-image: url("' + BranchList_Article_Thumbnail[a] + '")');
-        BranchList_Item_Thumbnail.className = "Branch_Navigation_Grid_Item_Thumbnail";
-        document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Thumbnail);
-
-        // Item Title
-        var BranchList_Item_Title = document.createElement('h2');
-        BranchList_Item_Title.innerHTML = BranchList_Article_Name[a];
-        BranchList_Item_Title.className = "Branch_Navigation_Grid_Item_Title";
-        document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Title);
-
-        // Item Detail Container
-        var BranchList_Item_Details = document.createElement('div');
-        BranchList_Item_Details.setAttribute('id', 'BranchList_Main_Item_Details_' + a);
-        BranchList_Item_Details.className = "Branch_Navigation_Grid_Item_Details";
-        document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Details);
-
-        // Item Detail Author
-        var BranchList_Item_Details_Item = document.createElement('div');
-        BranchList_Item_Details_Item.innerHTML = BranchList_Article_Author[a];
-        BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
-        BranchList_Item_Details_Item.classList.add("Detail_Type_Author");
-        BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
-        document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
-
-        // Item Detail Category
-        var BranchList_Item_Details_Item = document.createElement('div');
-        BranchList_Item_Details_Item.innerHTML = BranchList_Article_Category[a];
-        BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
-        BranchList_Item_Details_Item.classList.add("Detail_Type_Category");
-        BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
-        document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
-
-        // Item Detail Publishing Date
-        var BranchList_Item_Details_Item = document.createElement('div');
-        BranchList_Item_Details_Item.innerHTML = BranchList_Article_Date_Published[a];
-        BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
-        BranchList_Item_Details_Item.classList.add("Detail_Type_DatePublished");
-        BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
-        document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
-
-        //console.log("Done processing item " + a + ".");
+        
     }
     document.getElementById("Branch_Navigation_Status").style.display = "none";
     document.getElementById("Branch_Navigation_Status_Container").style.maxHeight = "0px";
-    // setTimeout(function(){
-    //     Element_Style_Animate_Batch_QuerySelector(".Curtain > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
-    //     Element_Style_Animate_Batch_QuerySelector(".Branch_Title_Text", "Branch_Title_Text_Reveal", "1s", "forwards", "1", 0);
-    //     Element_Style_Animate_Batch_QuerySelector(".Branch_Title_Icon", "Branch_Title_Text_Reveal", "1s", "forwards", "1", 0);
-    // }, 2000);
+    
     
     BranchNavigation_Search_SetDataToUppercase();
 }

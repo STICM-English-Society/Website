@@ -227,8 +227,8 @@
 
 .Branch_Navigation_Grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 25px;
     margin-bottom: 75px;
 }
 
@@ -286,20 +286,37 @@ a:focus > .Branch_Navigation_Grid_Item{
     background-color: rgb(175, 175, 175);
     background-position: center;
     background-size: cover;
-    height: 200px;
-    /* border-radius: 7px 7px 0px 0px; */
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--English-Orange-Base);
+    animation-name: Branch_Navigation_Grid_Item_Thumbnail_Image_Loading;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
-.Branch_Navigation_Grid_Item:nth-child(1) .Branch_Navigation_Grid_Item_Thumbnail{
-    background-image: url("../Assets/Images/BranchNavigation/Articles/Placeholder.png");
+@keyframes Branch_Navigation_Grid_Item_Thumbnail_Image_Loading{
+    0% {
+        background-color: #00000000;
+    }
+    50% {
+        
+        background-color: var(--English-Orange-Base);
+    }
+    100% {
+        background-color: #00000000;
+    }
 }
 
-.Branch_Navigation_Grid_Item:nth-child(2) .Branch_Navigation_Grid_Item_Thumbnail{
-    background-image: url("../Assets/Images/BranchNavigation/Articles/Placeholder.png");
-}
-
-.Branch_Navigation_Grid_Item:nth-child(3) .Branch_Navigation_Grid_Item_Thumbnail{
-    background-image: url("../Assets/Images/BranchNavigation/Articles/Placeholder.png");
+.Branch_Navigation_Grid_Item_Thumbnail_Image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.15);
+    opacity: 0%;
 }
 
 .Branch_Navigation_Grid_Item_Title{
@@ -317,6 +334,31 @@ a:focus > .Branch_Navigation_Grid_Item{
     padding-top: 0;
     flex-wrap: wrap;
     margin-top: auto;
+    display: grid;
+    grid-template-areas: 
+        "Author Author"
+        "Category Date"
+    ;
+}
+
+.Branch_Navigation_Grid_Item_Details > div{
+    font-family: Roboto;
+    color: var(--English-Blue-Level-3D);
+    background-color: rgb(228, 228, 228);
+    padding: 10px;
+}
+
+.Branch_Navigation_Grid_Item_Details_Author{
+    grid-area: Author;
+}
+
+.Branch_Navigation_Grid_Item_Details_Category{
+    grid-area: Category;
+}
+
+.Branch_Navigation_Grid_Item_Details_Date{
+    grid-area: Date;
+    text-align: right;
 }
 
 .Branch_Navigation_Grid_Item_Details_Item{
