@@ -227,24 +227,14 @@ function Branch_BackToParent_AddButton(ParentURL){
 
 function ShortenedLinks_GetShortenedLink(PageName){
   const request = new XMLHttpRequest();
-  request.open("GET", "Assets/ShortenedLinks.txt", false);
+  request.open("GET", "Assets/ShortenedLinks.json", false);
   request.send();
-  var messages = request.responseText.split("\n");
+  var messages = request.responseText;
   // console.log(messages);
-  File_Data = messages;
-  var ShortenedLinks_Line_Data;
-  var ShortenedLinks_Line_Data_WebURL = [];
-  var ShortenedLinks_Line_Data_ShortURL = [];
-  for (a = 5; a != File_Data.length; a++){
-    ShortenedLinks_Line_Data = File_Data[a].split("%&");
-    ShortenedLinks_Line_Data_WebURL[a] = ShortenedLinks_Line_Data[0];
-    ShortenedLinks_Line_Data_ShortURL[a] = ShortenedLinks_Line_Data[1].split("\r")[0];
-  }
-  // console.log(ShortenedLinks_Line_Data_WebURL);
-  // console.log(ShortenedLinks_Line_Data_ShortURL);
-  for (a = 5; a < ShortenedLinks_Line_Data_WebURL.length; a++){
-    if (ShortenedLinks_Line_Data_WebURL[a] == PageName){
-      CopyURL = ShortenedLinks_Line_Data_ShortURL[a];
+  var File_Data = JSON.parse(messages);
+  for (a = 0; a < File_Data.length; a++){
+    if (File_Data[a].Link_Original == PageName){
+      CopyURL = File_Data[a].Link_Substitute;
       break;
     }
   }

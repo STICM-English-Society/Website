@@ -1,9 +1,0 @@
-==================
-Link index name here
-This text file contains the records of the gallery that is currently up. ES_Gallery.html will use this file to generate the article list.
-To add a record, follow the format for one line: Album Name%&Album Photographer(s)%&Album Category%&Date Published%&File name of the index file associated with the album (remove Index_ prefix and .txt extension)%&Thumbnail image
-Scanning starts at line 7. 
-==================
-February Sentiments%&English Society Officers%&English Society Pubmats%&1 March 2024%&FebSentiments_2024%&Assets/Images/Articles/ESA_FS23/ESA_FS23_1.png
-Motivational Mondays%&English Society Officers%&English Society Pubmats%&26 March 2024%&MotivationalMondays_202324%&Assets/Images/Gallery/ESG_MM202324/September 4.png
-Wordy Wednesdays%&English Society Officers%&English Society Pubmats%&26 March 2024%&WordyWednesdays_202324%&Assets/Images/Gallery/ESG_WW202324/September 6.png
