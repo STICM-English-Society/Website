@@ -1,130 +1,3 @@
-var BranchList_Article_Name = [];
-var BranchList_Article_Author = [];
-var BranchList_Article_Category = [];
-var BranchList_Article_Date_Published = [];
-var BranchList_Article_URL = [];
-var BranchList_Article_Thumbnail = [];
-
-var BranchList_Album_Name = [];
-var BranchList_Album_Author = [];
-var BranchList_Album_Category = [];
-var BranchList_Album_Date_Published = [];
-var BranchList_Album_IndexFileName = [];
-var BranchList_Album_Thumbnail = [];
-
-function BranchNavigation_Generate_List_Gallery(){
-    const request = new XMLHttpRequest();
-    request.open("GET", "Gallery/Index_Gallery_Main.txt", false);
-    request.send();
-    var messages = request.responseText.split("\n");
-    console.log(messages);
-    BranchList_Data = messages;
-    for (a = 6; a != messages.length; a++){
-        console.log("Processing item " + a + "...");
-        BranchList_Line_Data = messages[a].split("%&");
-        BranchList_Album_Name[a] = BranchList_Line_Data[0];
-        BranchList_Album_Author[a] = BranchList_Line_Data[1];
-        BranchList_Album_Category[a] = BranchList_Line_Data[2];
-        BranchList_Album_Date_Published[a] = BranchList_Line_Data[3];
-        BranchList_Album_IndexFileName[a] = BranchList_Line_Data[4];
-        if (BranchList_Line_Data[5].includes("\r")){
-            BranchList_Album_Thumbnail[a] = BranchList_Line_Data[5].replace("\r", "");
-        } else {
-            BranchList_Album_Thumbnail[a] = BranchList_Line_Data[5];
-        }
-        console.log("Done processing item " + a + ".");
-    }
-    BranchNavigation_Generate_BranchList_Gallery();
-}
-
-function BranchNavigation_Generate_BranchList_Gallery(){
-    for (a = 6; a != BranchList_Album_Name.length; a++){
-        console.log("Processing item " + a + "...");
-        var BranchList_Item_InnerHTML = `
-            <div class="Branch_Navigation_Grid_Item">
-              <div class="Branch_Navigation_Grid_Item_Thumbnail">
-                <img class='Branch_Navigation_Grid_Item_Thumbnail_Image' src='${BranchList_Album_Thumbnail[a]}' draggable='false' loading='lazy'/>
-              </div>
-              <h2 class="Branch_Navigation_Grid_Item_Title">
-                ${BranchList_Album_Name[a]}
-              </h2>
-              <div class="Branch_Navigation_Grid_Item_Details">
-                <div class="Branch_Navigation_Grid_Item_Details_Author">
-                  ${BranchList_Album_Author[a]}
-                </div>
-                <div class="Branch_Navigation_Grid_Item_Details_Category">
-                  ${BranchList_Album_Category[a]}
-                </div>
-                <div class="Branch_Navigation_Grid_Item_Details_Date">
-                  ${BranchList_Album_Date_Published[a]}
-                </div>
-              </div>
-            </div>
-        `;
-        // Anchor
-        var BranchList_Item_Anchor = document.createElement('a');
-        BranchList_Item_Anchor.innerHTML = BranchList_Item_InnerHTML;
-        BranchList_Item_Anchor.setAttribute("href", "ES_AlbumViewer.html?albumName=" + BranchList_Album_IndexFileName[a]);
-        BranchList_Item_Anchor.setAttribute("id", "BranchList_Main_Item_Anchor_" + a);
-        document.getElementById("Branch_Navigation_Main").appendChild(BranchList_Item_Anchor);
-
-        
-
-        // Item Container
-        // var BranchList_Item_Div = document.createElement('div');
-        // BranchList_Item_Div.setAttribute('id','BranchList_Main_Item_Div_' + a);
-        // BranchList_Item_Div.className = "Branch_Navigation_Grid_Item";
-        // document.getElementById("BranchList_Main_Item_Anchor_" + a).appendChild(BranchList_Item_Div);
-
-        // Item Thumbnail
-        // var BranchList_Item_Thumbnail = document.createElement('div');
-        // BranchList_Item_Thumbnail.setAttribute('style', 'background-image: url("' + BranchList_Album_Thumbnail[a] + '")');
-        // BranchList_Item_Thumbnail.className = "Branch_Navigation_Grid_Item_Thumbnail";
-        // document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Thumbnail);
-
-        // Item Title
-        // var BranchList_Item_Title = document.createElement('h2');
-        // BranchList_Item_Title.innerHTML = BranchList_Album_Name[a];
-        // BranchList_Item_Title.className = "Branch_Navigation_Grid_Item_Title";
-        // document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Title);
-
-        // Item Detail Container
-        // var BranchList_Item_Details = document.createElement('div');
-        // BranchList_Item_Details.setAttribute('id', 'BranchList_Main_Item_Details_' + a);
-        // BranchList_Item_Details.className = "Branch_Navigation_Grid_Item_Details";
-        // document.getElementById('BranchList_Main_Item_Div_' + a).appendChild(BranchList_Item_Details);
-
-        // Item Detail Author
-        // var BranchList_Item_Details_Item = document.createElement('div');
-        // BranchList_Item_Details_Item.innerHTML = BranchList_Album_Author[a];
-        // BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
-        // BranchList_Item_Details_Item.classList.add("Detail_Type_Author");
-        // BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
-        // document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
-
-        // Item Detail Category
-        // var BranchList_Item_Details_Item = document.createElement('div');
-        // BranchList_Item_Details_Item.innerHTML = BranchList_Album_Category[a];
-        // BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
-        // BranchList_Item_Details_Item.classList.add("Detail_Type_Category");
-        // BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
-        // document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
-
-        // Item Detail Publishing Date
-        // var BranchList_Item_Details_Item = document.createElement('div');
-        // BranchList_Item_Details_Item.innerHTML = BranchList_Album_Date_Published[a];
-        // BranchList_Item_Details_Item.classList.add("Branch_Navigation_Grid_Item_Details_Item");
-        // BranchList_Item_Details_Item.classList.add("Detail_Type_DatePublished");
-        // BranchList_Item_Details_Item.className = "Branch_Navigation_Grid_Item_Details_Item";
-        // document.getElementById('BranchList_Main_Item_Details_' + a).appendChild(BranchList_Item_Details_Item);
-
-        console.log("Done processing item " + a + ".");
-    }
-    document.getElementById("Branch_Navigation_Status").style.display = "none";
-    document.getElementById("Branch_Navigation_Status_Container").style.maxHeight = "0px";
-    BranchNavigation_Search_SetDataToUppercase();
-}
-
 var BranchList = {};
 var BranchList_Searchable = [];
 var BranchList_Item_Name = [];
@@ -133,6 +6,7 @@ var BranchList_Item_Category = [];
 var BranchList_Item_Date_Published = [];
 var BranchList_Item_URL = [];
 var BranchList_Item_Thumbnail = [];
+var BranchList_Item_OpenInNewTab = [];
 
 function BranchNavigation_Generate_List(FileURL){
     const request = new XMLHttpRequest();
@@ -150,6 +24,7 @@ function BranchNavigation_Generate_List(FileURL){
         BranchList_Item_Date_Published[a] = BranchList[a].Date_Published;
         BranchList_Item_URL[a] = BranchList[a].Link;
         BranchList_Item_Thumbnail[a] = BranchList[a].Thumbnail;
+        BranchList_Item_OpenInNewTab[a] = BranchList[a].Open_In_NewTab;
         BranchList_Searchable[a] = "<" + BranchList[a].Title + " & " + BranchList[a].Authors + " & " + BranchList[a].Category + " & " + BranchList[a].Date_Published +">";
     }
     // for (a = 6; a != messages.length; a++){
@@ -173,7 +48,7 @@ function BranchNavigation_Generate_List(FileURL){
 
 
 function BranchNavigation_Generate_BranchList(){
-    for (a = 0; a != BranchList_Item_Name.length; a++){
+    for (a = BranchList_Item_Name.length -1 ; a != -1; a--){
         console.log("Processing item " + a + "...");
         var BranchList_Item_InnerHTML = `
             <div class="Branch_Navigation_Grid_Item">
@@ -201,6 +76,9 @@ function BranchNavigation_Generate_BranchList(){
         BranchList_Item_Anchor.innerHTML = BranchList_Item_InnerHTML;
         BranchList_Item_Anchor.setAttribute("href", BranchList_Item_URL[a]);
         BranchList_Item_Anchor.setAttribute("id", "BranchList_Main_Item_Anchor_" + a);
+        if (BranchList_Item_OpenInNewTab[a] == true){
+          BranchList_Item_Anchor.setAttribute("target", "_blank");
+        }
         document.getElementById("Branch_Navigation_Main").appendChild(BranchList_Item_Anchor);
 
         
