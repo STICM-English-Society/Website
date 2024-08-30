@@ -86,7 +86,7 @@ function BranchNavigation_Generate_BranchList(){
     document.getElementById("Branch_Navigation_Status").style.display = "none";
     document.getElementById("Branch_Navigation_Status_Container").style.maxHeight = "0px";
     
-    
+    Element_Style_Animate_Batch_QuerySelector(".Branch_Navigation_Grid_Item", "Branch_Navigation_Grid_Item_Appear", "0.3s", "forwards", "1", 50);
     BranchNavigation_Search_SetDataToUppercase();
 }
 

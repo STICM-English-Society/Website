@@ -242,7 +242,8 @@
     /* border-radius: 7px; */
     outline: solid #00000000 5px;
     border: solid #00000000 5px;
-    opacity: 100%;
+    opacity: 0%;
+    animation-timing-function: ease-out;
     padding: 5px;
     transition: var(--Element-Transition-Delay);
     margin-bottom: 10px;
@@ -253,6 +254,17 @@
     outline-color: white;
     box-shadow: 10px 10px 0px 0px var(--English-Orange-Base);
     z-index: 50;
+}
+
+@keyframes Branch_Navigation_Grid_Item_Appear {
+    0% {
+        opacity: 0%;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
 }
 
 a:nth-child(odd):hover > .Branch_Navigation_Grid_Item{

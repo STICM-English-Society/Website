@@ -167,7 +167,7 @@ function AB_Renderer_Article_Render(Data){
         });
     }
     setTimeout(function(){
-        Element_Style_Animate_Batch_QuerySelector(".Element", "Article_Content_Appear", "0.5s", "forwards", "1", 200);
+        Element_Style_Animate_Batch_QuerySelector(".Element", "Article_Content_Appear", "0.5s", "forwards", "1", 150);
     }, 2000);
 }
 
