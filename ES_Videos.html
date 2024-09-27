@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <title>English Society | Videos</title>
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_UI.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Article.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Animations.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_Reference.css" />
+    <link rel="stylesheet" href="Scripts/ES_Stylesheet_BranchNavigation.css" />
+    <link
+      rel="icon" type="image/png" href="Assets/Icons/favicon.png" sizes="96x96"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta
+      property="og:image" 
+      content="https://sticm-english-society.github.io/Website/Assets/Images/Link_Preview.png"
+    />
+    <meta
+      property="og:title"
+      content="English Society | Videos"
+    />
+    <meta
+      property="og:description"
+      content="The official website of STI College Marikina English Society"
+    />
+  </head>
+  <script src="Scripts/ES_Javascript_UI.js"></script>
+  <script src="Scripts/ES_Javascript_BranchNavigation.js"></script>
+  <script src="Scripts/App_Javascript_ERUMAUI_Core.js"></script>
+  <body id="pageElement_Body" onload="Load_Template('Template_UI'), BranchNavigation_Generate_List('Videos/Index_Videos.json')" ShortenedLinks_HasShortenedLink="true" Header_ChangeTitles="true" Header_ChangeTitles_AltPage_Title="Videos" Header_ChangeTitles_AltPage_URL="Top">
+  <!-- <body id="pageElement_Body" onload="Load_Template('Template_UI')" ShortenedLinks_HasShortenedLink="true" Header_ChangeTitles="true" Header_ChangeTitles_AltPage_Title="Gallery" Header_ChangeTitles_AltPage_URL="Top"> -->
+    <div class="Main_Content_Container">
+      <div class="Curtain">
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+        <span class="Curtain_Item"></span>
+      </div>
+      <div class="Branch_Title">
+        <h1 class="Branch_Title_Text">
+          Videos
+        </h1>
+        <div class="Branch_Title_Icon">
+          <img class='Branch_Title_Icon_Icon' src='Assets/Icons/English Organization Technical Committee Logo 1.png' draggable='false' loading='lazy'/>
+        </div>  
+      </div>
+      <div class="Branch_Content">
+        <div class="Branch_Navigation">
+          <div class="Branch_Navigation_Search">
+            <input type="text" class="Branch_Navigation_Search_Input" placeholder="Search for titles, authors, or categories" id="BranchNavigation_Search_Query" oninput="BranchNavigation_Search_Articles(this.value)"/>
+            <img src="Assets/Icons/icon_search.png" class="Branch_Navigation_Search_Button" onclick="BranchNavigation_Search_Articles(document.getElementById('BranchNavigation_Search_Query').value)"/>
+          </div>
+          <div class="Branch_Navigation_Status" id="Branch_Navigation_Status_Container">
+            <h3 class="Branch_Navigation_Status_Text" id="Branch_Navigation_Status">
+              Loading video list. Please wait...
+            </h3>
+          </div>
+          <div class="Branch_Navigation_Grid" id="Branch_Navigation_Main">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+{
+    "Metadata": {
+        "Playlist_Thumbnail": "https://sticm-english-society.github.io/Website/Assets/Images/Placeholder.png",
+        "Playlist_Title": "Talent Search 2022",
+        "Playlist_Description": "Test Description"
+    },
+    "Contents":[
+        {
+            "Video_Title": "7 days to go",
+            "Video_Thumbnail": "https://sticm-english-society.github.io/Website/Assets/Images/Placeholder_1.png",
+            "Video_URL": "https://www.youtube.com/embed/U-uSTRe2VFQ?si=_NXzvepgDsgAsJ3s",
+            "Video_PublishingDate": "1 September 2024"
+        },
+        {
+            "Video_Title": "6 days to go",
+            "Video_Thumbnail": "https://sticm-english-society.github.io/Website/Assets/Images/Placeholder_2.png",
+            "Video_URL": "https://www.youtube.com/embed/Dyp5buenJ3w?si=fJbUtwEpRXzJfhv2",
+            "Video_PublishingDate": "1 September 2024"
+        },
+        {
+            "Video_Title": "5 days to go",
+            "Video_Thumbnail": "https://sticm-english-society.github.io/Website/Assets/Images/Placeholder_3.png",
+            "Video_URL": "https://www.youtube.com/embed/548kq84p0jk?si=Hid-DdI-ZpMemH9G",
+            "Video_PublishingDate": "1 September 2024"
+        },
+        {
+            "Video_Title": "4 days to go",
+            "Video_Thumbnail": "https://sticm-english-society.github.io/Website/Assets/Images/Placeholder_4.png",
+            "Video_URL": "https://www.youtube.com/embed/-HYxePlXtMM?si=xsWUiptILsMYsFAa",
+            "Video_PublishingDate": "1 September 2024"
+        },
+        {
+            "Video_Title": "3 days to go",
+            "Video_Thumbnail": "https://sticm-english-society.github.io/Website/Assets/Images/Placeholder_5.png",
+            "Video_URL": "https://www.youtube.com/embed/kin3jO1aUA4?si=IqVqN6Sn6JuWaBkC",
+            "Video_PublishingDate": "1 September 2024"
+        },
+        {
+            "Video_Title": "2 days to go",
+            "Video_Thumbnail": "https://sticm-english-society.github.io/Website/Assets/Images/Placeholder_5.png",
+            "Video_URL": "https://www.youtube.com/embed/SVlMoKC5cHU?si=oyskX2xNkO3Wesai",
+            "Video_PublishingDate": "1 September 2024"
+        },
+        {
+            "Video_Title": "1 day to go",
+            "Video_Thumbnail": "https://sticm-english-society.github.io/Website/Assets/Images/Placeholder_5.png",
+            "Video_URL": "https://www.youtube.com/embed/u7Hu_xoJeP8?si=yzh6aAXm5h9yXsM7",
+            "Video_PublishingDate": "1 September 2024"
+        },
+        {
+            "Video_Title": "Audience's Bets",
+            "Video_Thumbnail": "https://sticm-english-society.github.io/Website/Assets/Images/Placeholder_5.png",
+            "Video_URL": "https://www.youtube.com/embed/WlHrA6GM2Zc?si=kCTlIMuj_lvGRnLw",
+            "Video_PublishingDate": "1 September 2024"
+        }
+    ]
+}

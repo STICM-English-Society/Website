@@ -25,7 +25,7 @@ function BranchNavigation_Generate_List(FileURL){
         BranchList_Item_URL[a] = BranchList[a].Link;
         BranchList_Item_Thumbnail[a] = BranchList[a].Thumbnail;
         BranchList_Item_OpenInNewTab[a] = BranchList[a].Open_In_NewTab;
-        BranchList_Searchable[a] = "<" + BranchList[a].Title + " & " + BranchList[a].Authors + " & " + BranchList[a].Category + " & " + BranchList[a].Date_Published +">";
+        BranchList_Searchable[a] = "<" + BranchList[a].Title + " & " + BranchList[a].Authors + " & " + BranchList[a].Category + " & " + BranchList[a].Date_Published + " & " + BranchList[a].Link +">";
     }
     // for (a = 6; a != messages.length; a++){
     //     console.log("Processing item " + a + "...");
@@ -86,7 +86,7 @@ function BranchNavigation_Generate_BranchList(){
     document.getElementById("Branch_Navigation_Status").style.display = "none";
     document.getElementById("Branch_Navigation_Status_Container").style.maxHeight = "0px";
     
-    Element_Style_Animate_Batch_QuerySelector(".Branch_Navigation_Grid_Item", "Branch_Navigation_Grid_Item_Appear", "0.3s", "forwards", "1", 50);
+    Element_Style_Animate_Batch_QuerySelector(".Branch_Navigation_Grid_Item", "Branch_Navigation_Grid_Item_Appear", "0.5s", "forwards", "1", 25);
     BranchNavigation_Search_SetDataToUppercase();
 }
 
@@ -113,18 +113,17 @@ function BranchNavigation_Search_Articles(Query){
     //console.log("Search result lines: " + BranchList_Search_Results_Lines);
 
     for (a = 0; a != BranchList_Searchable.length; a++){
-        
         document.getElementById("BranchList_Main_Item_Anchor_" + a).style.display = "none";
-        document.getElementById("BranchList_Main_Item_Anchor_" + a).style.animationName = "Animation_Branch_Navigation_Grid_Item_FadeOut";
-        document.getElementById("BranchList_Main_Item_Anchor_" + a).style.animationFillMode = "forwards";
-        document.getElementById("BranchList_Main_Item_Anchor_" + a).style.animationDuration = "0.25s";
+        // document.getElementById("BranchList_Main_Item_Anchor_" + a).style.animationName = "Animation_Branch_Navigation_Grid_Item_FadeOut";
+        // document.getElementById("BranchList_Main_Item_Anchor_" + a).style.animationFillMode = "forwards";
+        // document.getElementById("BranchList_Main_Item_Anchor_" + a).style.animationDuration = "0.1s";
     }
 
     for (a = 0; a != BranchList_Search_Results_Lines.length; a++){
         document.getElementById("BranchList_Main_Item_Anchor_" + BranchList_Search_Results_Lines[a]).style.display = "block";
         document.getElementById("BranchList_Main_Item_Anchor_" + BranchList_Search_Results_Lines[a]).style.animationName = "Animation_Branch_Navigation_Grid_Item_FadeIn";
         document.getElementById("BranchList_Main_Item_Anchor_" + BranchList_Search_Results_Lines[a]).style.animationFillMode = "forwards";
-        document.getElementById("BranchList_Main_Item_Anchor_" + BranchList_Search_Results_Lines[a]).style.animationDuration = "0.25s";
+        document.getElementById("BranchList_Main_Item_Anchor_" + BranchList_Search_Results_Lines[a]).style.animationDuration = "0.5s";
     }
 
     document.getElementById("Branch_Navigation_Status").style.display = "block";

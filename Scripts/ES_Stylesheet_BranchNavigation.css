@@ -259,7 +259,7 @@
 @keyframes Branch_Navigation_Grid_Item_Appear {
     0% {
         opacity: 0%;
-        transform: translateY(100px);
+        transform: translateY(500px);
     }
     100% {
         opacity: 100%;
@@ -284,14 +284,30 @@ a:focus > .Branch_Navigation_Grid_Item{
     box-shadow: 10px 10px 0px 0px var(--English-Blue-Level-2D);
 }
 
+a, .Branch_Navigation_Grid_Item{
+    animation-timing-function: cubic-bezier(0.380, 0.300, 0.000, 0.880);
+}
+
 @keyframes Animation_Branch_Navigation_Grid_Item_FadeOut{
-    0% {opacity: 100%; transform: scale(1);}
-    100% {opacity: 0%; transform: scale(0.8);}
+    0% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0%; 
+        transform: scale(0.5); 
+        display: none;
+    }
 }
 
 @keyframes Animation_Branch_Navigation_Grid_Item_FadeIn{
-    0% {opacity: 0%; transform: scale(0.8);}
-    100% {opacity: 100%; transform: scale(1);}
+    0% {
+        opacity: 0%; 
+        transform: scale(0.5);
+    }
+    100% {opacity: 100%;
+        transform: scale(1);
+    }
 }
 
 .Branch_Navigation_Grid_Item_Thumbnail{

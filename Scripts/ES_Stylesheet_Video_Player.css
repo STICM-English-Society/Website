@@ -1,0 +1,126 @@
+.Player{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right);
+    width: calc(100% - var(--Margin-Left) - var(--Margin-Right));
+    position: absolute;
+    z-index: 2;
+    overflow-y: auto;
+}
+
+.Player_Thumbnail_Background{
+    width: 80%;
+    position: fixed;
+    z-index: 1;
+    transform: translate(-150px, -150px) rotate(-15deg);
+    filter: blur(50px);
+    opacity: 35%;
+}
+
+.Player_Content{
+    overflow-y: auto;
+    padding: 25px;
+    padding-left: 0;
+}
+
+.Player_Video{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.Player_Category{
+    font-family: Gilroy Bold;
+    color: var(--English-Blue-Level-3D);
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.Player_Title{
+    font-family: Hansief;
+    line-height: 0.85;
+    overflow-wrap: break-word;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.Player_Details{
+    display: flex;
+}
+
+.Player_Details_Item_Title{
+    font-family: Roboto;
+    font-weight: bold;
+    color: var(--English-Blue-Level-3D);
+    margin: 0;
+    margin-right: 10px;
+}
+
+.Player_Details_Item_Value{
+    font-family: Roboto;
+    color: var(--English-Blue-Level-3D);
+    margin: 0;
+    margin-right: 10px;
+}
+
+.Player_Playlist{
+    padding-top: 25px;
+    overflow-y: auto;
+    height: calc(100% - 250px);
+}
+
+.Player_Playlist_Title{
+    font-family: Gilroy Heavy;
+    color: var(--English-Blue-Level-3D);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.Player_Playlist_List{
+    overflow-y: auto;
+    padding: 10px;
+    padding-left: 3px;
+}
+
+.Player_Playlist_List_Item{
+    outline: solid #00000000 3px;
+    border: solid #00000000 3px;
+    background-color: unset;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 10px;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.Player_Playlist_List_Item:hover{
+    border-color: var(--English-Blue-Level-2D);
+    background-color: var(--English-Orange-Level-3L);
+    outline-color: white;
+    box-shadow: 5px 5px 0px 0px var(--English-Blue-Level-2D);
+}
+
+.Player_Playlist_List_Item:focus{
+    border-color: var(--English-Blue-Level-2D);
+    outline-color: white;
+    box-shadow: 5px 5px 0px 0px var(--English-Orange-Base);
+}
+
+.Player_Playlist_List_Item_Thumbnail{
+    width: 150px;
+    border-radius: 5px;
+}
+
+.Player_Playlist_List_Item_Title{
+    font-family: Roboto;
+    color: var(--English-Blue-Level-3D);
+    margin: 0;
+    text-align: left;
+}
