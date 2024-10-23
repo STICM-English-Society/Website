@@ -1,0 +1,302 @@
+.Particle{
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+}
+
+.ELISM_Banner{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 400px;
+    /* background-image: url("../Assets/Images/Generic_Cogs.png"); */
+    background-color: #1f1e1d;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+}
+
+.ELISM_Banner_Image{
+    width: 60vw;
+    max-width: 750px;
+}
+
+.ELISM_Sparkle{
+    transform: scale(0.25);
+    opacity: 0%;
+    transition: all 6s !important;
+    transition-timing-function: cubic-bezier(0, 0.64, 0, 0.96);
+    transition-timing-function: linear;
+    animation-name: ELISM_Sparkle_Blink;
+    animation-iteration-count: 4;
+    animation-duration: 5s;
+}
+
+@keyframes ELISM_Sparkle_Blink{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.ELISM_HypeText_1{
+    /* background-color: antiquewhite; */
+    width: calc(100% - var(--Margin-Left) - var(--Margin-Right));
+    margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right);
+    /* height: 250px; */
+}
+
+.ELISM_HypeText_1_Text{
+    text-align: center;
+    font-family: Meditative;
+    font-size: 35px;
+    color: #1f1e1d;
+}
+
+.ELISM_BetterTogether, .ELISM_Venue, .ELISM_Location{
+    margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right);
+    border: solid #ff9c0e 4px;
+}
+
+.ELISM_BetterTogether{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ELISM_BetterTogether_Text{
+    background-color: #ff9c0e;
+    padding: 20px;
+}
+
+.ELISM_BetterTogether_Text_Title{
+    font-family: Meditative;
+    font-size: 55px;
+    color: #1f1e1d;
+    margin: 0;
+}
+
+.ELISM_BetterTogether_Text_Subtext{
+    font-family: Linux_Libertine_Bold;
+    font-size: 35px;
+    color: #1f1e1d;
+    margin: 0;
+    letter-spacing: -2px;
+    line-height: 35px;
+}
+
+.ELISM_Segments, .ELISM_Guests{
+    margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right);
+}
+
+.ELISM_Segments{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 400px;
+    overflow-x: auto;
+}
+
+.ELISM_Segments_Item{
+    border: solid #ff9c0e 4px;
+    display: grid;
+    grid-template-rows: auto 1fr 40px;
+    min-width: 350px;
+}
+
+.ELISM_Segments_Item_Text{
+    padding: 20px;
+}
+
+.ELISM_Segments_Item_Text_Title{
+    font-family: Meditative;
+    font-size: 50px;
+    color: #1f1e1d;
+    margin: 0;
+}
+
+.ELISM_Segments_Item_Text_Subtext{
+    font-family: Linux_Libertine_Bold;
+    font-size: 35px;
+    color: #1f1e1d;
+    margin: 0;
+    letter-spacing: -2px;
+    line-height: 35px;
+}
+
+.ELISM_Segments_Item_Button{
+    background-color: #ff9c0e;
+    padding: 7px;
+    text-align: center;
+    font-family: Linux_Libertine_Bold;
+    font-size: 25px;
+    color: #1f1e1d;
+    letter-spacing: -2px;
+    margin: 0;
+    user-select: none;
+    cursor: pointer;
+}
+
+.ELISM_Segments_Item_Button:hover{
+    background-color: #df880f;
+}
+
+.ELISM_Guests{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    height: 400px;
+}
+
+.ELISM_Guests_Item{
+    border: solid #ff9c0e 4px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ELISM_Guests_Item_Profile{
+    background-color: #ff9c0e;
+    height: 400px;
+    width: 250px;
+}
+
+.ELISM_Guests_Item_Text{
+    padding: 20px;
+}
+
+.ELISM_Guests_Item_Text_Title{
+    font-family: Meditative;
+    font-size: 50px;
+    color: #1f1e1d;
+    margin: 0;
+}
+
+.ELISM_Guests_Item_Text_Subtext{
+    font-family: Linux_Libertine_Bold;
+    font-size: 35px;
+    color: #1f1e1d;
+    margin: 0;
+    letter-spacing: -2px;
+    line-height: 35px;
+}
+
+.ELISM_Venue{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ELISM_Venue_Time{
+    background-color: #ff9c0e;
+}
+
+.ELISM_Venue_Time, .ELISM_Venue_Place{
+    padding: 20px;
+}
+
+.ELISM_Venue_Text{
+    font-family: Meditative;
+    font-size: 40px;
+    color: #1f1e1d;
+    margin: 0;
+    text-align: center;
+}
+
+.ELISM_Location{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    height: 600px;
+    position: relative;
+}
+
+.ELISM_Location_Map{
+    width: 100%;
+    height: 100%;
+}
+
+.ELISM_Location_Button{
+    background-color: #ff9c0e;
+    position: absolute;
+    right: -1px;
+    height: 20px;
+    padding: 15px;
+    padding-bottom: 25px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.ELISM_Location_Button:hover{
+    background-color: #df880f;
+}
+
+.ELISM_Location_Button_Text{
+    font-family: Linux_Libertine_Bold;
+    font-size: 25px;
+    color: #1f1e1d;
+    margin: 0;
+    letter-spacing: -2px;
+    line-height: 35px;
+}
+
+.Article_Title, .Article_Content_Title_Big{
+    font-family: Meditative;
+}
+
+.UI_Header{
+    background-color: #1f1e1d;
+}
+
+.UI_Sidebar_Main_Item{
+    font-size: 14px;
+}
+
+.UI_Sidebar_Secondary_Item{
+    font-size: 10px;
+}
+
+.UI_Sidebar_Secondary_Footer{
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 750px){
+    .ELISM_BetterTogether, .ELISM_Venue{
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .ELISM_Segments{
+        /* height: auto; */
+        display: flex;
+        flex-direction: row;
+        grid-template-rows: unset;
+    }
+
+    .ELISM_Venue{
+        grid-template-columns: unset;
+    }
+
+    .ELISM_Location{
+        display: grid;
+        grid-template-rows: auto 1fr;
+    }
+
+    .ELISM_Location_Button{
+        position: static;
+        text-align: center;
+    }
+
+    .ELISM_Banner_Image {
+        width: 80vw;
+    }
+}

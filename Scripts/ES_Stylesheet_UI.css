@@ -454,7 +454,7 @@ a{
 	filter: var(--Element-Icon-Brightness);
 }
 
-.Main_Content_Container{
+.Page_Main_Content, .Main_Content_Container{
 	width: calc(100%);
 	height: calc(100% - 50px);
 	position: fixed;

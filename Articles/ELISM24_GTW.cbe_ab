@@ -1,0 +1,38 @@
+{
+  "Metadata": {
+    "Article_Banner": "Assets/Images/ELISM24/Link_Preview.png",
+    "Article_Title": "Word Genius: Guess the Word (Pinoy-Henyo English Game)",
+    "Article_Title_Height": "183px",
+    "Article_Author": "Committee on Student Club and Organizations & Library Department",
+    "Article_Category": "Guidelines",
+    "Article_PublishingDate": "24 October 2024"
+  },
+  "Contents": [
+    {
+      "Type": "Primary_Title",
+      "Content": "Background and Objectives"
+    },
+    {
+      "Type": "Paragraph",
+      "Content": "This contest will follow the format of \"Pinoy-Henyo\", but in English language. It promotes camaraderie among members of different organizations and clubs, and students from other schools in Marikina. It encourages teamwork and friendly competition through a fun and engaging word-guessing game. It also highlights their knowledge, quick thinking, and problem-solving abilities."
+    },
+    {
+      "Type": "Primary_Title",
+      "Content": "Guidelines"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "",
+      "Content": "The contest is open to all student organizations.<ul><li>2 representatives per organization.</li></ul>\nAlso 2 representatives from the participating schools in Marikina.\nEach team will take turns in guessing the word provided by the game master.\nThe game master will show the word to one member of the team (the guesser) without letting the other member (the describer) see it.\nThe describer can only answer \"Yes\", \"No\", or \"Can Be\" to the questions asked by the guesser. <ul><li>The guesser must only use English language in asking questions.</li></ul>\nThe guesser must figure out the word within the given time limit of 2 minutes.\nWords to be guessed will revolve around the theme of libraries, books, content creation, and the like."
+    },
+    {
+      "Type": "Primary_Title",
+      "Content": "Mechanics"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "",
+      "Content": "Teams will draw lots to determine their order of play.\nEach team will be given 3 words to guess within the total time limit of 2 minutes.\nIn every Filipino word used during the game, 3 seconds will be deducted from the official time.\nThe team that correctly guesses the most words in the shortest time will be declared the winner.\nIn case of a tie, there will be a tie-breaker round with 1 additional word for each tied team."
+    }
+  ]
+}

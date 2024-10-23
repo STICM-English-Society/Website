@@ -12,7 +12,7 @@
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-    filter:blur(2px);
+    filter: brightness(75%) blur(10px);
     transform: scale(2);
 }
 
@@ -24,6 +24,7 @@
 	position: absolute;
 	bottom: 0;
     z-index: 50;
+    display: none;
 	/* border-radius: 8px; */
 }
 
@@ -142,18 +143,18 @@
 }
 
 .Article_Content > *{
-    opacity: 0%;
-    transform: translateY(150px);
+    /* opacity: 0%; */
+    /* transform: translateY(150px); */
 }
 
 @keyframes Article_Content_Appear{
     0%{
         transform: translateY(150px);
-        opacity: 0%;
+        /* opacity: 0%; */
     }
     100%{
         transform: translateY(0px);
-        opacity: 100%;
+        /* opacity: 100%; */
     }
 }
 

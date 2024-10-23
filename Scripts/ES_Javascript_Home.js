@@ -66,85 +66,13 @@ function Slideshow_Clear_Carousel(){
     }
 }
 
-let Home_PageElements = {
-    Featured: [
-        {
-            Name: "Featured_1",
-            Image: "Assets/Images/Home/Featured/SF24.png",
-            Title: "Playlist: Sports Fest 2024 Cheerdance Competition | All Performances",
-            Link: "https://www.youtube.com/playlist?list=PL_jOJQLXJOrJxLKWkjjd-evoTsAZ2oEgk"
-        },
-        {
-            Name: "Featured_2",
-            Image: "Assets/Images/Articles/ESA_DTR23/ESA_DTR23_7.png",
-            Title: "A December to Remember",
-            Link: "Articles/ES_Article_Renderer.html?article=ESA_DTR23"
-        },
-        {
-            Name: "Featured_3",
-            Image: "Assets/Images/Link_Preview.png",
-            Title: "Join English Society now!",
-            Link: "ES_Register.html"
-        },
-        {
-            Name: "Featured_4",
-            Image: "Assets/Images/Home/Featured/SF24_2.jpg",
-            Title: "In Photos: STI Marikina Sports Fest 2024 | Recreational Games",
-            Link: "https://www.facebook.com/share/p/iXKhJDApBiRi4QQb/"
-        },
-        {
-            Name: "Featured_5",
-            Image: "Assets/Images/Articles/ESA_DTR23/ESA_DTR23_11.png",
-            Title: "In Photos: STI Marikina Year-End Event 2023",
-            Link: "https://www.facebook.com/share/p/uo7LXzPDrBUjZg7r/"
-        }
-    ],
-    Articles: [
-        {
-            Name: "Article_1",
-            Image: "Assets/Images/Articles/ESA_STIMTS23/ESA_STIMTS23_1.png",
-            Title: "STI College Marikina Talent Search 2023",
-            Author: "Adriene Dillo & Trisha Bravo",
-            Link: "ES_Article_Renderer.html?article=ESA_STIMTS23"
-        },
-        {
-            Name: "Article_2",
-            Image: "Assets/Images/Articles/ESA_POC23/ESA_POC23_1.png",
-            Title: "Parade of Characters 2023",
-            Author: "Adriene Dillo & Trisha Bravo",
-            Link: "ES_Article_Renderer.html?article=ESA_POC23"
-        },
-        {
-            Name: "Article_3",
-            Image: "Assets/Images/Articles/ESA_DTR23/ESA_DTR23_15.png",
-            Title: "Year-End Events 2023",
-            Author: "Elmer Felisilda",
-            Link: "ES_Article_Renderer.html?article=ESA_DTR23"
-        },
-    ],
-    InPhotos: [
-        {
-            Name: "InPhotos_1",
-            Image: "Assets/Images/Home/Featured/TNTS24.jpg",
-            Title: "Codefest 2024",
-            Link: "https://www.facebook.com/STIM.EnglishOrg/posts/pfbid08UCr6H1KehLv8of3N79xxsqASKsv6ha7CFjSaohp4BE652gawbsSWkSAH5EmAkQSl"
-        },
-        {
-            Name: "InPhotos_2",
-            Image: "Assets/Images/Home/Featured/CD24.jpg",
-            Title: "Sports Fest 2024 Cheerdance",
-            Link: "https://www.facebook.com/share/p/R9XwDKZUyL4ED4Vx/"
-        },
-        {
-            Name: "InPhotos_3",
-            Image: "Assets/Images/Home/Featured/EXPO24.jpg",
-            Title: "Senior High School Expo 2024",
-            Link: "https://www.facebook.com/STIM.EnglishOrg/posts/pfbid0kFJhKw5umF34jpYnSDARF2cWPQcuoitLfVYC7crLFrdoS9kmX9kQSPjhkA9evbKul"
-        },
-    ]
-}
 
 function Home_PageData_Load(){
+    const request = new XMLHttpRequest();
+    request.open("GET", "Home/Index_Home.json", false);
+    request.send();
+    var Home_PageElements = JSON.parse(request.responseText);
+    // console.log(Playlist_Data);
     // Featured List
     for(a = 0; a < 5; a++){
         // document.getElementById("Featured_" + a).style.setProperty("--Home-Featured-Image-" + a, "url(../" + Home_PageElements.Featured[a].Image + ")");
@@ -173,48 +101,48 @@ var Home_Section_State_4 = 0;
 var Home_Section_State_5 = 0;
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    var Main_Content_Container = document.querySelector(".Home");
-    Main_Content_Container.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-      var Body = document.getElementById("pageElement_Body");
-        if (Main_Content_Container.scrollTop > 110 && Main_Content_Container.scrollTop < 410) {
-            // Home_Featured
-            if (Home_Section_State_2 == 0){
-                Home_Section_State_2 = 1;
-                Element_Style_Animate_Batch_QuerySelector(".Curtain_2 > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
-                Element_Style_Animate_Batch_QuerySelector(".Section_2", "Section_Reveal", "0.60s", "forwards", "1", 0);
-                Element_Style_Animate_Batch_QuerySelector(".Home_Featured", "Section_Reveal", "0.60s", "forwards", "1", 100);
-            }
+// document.addEventListener('DOMContentLoaded', function() {
+//     var Main_Content_Container = document.querySelector(".Home");
+//     Main_Content_Container.onscroll = function() {scrollFunction()};
+//     function scrollFunction() {
+//       var Body = document.getElementById("pageElement_Body");
+//         if (Main_Content_Container.scrollTop > 110 && Main_Content_Container.scrollTop < 410) {
+//             // Home_Featured
+//             if (Home_Section_State_2 == 0){
+//                 Home_Section_State_2 = 1;
+//                 Element_Style_Animate_Batch_QuerySelector(".Curtain_2 > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
+//                 Element_Style_Animate_Batch_QuerySelector(".Section_2", "Section_Reveal", "0.60s", "forwards", "1", 0);
+//                 Element_Style_Animate_Batch_QuerySelector(".Home_Featured", "Section_Reveal", "0.60s", "forwards", "1", 100);
+//             }
             
-        }
-        if (Main_Content_Container.scrollTop > 410 && Main_Content_Container.scrollTop < 800) {
-            // Home_Articles
-            if (Home_Section_State_3 == 0){
-                Home_Section_State_3 = 1;
-                Element_Style_Animate_Batch_QuerySelector(".Curtain_3 > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
-                Element_Style_Animate_Batch_QuerySelector(".Section_3", "Section_Reveal", "0.60s", "forwards", "1", 0);
-                Element_Style_Animate_Batch_QuerySelector(".Home_Articles", "Section_Reveal", "0.60s", "forwards", "1", 100);
-            }
+//         }
+//         if (Main_Content_Container.scrollTop > 410 && Main_Content_Container.scrollTop < 800) {
+//             // Home_Articles
+//             if (Home_Section_State_3 == 0){
+//                 Home_Section_State_3 = 1;
+//                 Element_Style_Animate_Batch_QuerySelector(".Curtain_3 > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
+//                 Element_Style_Animate_Batch_QuerySelector(".Section_3", "Section_Reveal", "0.60s", "forwards", "1", 0);
+//                 Element_Style_Animate_Batch_QuerySelector(".Home_Articles", "Section_Reveal", "0.60s", "forwards", "1", 100);
+//             }
             
-        }
-        if (Main_Content_Container.scrollTop > 800 && Main_Content_Container.scrollTop < 1000) {
-            // Home_InPhotos
-            if (Home_Section_State_4 == 0){
-                Home_Section_State_4 = 1;
-                Element_Style_Animate_Batch_QuerySelector(".Curtain_4 > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
-                Element_Style_Animate_Batch_QuerySelector(".Section_4", "Section_Reveal", "0.60s", "forwards", "1", 0);
-                Element_Style_Animate_Batch_QuerySelector(".Home_InPhotos", "Section_Reveal", "0.60s", "forwards", "1", 100);
-            }
+//         }
+//         if (Main_Content_Container.scrollTop > 800 && Main_Content_Container.scrollTop < 1000) {
+//             // Home_InPhotos
+//             if (Home_Section_State_4 == 0){
+//                 Home_Section_State_4 = 1;
+//                 Element_Style_Animate_Batch_QuerySelector(".Curtain_4 > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
+//                 Element_Style_Animate_Batch_QuerySelector(".Section_4", "Section_Reveal", "0.60s", "forwards", "1", 0);
+//                 Element_Style_Animate_Batch_QuerySelector(".Home_InPhotos", "Section_Reveal", "0.60s", "forwards", "1", 100);
+//             }
             
-        }
-        if (Main_Content_Container.scrollTop > 1000) {
-            // Home_Footer
-            if (Home_Section_State_5 == 0){
-                Home_Section_State_5 = 1;
-                Element_Style_Animate_Batch_QuerySelector(".Curtain_5 > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
-                Element_Style_Animate_Batch_QuerySelector(".Home_Footer", "Section_Reveal", "0.60s", "forwards", "1", 100);
-            }
-        }
-    }
-});
+//         }
+//         if (Main_Content_Container.scrollTop > 1000) {
+//             // Home_Footer
+//             if (Home_Section_State_5 == 0){
+//                 Home_Section_State_5 = 1;
+//                 Element_Style_Animate_Batch_QuerySelector(".Curtain_5 > .Curtain_Item", "Curtain_Reveal", "0.6s", "forwards", "1", 0);
+//                 Element_Style_Animate_Batch_QuerySelector(".Home_Footer", "Section_Reveal", "0.60s", "forwards", "1", 100);
+//             }
+//         }
+//     }
+// });

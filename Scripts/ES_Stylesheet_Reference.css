@@ -48,6 +48,41 @@
 	font-style: normal;
 }
 
+@font-face{
+	font-family: "Frista";
+	src: url("../Assets/Fonts/FRISTARegular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Bohemian Soul";
+	src: url("../Assets/Fonts/Bohemian-Soul.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Meditative";
+	src: url("../Assets/Fonts/Meditative.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Linux_Libertine";
+	src: url("../Assets/Fonts/LinLibertine_RZ.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Linux_Libertine_Bold";
+	src: url("../Assets/Fonts/LinLibertine_RB.ttf") format("truetype");
+	font-weight: bolder;
+	font-style: normal;
+}
+
 :root{
 	--Margin-Left: 12%;
 	--Margin-Right: 12%;

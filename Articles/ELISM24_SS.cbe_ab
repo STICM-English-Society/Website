@@ -1,0 +1,53 @@
+{
+  "Metadata": {
+    "Article_Banner": "Assets/Images/ELISM24/Link_Preview.png",
+    "Article_Title": "Soul Speak: A Day of Poetic Expression (Spoken Word Poetry Contest)",
+    "Article_Title_Height": "244px",
+    "Article_Author": "Committee on Student Club and Organizations & Library Department",
+    "Article_Category": "Guidelines",
+    "Article_PublishingDate": "24 October 2024"
+  },
+  "Contents": [
+    {
+      "Type": "Primary_Title",
+      "Content": "Background and Objectives"
+    },
+    {
+      "Type": "Paragraph",
+      "Content": "Spoken word poetry is an oral performance art where poetry is read aloud. Wordplay, rhymes, repetition, and improvisation characterize it. This contest aims to stir up the students’ creativity and wit, gathering information, and practicing the English language."
+    },
+    {
+      "Type": "Primary_Title",
+      "Content": "Guidelines"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "",
+      "Content": "The contest is open to all student organizations. One (1) representative per organization.\nThe poetry piece must be an original composition, written in strictly English. Minimum of two (2) minutes and maximum of three (3) minutes.\nThere is no particular topic, the piece can be written in freestyle.\nIt must not contain any malicious or offensive content.\nThe poetry piece may be delivered from memory.\nThe piece’s author may choose another student/representative to deliver his/her composition.\nMusical backgrounds are required to complement the delivery. Non-copyrighted music must be used."
+    },
+    {
+      "Type": "Primary_Title",
+      "Content": "Criteria for Judging"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "<b>30%: </b>Content",
+      "Content": "The piece is appropriate and responsive to the theme.\nWas able to give depth and breadth to the points, thoughts, and ideas presented in the piece."
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "<b>25%: </b>Organization",
+      "Content": "The flow of thought is straightforward, easy to understand, well-sequenced, and detailed."
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "<b>25%: </b>Presentation and Delivery",
+      "Content": "Appropriateness and efficiency in using voice (weakness/strength, height/lowness, stress/length, etc.)\nEffective use of body and hands in the presentation (posture, gestures, facial expressions, and movements).\nEmotions are used in effective presentation and/or storytelling."
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "<b>20%: </b>Use of Language",
+      "Content": "Artistry in choosing and using words (words, idioms).\nCareful word choice and/or use (words are easy to understand, simple, and specific)."
+    }
+  ]
+}

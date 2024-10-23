@@ -605,7 +605,7 @@ a#Featured_4 > .Home_Latest_Item{
 }
 
 .Home_Footer_Logo_Image{
-    height: 150px;
+    height: 135px;
 }
 
 .Home_Footer_Links{
@@ -907,18 +907,18 @@ body{
     }
 }
 
-.Home_MainTitle, .Home_Featured, .Home_Articles, .Home_InPhotos, .Home_Footer, .Home_Section_Title{
+/* .Home_MainTitle, .Home_Featured, .Home_Articles, .Home_InPhotos, .Home_Footer, .Home_Section_Title{
     opacity: 0%;
     animation-timing-function: cubic-bezier(0.14, 0.82, 0.12, 0.93);
-}
+} */
 
-.Home_MainTitle{
+/* .Home_MainTitle{
     animation-name: Section_Reveal;
     animation-duration: 0.60s;
     animation-delay: 2.1s;
     animation-timing-function: cubic-bezier(0.14, 0.82, 0.12, 0.93);
     animation-fill-mode: forwards;
-}
+} */
 
 
 @keyframes Section_Reveal{
