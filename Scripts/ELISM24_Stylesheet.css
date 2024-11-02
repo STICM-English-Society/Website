@@ -1,28 +1,73 @@
+body{ 
+    background-color: #2b2f51;
+    overflow-x: hidden !important;
+}
+
+.Page_Main_Content{
+    overflow-x: hidden !important;
+}
+
 .Particle{
     position: absolute;
     user-select: none;
     pointer-events: none;
 }
 
+.ELISM_Decorations{
+    position: absolute;
+    z-index: -1;
+    /* overflow-x: hidden !important; */
+}
+
+
 .ELISM_Banner{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     width: 100%;
-    height: 400px;
+    height: 100%;
+    /* aspect-ratio: 8/12; */
+    /* height: 800px; */
     /* background-image: url("../Assets/Images/Generic_Cogs.png"); */
-    background-color: #1f1e1d;
+    /* background-color: #2b2f51; */
     background-position: center;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
     user-select: none;
+    z-index: -1;
+    
 }
 
-.ELISM_Banner_Image{
+.ELISM_Banner_Bottom{
+    margin-top: 150px;
+    height: 750px;
+    height: 100%;
+}
+
+.ELISM_Banner_Logo{
     width: 60vw;
     max-width: 750px;
+    z-index: 50;
+    /* position: absolute; */
+    /* top: 100px; */
+}
+
+.ELISM_Banner_Title{
+    font-family: Meditative;
+    color: #fcb956;
+}
+
+.ELISM_Banner_Layer{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.ELISM_Banner_Bottom > .ELISM_Banner_Layer{
+    bottom: 0;
 }
 
 .ELISM_Sparkle{
@@ -34,6 +79,26 @@
     animation-name: ELISM_Sparkle_Blink;
     animation-iteration-count: 4;
     animation-duration: 5s;
+}
+
+.ELISM_Sparkle_Decoration{
+    position: absolute;
+    transform: scale(0.05);
+    opacity: 100%;
+    transition: all 6s !important;
+    z-index: 0;
+}
+
+.ELISM_Sparkle_Decoration_Twinkling{
+    position: absolute;
+    opacity: 0%;
+    z-index: 0;
+    transform: scale(0.03);
+    transition-timing-function: cubic-bezier(0, 0.64, 0, 0.96);
+    transition-timing-function: linear;
+    animation-name: ELISM_Sparkle_Blink;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
 }
 
 @keyframes ELISM_Sparkle_Blink{
@@ -50,9 +115,10 @@
 
 .ELISM_HypeText_1{
     /* background-color: antiquewhite; */
-    width: calc(100% - var(--Margin-Left) - var(--Margin-Right));
+    width: calc(100% - var(--Margin-Left) - var(--Margin-Right) - 20px);
     margin-left: var(--Margin-Left);
     margin-right: var(--Margin-Right);
+    padding: 10px;
     /* height: 250px; */
 }
 
@@ -60,13 +126,13 @@
     text-align: center;
     font-family: Meditative;
     font-size: 35px;
-    color: #1f1e1d;
+    color: #fcb956;
 }
 
 .ELISM_BetterTogether, .ELISM_Venue, .ELISM_Location{
     margin-left: var(--Margin-Left);
     margin-right: var(--Margin-Right);
-    border: solid #ff9c0e 4px;
+    border: solid #fcb956 4px;
 }
 
 .ELISM_BetterTogether{
@@ -75,8 +141,29 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.ELISM_BetterTogether_Design{
+    background-color: #2b2f51;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.ELISM_BetterTogether_Design_Cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.021); */
+    z-index: 50;
+    pointer-events: none;
+    user-select: none;
+}
+
+.ELISM_BetterTogether_Design_Line_Logo{
+    height: 121px;
+}
+
 .ELISM_BetterTogether_Text{
-    background-color: #ff9c0e;
+    background-color: #fcb956;
     padding: 20px;
 }
 
@@ -110,10 +197,11 @@
 }
 
 .ELISM_Segments_Item{
-    border: solid #ff9c0e 4px;
+    border: solid #fcb956 4px;
     display: grid;
     grid-template-rows: auto 1fr 40px;
     min-width: 350px;
+    background-color: #2b2f51;
 }
 
 .ELISM_Segments_Item_Text{
@@ -123,21 +211,21 @@
 .ELISM_Segments_Item_Text_Title{
     font-family: Meditative;
     font-size: 50px;
-    color: #1f1e1d;
+    color: #fcb956;
     margin: 0;
 }
 
 .ELISM_Segments_Item_Text_Subtext{
     font-family: Linux_Libertine_Bold;
     font-size: 35px;
-    color: #1f1e1d;
+    color: #fcb956;
     margin: 0;
     letter-spacing: -2px;
     line-height: 35px;
 }
 
 .ELISM_Segments_Item_Button{
-    background-color: #ff9c0e;
+    background-color: #fcb956;
     padding: 7px;
     text-align: center;
     font-family: Linux_Libertine_Bold;
@@ -161,13 +249,13 @@
 }
 
 .ELISM_Guests_Item{
-    border: solid #ff9c0e 4px;
+    border: solid #fcb956 4px;
     display: flex;
     flex-direction: row;
 }
 
 .ELISM_Guests_Item_Profile{
-    background-color: #ff9c0e;
+    background-color: #fcb956;
     height: 400px;
     width: 250px;
 }
@@ -195,10 +283,11 @@
 .ELISM_Venue{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: #2b2f51;
 }
 
 .ELISM_Venue_Time{
-    background-color: #ff9c0e;
+    background-color: #fcb956;
 }
 
 .ELISM_Venue_Time, .ELISM_Venue_Place{
@@ -211,6 +300,10 @@
     color: #1f1e1d;
     margin: 0;
     text-align: center;
+}
+
+.ELISM_Venue_Place > h1{
+    color: #fcb956;
 }
 
 .ELISM_Location{
@@ -226,7 +319,7 @@
 }
 
 .ELISM_Location_Button{
-    background-color: #ff9c0e;
+    background-color: #fcb956;
     position: absolute;
     right: -1px;
     height: 20px;
@@ -253,8 +346,17 @@
     font-family: Meditative;
 }
 
+.Article_Main_Content_Container{
+    background-color: white;
+}
+
 .UI_Header{
     background-color: #1f1e1d;
+    background-color: #2b2f51;
+}
+
+.UI_Sidebar{
+    background-color: #1b1e36;
 }
 
 .UI_Sidebar_Main_Item{
@@ -269,7 +371,69 @@
     font-size: 10px;
 }
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color: #fcb956;
+	/* border-radius: 10px; */
+	
+	transition: var(--Element-Transition-Delay);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background-color: #df880f;
+	/* border-radius: 10px; */
+	width: 50px;
+	height: 50px;
+}
+/* Selection color */
+::selection{
+	background-color: #fcba5649;
+}
+
+
+.ELISM_Schedule{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-left: var(--Margin-Left);
+    margin-right: var(--Margin-Right);
+    background-color: #2b2f51;
+}
+
+.ELISM_Schedule_Item{
+    border: solid #fcb956 4px;
+}
+
+.ELISM_Schedule_Item_Time{
+    font-family: Meditative;
+    color: #1f1e1d;
+    margin: 0;
+    background-color: #fcb956;
+    padding: 10px;
+}
+
+.ELISM_Schedule_Item_Events{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.ELISM_Schedule_Item_Events_Item{
+    font-family: Linux_Libertine_Bold;
+    color: #fcb956;
+    font-size: larger;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid #fcba5662 4px;
+}
+
 @media only screen and (max-width: 750px){
+    .ELISM_Banner_Bottom{
+        height: 350px;
+    }
     .ELISM_BetterTogether, .ELISM_Venue{
         grid-template-columns: unset;
         grid-template-rows: 1fr 1fr;
@@ -298,5 +462,10 @@
 
     .ELISM_Banner_Image {
         width: 80vw;
+    }
+
+    .ELISM_Schedule{
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
     }
 }

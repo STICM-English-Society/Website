@@ -34,7 +34,7 @@
       content="The official website of STI College Marikina English Society"
     />
 </head>
-<body id="pageElement_Body" onload="Load_Template('Template_UI')" Header_ChangeTitles="true" Header_ChangeTitles_AltPage_Title="ELISM 2024" Header_ChangeTitles_AltPage_URL="Top">
+<body id="pageElement_Body" onload="Load_Template('Template_UI'); ELISM_Start()" Header_ChangeTitles="true" Header_ChangeTitles_AltPage_Title="ELISM 2024" Header_ChangeTitles_AltPage_URL="Top">
     <script src="Scripts/ES_Javascript.js"></script>
     <script src="Scripts/ES_Javascript_UI.js"></script>
     <script src="Scripts/ELISM24_Javascript.js"></script>
@@ -44,8 +44,18 @@
     <main class="Page_Main" id="Page_Main">
         <div class="Page_Main_Content" id="Page_Main_Content">
             <!-- Main content here -->
-            <div class="ELISM_Banner" id="ELISM_Banner" onclick="ELISM_Banner_Particle_Generate()">
-              <img class='ELISM_Banner_Image' src='Assets/Images/ELISM24/Banner_1.png' draggable='false' loading='lazy'/>
+            <div class="ELISM_Decorations" id="ELISM_Decorations">
+
+            </div>
+            <div class="ELISM_Banner" id="ELISM_Banner">
+              <img class="ELISM_Banner_Layer" src="Assets/Images/ELISM24/Banner_Layer_1.png" draggable='false' loading='lazy'/>
+              <!-- <img class="ELISM_Banner_Layer" src="Assets/Images/ELISM24/Banner_Layer_2.png" draggable='false' loading='lazy'/>
+              <img class="ELISM_Banner_Layer" src="Assets/Images/ELISM24/Banner_Layer_3.png" draggable='false' loading='lazy'/>
+              <img class="ELISM_Banner_Layer" src="Assets/Images/ELISM24/Banner_Layer_4.png" draggable='false' loading='lazy'/> -->
+              <img class='ELISM_Banner_Logo' src='Assets/Images/ELISM24/Banner_2.png' draggable='false' loading='lazy' onclick="ELISM_Banner_Particle_Generate()"/>
+              <h3 class="ELISM_Banner_Title">
+                🔽 Scroll down 🔽
+              </h3>
             </div>
             <section class="ELISM_HypeText_1">
               <h1 class="ELISM_HypeText_1_Text">
@@ -61,7 +71,61 @@
                   A collaborative event by the Library and Information Services, and STI College Marikina Student Organizations.
                 </h3>
               </div>
-              <div class="ELISM_BetterTogether_Design"></div>
+              <div class="ELISM_BetterTogether_Design">
+                <div class="ELISM_BetterTogether_Design_Cover"></div>
+                <marquee class="ELISM_BetterTogether_Design_Line" loop="-1" behavior="alternate">
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ES.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/TMO.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/TS.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ICTSR.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ICTJR.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/CC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/STIC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/BHIC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ES.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/TMO.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/TS.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ICTSR.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ICTJR.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/CC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/STIC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/BHIC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ES.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/TMO.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/TS.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ICTSR.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ICTJR.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/CC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/STIC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/BHIC.png' draggable='false' loading='lazy'/>
+                </marquee>
+                <marquee class="ELISM_BetterTogether_Design_Line" loop="-1" behavior="alternate" direction="right">
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ES.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/TMO.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/TS.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ICTSR.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ICTJR.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/CC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/STIC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/BHIC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ES.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/TMO.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/TS.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ICTSR.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ICTJR.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/CC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/STIC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/BHIC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ES.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/TMO.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/TS.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ICTSR.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/ICTJR.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/CC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/STIC.png' draggable='false' loading='lazy'/>
+                  <img class='ELISM_BetterTogether_Design_Line_Logo' src='Assets/Images/ELISM24/BHIC.png' draggable='false' loading='lazy'/>
+                </marquee>
+              </div>
             </section>
 
             <section class="ELISM_HypeText_1">
@@ -186,6 +250,58 @@
               
               <iframe class="ELISM_Location_Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d638.8688056709068!2d121.09987702745933!3d14.61968354655382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b838d3c7c0af%3A0x640d523d11677ff!2sRobinsons%20Metro%20East!5e1!3m2!1sen!2sph!4v1729694699238!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
+
+            <section class="ELISM_HypeText_1">
+              <h1 class="ELISM_HypeText_1_Text">
+                Schedule
+              </h1>
+            </section>
+            <section class="ELISM_Schedule">
+              <div class="ELISM_Schedule_Item">
+                <h2 class="ELISM_Schedule_Item_Time">
+                  10:00 AM to 1:00 PM
+                </h2>
+                <div class="ELISM_Schedule_Item_Events">
+                  <p class="ELISM_Schedule_Item_Events_Item">
+                    Talk 1: Story Telling
+                  </p>
+                  <p class="ELISM_Schedule_Item_Events_Item">
+                    Word Genius: Guess the Word
+                  </p>
+                  <p class="ELISM_Schedule_Item_Events_Item">
+                    Organization Intermissions 1 to 4
+                  </p>
+                </div>
+              </div>
+              <div class="ELISM_Schedule_Item">
+                <h2 class="ELISM_Schedule_Item_Time">
+                  1:30 PM to 5:00 PM
+                </h2>
+                <div class="ELISM_Schedule_Item_Events">
+                  <p class="ELISM_Schedule_Item_Events_Item">
+                    Soul Speak: The Spoken Poetry Contest
+                  </p>
+                  <p class="ELISM_Schedule_Item_Events_Item">
+                    Talk 2: Content Creation
+                  </p>
+                  <p class="ELISM_Schedule_Item_Events_Item">
+                    Org Vibes: Unleash Your Creative Edge
+                  </p>
+                  <p class="ELISM_Schedule_Item_Events_Item">
+                    Organization Intermissions 5 to 8
+                  </p>
+                  <p class="ELISM_Schedule_Item_Events_Item">
+                    Awarding Ceremony
+                  </p>
+                </div>
+              </div>
+            </section>
+            <div class="ELISM_Banner ELISM_Banner_Bottom">
+              <!-- <img class="ELISM_Banner_Layer" src="Assets/Images/ELISM24/Banner_Layer_1.png" draggable='false' loading='lazy'/> -->
+              <img class="ELISM_Banner_Layer" src="Assets/Images/ELISM24/Banner_Layer_2.png" draggable='false' loading='lazy'/>
+              <img class="ELISM_Banner_Layer" src="Assets/Images/ELISM24/Banner_Layer_3.png" draggable='false' loading='lazy'/>
+              <img class="ELISM_Banner_Layer" src="Assets/Images/ELISM24/Banner_Layer_4.png" draggable='false' loading='lazy'/>
+            </div>
         </div>
     </main>
 </body>

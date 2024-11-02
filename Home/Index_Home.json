@@ -2,9 +2,9 @@
     "Featured": [
         {
             "Name": "Featured_1",
-            "Image": "Assets/Images/Home/Featured/SF24.png",
-            "Title": "Playlist: Sports Fest 2024 Cheerdance Competition | All Performances",
-            "Link": "https://www.youtube.com/playlist?list=PL_jOJQLXJOrJxLKWkjjd-evoTsAZ2oEgk"
+            "Image": "Assets/Images/ELISM24/Link_Preview.png",
+            "Title": "Crafting Stories, Curating Knowledge: The Art of Content and Information",
+            "Link": "https://bit.ly/STICM-ELISM24"
         },
         {
             "Name": "Featured_2",
@@ -26,9 +26,9 @@
         },
         {
             "Name": "Featured_5",
-            "Image": "Assets/Images/Articles/ESA_DTR23/ESA_DTR23_11.png",
-            "Title": "In Photos: STI Marikina Year-End Event 2023",
-            "Link": "https://www.facebook.com/share/p/uo7LXzPDrBUjZg7r/"
+            "Image": "Assets/Images/Home/Featured/GA_2024.png",
+            "Title": "In Photos: English Society General Assembly 2024",
+            "Link": "https://www.facebook.com/share/p/19efL98JDz/"
         }
     ],
     "Articles": [
@@ -57,9 +57,9 @@
     "InPhotos": [
         {
             "Name": "InPhotos_1",
-            "Image": "Assets/Images/Home/Featured/TNTS24.jpg",
-            "Title": "Codefest 2024",
-            "Link": "https://www.facebook.com/STIM.EnglishOrg/posts/pfbid08UCr6H1KehLv8of3N79xxsqASKsv6ha7CFjSaohp4BE652gawbsSWkSAH5EmAkQSl"
+            "Image": "Assets/Images/Home/Featured/GA_2024.png",
+            "Title": "General Assembly 2024",
+            "Link": "https://www.facebook.com/share/p/19efL98JDz/"
         },
         {
             "Name": "InPhotos_2",
