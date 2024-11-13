@@ -423,12 +423,111 @@
         "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_EXPO_24.jpg"
     },
     {
-        "Title": "English Society General Assembly 2024",
+        "Title": "General Assembly 2024",
         "Authors": "Val Chua, Samuel Bechayda, Kiro Fernandez",
-        "Category": "School Events",
+        "Category": "English Society Events",
         "Date_Published": "23 September 2024",
         "Link": "https://www.facebook.com/share/p/19efL98JDz/",
         "Open_In_NewTab": true,
         "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_GA_24.png"
+    },
+    {
+        "Title": "Talent Search 2024 - Opening Ceremony and Oath Taking",
+        "Authors": "Kiro Fernandez, Elmer Felisilda, Owen Jarina, Samuel Bechayda, Samuel Calingasan, Val Chua, Marion Hearty Zamora, Isaiah Aldrich Valencia",
+        "Category": "Talent Search 2024",
+        "Date_Published": "2 October 2024",
+        "Link": "https://web.facebook.com/share/p/19XzMuE3HP/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TS_24_OC.png"
+    },
+    {
+        "Title": "Talent Search 2024 - Singing Idol",
+        "Authors": "Kiro Fernandez, Elmer Felisilda, Owen Jarina, Samuel Bechayda, Samuel Calingasan, Val Chua, Marion Hearty Zamora, Isaiah Aldrich Valencia",
+        "Category": "Talent Search 2024",
+        "Date_Published": "2 October 2024",
+        "Link": "https://web.facebook.com/share/p/18w4HY7ibj/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TS_24_SI.png"
+    },
+    {
+        "Title": "Talent Search 2024 - Hataw Sayaw",
+        "Authors": "Kiro Fernandez, Elmer Felisilda, Owen Jarina, Samuel Bechayda, Samuel Calingasan, Val Chua, Marion Hearty Zamora, Isaiah Aldrich Valencia",
+        "Category": "Talent Search 2024",
+        "Date_Published": "2 October 2024",
+        "Link": "https://web.facebook.com/share/p/15dXo6t5YX/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TS_24_HS.png"
+    },
+    {
+        "Title": "Talent Search 2024 - Battle of the Bands",
+        "Authors": "Kiro Fernandez, Elmer Felisilda, Owen Jarina, Samuel Bechayda, Samuel Calingasan, Val Chua, Marion Hearty Zamora, Isaiah Aldrich Valencia",
+        "Category": "Talent Search 2024",
+        "Date_Published": "2 October 2024",
+        "Link": "https://web.facebook.com/share/p/15Y5MiXnXv/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TS_24_BOTB.png"
+    },
+    {
+        "Title": "Talent Search 2024 - Mr. and Ms. STI - Part 1",
+        "Authors": "Kiro Fernandez, Elmer Felisilda, Owen Jarina, Samuel Bechayda, Samuel Calingasan, Val Chua, Marion Hearty Zamora, Isaiah Aldrich Valencia",
+        "Category": "Talent Search 2024",
+        "Date_Published": "2 October 2024",
+        "Link": "https://web.facebook.com/share/p/15Q17zLhbN/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TS_24_MMS_1.png"
+    },
+    {
+        "Title": "Talent Search 2024 - Mr. and Ms. STI - Part 2",
+        "Authors": "Kiro Fernandez, Elmer Felisilda, Owen Jarina, Samuel Bechayda, Samuel Calingasan, Val Chua, Marion Hearty Zamora, Isaiah Aldrich Valencia",
+        "Category": "Talent Search 2024",
+        "Date_Published": "2 October 2024",
+        "Link": "https://web.facebook.com/share/p/19PbEkegLn/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TS_24_MMS_2.png"
+    },
+    {
+        "Title": "Talent Search 2024 - Intermissions",
+        "Authors": "Kiro Fernandez, Elmer Felisilda, Owen Jarina, Samuel Bechayda, Samuel Calingasan, Val Chua, Marion Hearty Zamora, Isaiah Aldrich Valencia",
+        "Category": "Talent Search 2024",
+        "Date_Published": "2 October 2024",
+        "Link": "https://web.facebook.com/share/p/19cjRrFmUf/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TS_24_I.png"
+    },
+    {
+        "Title": "Talent Search 2024 - Audience",
+        "Authors": "Kiro Fernandez, Elmer Felisilda, Owen Jarina, Samuel Bechayda, Samuel Calingasan, Val Chua, Marion Hearty Zamora, Isaiah Aldrich Valencia",
+        "Category": "Talent Search 2024",
+        "Date_Published": "2 October 2024",
+        "Link": "https://web.facebook.com/share/p/1CbFDiGULw/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TS_24_A.png"
+    },
+    {
+        "Title": "Talent Search 2024 - Hosts, Teachers, and Staff - Part 1",
+        "Authors": "Kiro Fernandez, Elmer Felisilda, Owen Jarina, Samuel Bechayda, Samuel Calingasan, Val Chua, Marion Hearty Zamora, Isaiah Aldrich Valencia",
+        "Category": "Talent Search 2024",
+        "Date_Published": "2 October 2024",
+        "Link": "https://web.facebook.com/share/p/1A5mM3fXus/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TS_24_HTS_1.png"
+    },
+    {
+        "Title": "Talent Search 2024 - Hosts, Teachers, and Staff - Part 2",
+        "Authors": "Kiro Fernandez, Elmer Felisilda, Owen Jarina, Samuel Bechayda, Samuel Calingasan, Val Chua, Marion Hearty Zamora, Isaiah Aldrich Valencia",
+        "Category": "Talent Search 2024",
+        "Date_Published": "2 October 2024",
+        "Link": "https://web.facebook.com/share/p/1EXoG8VBfW/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TS_24_HTS_2.png"
+    },
+    {
+        "Title": "Talent Search 2024 - Awarding",
+        "Authors": "Kiro Fernandez, Elmer Felisilda, Owen Jarina, Samuel Bechayda, Samuel Calingasan, Val Chua, Marion Hearty Zamora, Isaiah Aldrich Valencia",
+        "Category": "Talent Search 2024",
+        "Date_Published": "2 October 2024",
+        "Link": "https://web.facebook.com/share/p/1EtjnU7sLo/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TS_24_AW.png"
     }
 ]

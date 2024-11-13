@@ -94,6 +94,16 @@ function BranchNavigation_Search_SetDataToUppercase(){
     for (a = 0; a != BranchList_Searchable.length; a++){
         BranchList_Searchable[a] = BranchList_Searchable[a].toUpperCase();
     }
+    if (UF_Parameter_Get("Query") != null || UF_Parameter_Get("Query") != undefined){
+        document.getElementById("BranchNavigation_Search_Query").value = UF_Parameter_Get("Query");
+        BranchNavigation_Search_Start(UF_Parameter_Get("Query"));
+    }
+    // BranchNavigation_Search_Articles();
+}
+
+function BranchNavigation_Search_Start(Query){
+  UF_Parameter_Set("Query", Query);
+  BranchNavigation_Search_Articles(UF_Parameter_Get("Query"));
 }
 
 var BranchList_Search_Results = [];
