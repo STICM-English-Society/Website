@@ -306,7 +306,7 @@
         "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_FD_23.jpg"
     },
     {
-        "Title": "Parade of Characters",
+        "Title": "Parade of Characters 2024",
         "Authors": "Sophia Ysabel Caballes",
         "Category": "School Events",
         "Date_Published": "November 2023",
@@ -529,5 +529,14 @@
         "Link": "https://web.facebook.com/share/p/1EtjnU7sLo/",
         "Open_In_NewTab": true,
         "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TS_24_AW.png"
+    },
+    {
+        "Title": "Parade of Characters 2024",
+        "Authors": "Isaiah Aldrich Valencia, Elthea Atilano, Samuel Calingasan",
+        "Category": "Parade of Characters",
+        "Date_Published": "4 November 2024",
+        "Link": "https://web.facebook.com/share/p/1CwXTJUnP7/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_POC_24.png"
     }
 ]
