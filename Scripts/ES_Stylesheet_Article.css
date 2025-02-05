@@ -385,6 +385,8 @@ li {
     color: white;
     cursor: pointer;
     transition: var(--Element-Transition-Delay);
+    outline: unset;
+    border: unset;
 }
 
 .Article_CTABox_Content_Button:hover{

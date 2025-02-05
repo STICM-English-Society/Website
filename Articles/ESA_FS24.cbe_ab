@@ -5,12 +5,15 @@
     "Article_Title_Height": "183px",
     "Article_Author": "English Society Officers",
     "Article_Category": "English Society Events",
-    "Article_PublishingDate": "14 February 2024"
+    "Article_PublishingDate": "5 February 2025"
   },
   "Contents": [
     {
-      "Type": "Paragraph",
-      "Content": "Check out all February Sentiments <a href=\"https://sticm-english-society.github.io/ES_AlbumViewer.html?albumName=FebSentiments_2024\">here!</a>"
+      "Type": "Call_To_Action",
+      "Content": "Send your February Sentiment in the Microsoft Form!",
+      "Button_Text": "Open MS Form",
+      "Button_Destination": "https://forms.office.com/Pages/ResponsePage.aspx?id=Q97QyABtNEWjxl_CIYWrmxN8FmzzU0xNjAO7q19cp8hUQlZWUUw4Q1YwVzk1MDBUSFMwMEhNNFZKSS4u",
+      "Button_OpenInNewTab": true
     },
     {
       "Type": "Secondary_Title",

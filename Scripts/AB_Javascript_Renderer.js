@@ -16,6 +16,16 @@ function AB_Renderer_Article_Render(Data){
     for (a = 0; a < Content.length; a++){
         var Content_Data = Content[a];
         var Element_InnerHTML = ``;
+        if (Content_Data.Type == "Call_To_Action"){
+            document.getElementById("Article_CTABox_Content_Text").innerText = Content_Data.Content;
+            document.getElementById("Article_CTABox_Content_Button").innerText = Content_Data.Button_Text;
+            document.getElementById("Article_CTABox_Content_Button_Link").setAttribute("href", Content_Data.Button_Destination);
+            if (Content_Data.Button_OpenInNewTab == true){
+                document.getElementById("Article_CTABox_Content_Button_Link").setAttribute("target", "_blank");
+            } else {
+                document.getElementById("Article_CTABox_Content_Button_Link").removeAttribute("target");
+            }
+        }
         if (Content_Data.Type == "Primary_Title"){
             Element_InnerHTML = `
                 <h1 class='Article_Content_Title_Big'>
