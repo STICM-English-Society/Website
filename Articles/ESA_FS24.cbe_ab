@@ -10,7 +10,7 @@
   "Contents": [
     {
       "Type": "Call_To_Action",
-      "Content": "Send your February Sentiment in the Microsoft Form!",
+      "Content": "Send your messages in the MS Form!",
       "Button_Text": "Open MS Form",
       "Button_Destination": "https://forms.office.com/Pages/ResponsePage.aspx?id=Q97QyABtNEWjxl_CIYWrmxN8FmzzU0xNjAO7q19cp8hUQlZWUUw4Q1YwVzk1MDBUSFMwMEhNNFZKSS4u",
       "Button_OpenInNewTab": true,
