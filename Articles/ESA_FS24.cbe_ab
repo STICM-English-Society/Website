@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "Article_Banner": "https://sticm-english-society.github.io/Website/Assets/Images/Articles/ESA_FS23/ESA_FS23_1.png",
+    "Article_Banner": "https://sticm-english-society.github.io/Website/Assets/Images/Articles/ESA_FS23/ESA_FS25_1.png",
     "Article_Title": "February Sentiments: Share your Feb-Feelings Anonymously!",
     "Article_Title_Height": "183px",
     "Article_Author": "English Society Officers",
@@ -13,11 +13,18 @@
       "Content": "Send your February Sentiment in the Microsoft Form!",
       "Button_Text": "Open MS Form",
       "Button_Destination": "https://forms.office.com/Pages/ResponsePage.aspx?id=Q97QyABtNEWjxl_CIYWrmxN8FmzzU0xNjAO7q19cp8hUQlZWUUw4Q1YwVzk1MDBUSFMwMEhNNFZKSS4u",
-      "Button_OpenInNewTab": true
+      "Button_OpenInNewTab": true,
+      "Source": ""
+    },
+    {
+      "Type": "Image",
+      "Source": "https://i.imgur.com/0chbMvZ.jpeg",
+      "Description": "View last year's February Sentiments <a href=\"https://sticm-english-society.github.io/Website/ES_AlbumViewer.html?albumName=FebSentiments_2024\" target=\"_blank\"><u>here.</u></a>",
+      "Credits": ""
     },
     {
       "Type": "Secondary_Title",
-      "Content": "Ahh yes, February..."
+      "Content": "February Sentiments returns to hear all kinds of thoughts and messages!"
     },
     {
       "Type": "Paragraph",

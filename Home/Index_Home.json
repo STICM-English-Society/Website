@@ -2,27 +2,27 @@
     "Featured": [
         {
             "Name": "Featured_1",
+            "Image": "Assets/Images/Articles/ESA_FS23/ESA_FS25_1.png",
+            "Title": "February Sentiments returns to hear your thoughts and messages!",
+            "Link": "https://bit.ly/ES-FebSentiments-25"
+        },
+        {
+            "Name": "Featured_2",
             "Image": "Assets/Images/Home/Featured/Promotional.png",
             "Title": "Watch: You have a place in The English Society",
             "Link": "https://youtu.be/VXIv-0c_DoY?si=HgaVfbTo_M5dO9PO"
         },
         {
-            "Name": "Featured_2",
+            "Name": "Featured_3",
             "Image": "Assets/Images/ELISM24/Link_Preview.png",
             "Title": "Crafting Stories, Curating Knowledge: The Art of Content and Information",
             "Link": "https://bit.ly/STICM-ELISM24"
         },
         {
-            "Name": "Featured_3",
+            "Name": "Featured_4",
             "Image": "Assets/Images/Home/Featured/POC_24.png",
             "Title": "In Photos: Parade of Characters 2024",
             "Link": "https://web.facebook.com/share/p/1CwXTJUnP7/"
-        },
-        {
-            "Name": "Featured_4",
-            "Image": "Assets/Images/Link_Preview.png",
-            "Title": "Join English Society now!",
-            "Link": "ES_Register.html"
         },
         {
             "Name": "Featured_5",
