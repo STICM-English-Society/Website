@@ -306,13 +306,13 @@
         "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_FD_23.jpg"
     },
     {
-        "Title": "Parade of Characters 2024",
+        "Title": "Parade of Characters 2023",
         "Authors": "Sophia Ysabel Caballes",
         "Category": "School Events",
         "Date_Published": "November 2023",
         "Link": "https://www.facebook.com/STIM.EnglishOrg/posts/pfbid0v9eu7anbQXVB8Qpae6AUvostgxj6RyyLqLMwCRsGFiY3o68PBNsgpiVKx3omWQpnl",
         "Open_In_NewTab": true,
-        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_POC_23.jpg"
+        "Thumbnail": "Assets/Images/Articles/ESA_POC23/ESA_POC23_1.png"
     },
     {
         "Title": "English Day 2023 - The Wordplay Game Extravaganza!",
@@ -601,5 +601,14 @@
         "Link": "https://web.facebook.com/share/p/1PxwGSRJiM/",
         "Open_In_NewTab": true,
         "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_VD_25_2.png"
+    },
+    {
+        "Title": "Tagisan ng Talino at Sining 2025",
+        "Authors": "Elthea Atilano",
+        "Category": "School Events",
+        "Date_Published": "14 February 2025",
+        "Link": "https://www.facebook.com/share/p/1Cst1PCzM3/",
+        "Open_In_NewTab": true,
+        "Thumbnail": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TNTS_25.png"
     }
 ]

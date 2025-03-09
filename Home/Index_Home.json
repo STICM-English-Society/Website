@@ -2,33 +2,33 @@
     "Featured": [
         {
             "Name": "Featured_1",
+            "Image": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TNTS_25.png",
+            "Title": "In Photos: Tagisan ng Talino at Sining 2025",
+            "Link": "https://www.facebook.com/share/p/1Cst1PCzM3/"
+        },
+        {
+            "Name": "Featured_2",
             "Image": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_VD_25_2.png",
             "Title": "In Photos: Valentines' Day 2025",
             "Link": "https://web.facebook.com/share/p/1PxwGSRJiM/"
         },
         {
-            "Name": "Featured_2",
+            "Name": "Featured_3",
             "Image": "Assets/Images/Articles/ESA_FS23/ESA_FS25_1.png",
             "Title": "February Sentiments returns to hear your thoughts and messages!",
             "Link": "https://bit.ly/ES-FebSentiments-25"
         },
         {
-            "Name": "Featured_3",
+            "Name": "Featured_4",
             "Image": "Assets/Images/Home/Featured/Promotional.png",
             "Title": "Watch: You have a place in The English Society",
             "Link": "https://youtu.be/VXIv-0c_DoY?si=HgaVfbTo_M5dO9PO"
         },
         {
-            "Name": "Featured_4",
+            "Name": "Featured_5",
             "Image": "Assets/Images/ELISM24/Link_Preview.png",
             "Title": "Crafting Stories, Curating Knowledge: The Art of Content and Information",
             "Link": "https://bit.ly/STICM-ELISM24"
-        },
-        {
-            "Name": "Featured_5",
-            "Image": "Assets/Images/Home/Featured/POC_24.png",
-            "Title": "In Photos: Parade of Characters 2024",
-            "Link": "https://web.facebook.com/share/p/1CwXTJUnP7/"
         }
     ],
     "Articles": [
@@ -57,21 +57,21 @@
     "InPhotos": [
         {
             "Name": "InPhotos_1",
+            "Image": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_TNTS_25.png",
+            "Title": "Tagisan ng Talino at Sining 2025",
+            "Link": "https://www.facebook.com/share/p/1Cst1PCzM3/"
+        },
+        {
+            "Name": "InPhotos_2",
             "Image": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_VD_25_3.png",
             "Title": "Valentines' Day 2025",
             "Link": "https://web.facebook.com/share/p/1PxwGSRJiM/"
         },
         {
-            "Name": "InPhotos_2",
-            "Image": "Assets/Images/Home/Featured/TS_24_MMS_2.png",
-            "Title": "Talent Search 2024",
-            "Link": "ES_Gallery.html?Query=Talent+Search+2024"
-        },
-        {
             "Name": "InPhotos_3",
-            "Image": "Assets/Images/Home/Featured/POC_24.png",
-            "Title": "Parade of Characters 2024",
-            "Link": "https://web.facebook.com/share/p/1CwXTJUnP7/"
+            "Image": "Assets/Images/Gallery/ESG_Thumbnails/ESGT_ELISM_24_H.png",
+            "Title": "ELISM 2024",
+            "Link": "ES_Gallery.html?Query=English+%26+Library+%26+Information+Services+Month+2024"
         }
     ]
 }
