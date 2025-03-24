@@ -393,8 +393,30 @@ a:nth-child(even):hover > .Branch_Navigation_Grid_Item{
     text-shadow: unset;
 }
 
+
+
+.SF24_Warning{
+    margin-left: 11%;
+    margin-right: 11%;
+    background-color: rgba(255, 166, 0, 0.466);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.SF24_Warning_Title{
+    font-family: Graduate;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.SF24_Warning_Description{
+    font-family: var(--Text-Font-Paragraph);
+    margin: 0;
+}
+
 @media only screen and (max-width: 700px){
-    .SF_Schedule_Day, .SF_Schedule, .SF_Scores, .SF_Title, .SF_Scores_Search, .Branch_Navigation_Status_Text, .SF_Button_Row{
+    .SF_Schedule_Day, .SF_Schedule, .SF_Scores, .SF_Title, .SF_Scores_Search, .Branch_Navigation_Status_Text, .SF_Button_Row, .SF24_Warning{
         margin-left: 0%;
         margin-right: 0%;
         margin: 10px;
