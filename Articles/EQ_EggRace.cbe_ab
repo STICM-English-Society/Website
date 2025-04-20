@@ -1,0 +1,98 @@
+{
+  "Metadata": {
+    "Article_Banner": "Assets/Images/Articles/ESA_EQ25/ESA_EQ25_2.png",
+    "Article_Title": "Eggs-pedition Quest: Egg Race",
+    "Article_Title_Height": "122px",
+    "Article_Author": "Event Organizers",
+    "Article_Category": "Easter Egg Event 2025",
+    "Article_PublishingDate": "20 April 2025"
+  },
+  "Contents": [
+    {
+      "Type": "Paragraph",
+      "Content": ""
+    },
+    {
+      "Type": "Primary_Title",
+      "Content": "Registration"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "",
+      "Content": "This activity is open to <b>all Tertiary and SHS students.</b>\nRegistration is from April 21 to 23, 2025."
+    },
+    {
+      "Type": "Primary_Title",
+      "Content": "Mechanics"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "",
+      "Content": "Participants will form groups comprising of 5 members each.\nEach group will embark on 5 missions, and those who complete all the challenges will win the quest."
+    },
+    {
+      "Type": "Secondary_Title",
+      "Content": "Challenge 1: The Missing Pieces - Picture Puzzle Challenge"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "",
+      "Content": "This challenge will take place at Room 304.\nEach group will randomly select an egg containing a number that corresponds to a specific puzzle.\nOnce you have your number, your group must race against time to solve the puzzle associated with it.\nYou will move to the next round when your group completes the puzzle the fastest within 3 minutes.\nThe eliminated group will receive a consolation prize of additional 10 points on their chosen quiz/activity/homework for the Finals Period only."
+    },
+    {
+      "Type": "Secondary_Title",
+      "Content": "Challenge 2: Compose It Right - The Sentence Challenge"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "",
+      "Content": "This challenge will take place at Room 303.\nEach group will form a line, with each member taking turns flipping a bottle before selecting an egg.<ul><li>Inside the egg is a word or phrase that will help them complete a riddle.</li></ul>\nYour team will continue this process until all the words needed to compose the correct riddle are gathered.\nOnce the riddle is formed, you must solve it to win.\nThe fastest group to solve the riddle will advance to the next round.\nThe eliminated group will receive a consolation prize of additional 5 points AND 2 days extension in their chosen quiz/activity/homework for the Finals Period only."
+    },
+    {
+      "Type": "Secondary_Title",
+      "Content": "Challenge 3: Egg-citing Math Challenge"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "",
+      "Content": "This challenge will take place at Room 204.\nEach group will pick an egg that corresponds to a math problem.\nYour team will advance to the next round if you solve the problem the fastest.\nThe eliminated group will receive a consolation prize of additional 5 points AND 3 days extension in their chosen quiz/activity/homework for the Finals Period only."
+    },
+    {
+      "Type": "Secondary_Title",
+      "Content": "Challenge 4: Roll your Way to Victory"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "",
+      "Content": "This challenge will take place at Room 309.\nEach member of the group will be given a fan.\nStarting from the designated line, participants will use their fans to make an egg roll across the ground until it reaches the finish line.\nThe first group to successfully roll their egg to the finish line will be declared the winner.\nThe eliminated group will receive a consolation prize of additional 10 points AND 3 days extension in their chosen quiz/activity/homework for the Finals Period only."
+    },
+    {
+      "Type": "Secondary_Title",
+      "Content": "Challenge 5: Eggs-traordinary Quizzes, Eggs-tra Fun!"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "",
+      "Content": "This challenge will take place at the Front Desk of the campus.\nThe host will ask 5 questions.\nThe first team member to ring the bell gets the chance to answer.<ul><li>If the answer is correct, the team scores a point. Otherwise, no points will be awarded and the opposing team gets the chance to steal the point.</li></ul>\nThe team with the highest total points at the end of all 5 questions wins the Egg Race game.\nIn the event of a tie, a tie-breaker question will be asked.\nThe eliminated group will receive a consolation prize of additional 10 points extension in their chosen quiz/activity/homework AND 3 days extension in their Performance Task for the Finals Period only."
+    },
+    {
+      "Type": "Secondary_Title",
+      "Content": "The Ultimate Winner"
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "If the winner are Tertiary students",
+      "Content": "They will receive an additional 5 points in their chosen subject's Major Exam.<ul><li>The subject must be in the list of involved subjects for this specific event only.</li></ul>\nThey will receive a 200 peso-worth token."
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "If the winner are SHS students",
+      "Content": "They will receive an additional 2 points in their chosen subject's Performance Task.<ul><li>The subject must be in the list of involved subjects for this specific event only.</li></ul>\nThey will receive a 200 peso-worth token."
+    },
+    {
+      "Type": "Bulleted_List",
+      "Header": "List of involved subjects",
+      "Content": "Art Appreciation\nKomunikasyon at Pananaliksik\nReading and Writing\nPurposive Communication\nPopular Culture\nContemporary Arts\nGreat Books\nEvents Planning and Organizing"
+    }
+  ]
+}
