@@ -2,7 +2,7 @@
   "Metadata": {
     "Article_Banner": "Assets/Images/Articles/ESA_EQ25/ESA_EQ25_1.png",
     "Article_Title": "Eggs-pedition Quest: Egg Mosaic Making Contest",
-    "Article_Title_Height": "183px",
+    "Article_Title_Height": "122px",
     "Article_Author": "Event Organizers",
     "Article_Category": "Easter Egg Event 2025",
     "Article_PublishingDate": "20 April 2025"
@@ -10,12 +10,22 @@
   "Contents": [
     {
       "Type": "Primary_Title",
-      "Content": "Who can join"
+      "Content": "Registration"
     },
     {
       "Type": "Bulleted_List",
       "Header": "",
       "Content": "This activity is open to <b>all Tertiary and SHS students.</b>"
+    },
+    {
+      "Type": "Paragraph",
+      "Content": "To register, click this <u><a href=\"https://forms.office.com/r/VgquZsMUPp?origin=lprLink\" target=\"_blank\">link</a></u> or scan the QR code:"
+    },
+    {
+      "Type": "Image",
+      "Source": "https://i.imgur.com/xBev9dA.png",
+      "Description": "",
+      "Credits": ""
     },
     {
       "Type": "Primary_Title",
@@ -24,7 +34,7 @@
     {
       "Type": "Numbered_List",
       "Header": "",
-      "Content": "The participants must provide their own eggshells, glue, and basic coloring materials (acrylic, watercolor, food coloring, and permanent or washable markers).<ul><li>For the baseboard, the participants must use a half of a 1/8 illustration board.</li><li>All materials must be non-toxic and pre-approved by the organizers.</li></ul>\nAll designs must be original and created during the contest period. They must also reflect the given theme for the competition.<ul><li>Plagiarizing or copying existing designs will result in disqualification.</li></ul>\nThe mosaics must be made primarily from eggshells.<ul><li>The participants can dye, paint, or break the shells creatively.</li><li>Other materials should not exceed 20% of the design.</li></ul>\nThe participants will be assigned a workspace.\nFinished designs must be submitted to the designated area before the time limit expires. Late entries will not be accepted.\nThe entries will undergo a pre-judging process, where the top 10 best works will be selected and displayed around the campus for final judging.\nJudging will be conducted by a panel of judges selected by the organizers. Their decision is final and irrevocable."
+      "Content": "The competition will take place at Room 306 this April 25, 2025.\nThe participants must provide their own eggshells, glue, and basic coloring materials (acrylic, watercolor, food coloring, and permanent or washable markers).<ul><li>The eggshells must be clean and dried before the competition.</li><li>For the baseboard, the participants must use a half of a 1/8 illustration board.</li><li>All materials must be non-toxic and pre-approved by the organizers.</li></ul>\nAll designs must be original and created during the contest period. They must also reflect the given theme for the competition.<ul><li>Plagiarizing or copying existing designs will result in disqualification.</li></ul>\nThe mosaics must be made primarily from eggshells.<ul><li>The participants can dye, paint, or break the shells creatively.</li><li>Other materials should not exceed 20% of the design.</li></ul>\nThe participants will be assigned a workspace.\nFinished designs must be submitted to the designated area before the time limit expires. Late entries will not be accepted.\nThe entries will undergo a pre-judging process, where the top 10 best works will be selected and displayed around the campus for final judging.\nJudging will be conducted by a panel of judges selected by the organizers. Their decision is final and irrevocable."
     },
     {
       "Type": "Primary_Title",

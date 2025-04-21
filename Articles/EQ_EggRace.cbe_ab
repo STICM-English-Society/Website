@@ -22,6 +22,20 @@
       "Content": "This activity is open to <b>all Tertiary and SHS students.</b>\nRegistration is from April 21 to 23, 2025."
     },
     {
+      "Type": "Paragraph",
+      "Content": "To register, click this <u><a href=\"https://forms.office.com/r/VgquZsMUPp?origin=lprLink\" target=\"_blank\">link</a></u> or scan the QR code:"
+    },
+    {
+      "Type": "Image",
+      "Source": "https://i.imgur.com/xBev9dA.png",
+      "Description": "",
+      "Credits": ""
+    },
+    {
+      "Type": "Paragraph",
+      "Content": ""
+    },
+    {
       "Type": "Primary_Title",
       "Content": "Mechanics"
     },
