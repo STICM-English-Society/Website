@@ -4,6 +4,24 @@ let Committees = {
     "Promotional" : false
 }
 
+window.addEventListener('DOMContentLoaded', Article_Fetch);
+
+function Article_Fetch() {
+    var Article_QueryString = window.location.search;
+    var Article_QueryString_Parameters = new URLSearchParams(Article_QueryString);
+    var Article_FileLocation = "Articles/ES_Register.cbe_ab";
+    Article_Load(Article_FileLocation);
+}
+
+function Article_Load(IndexURL) {
+    const request = new XMLHttpRequest();
+    request.open("GET", IndexURL, false);
+    request.send();
+    var Article_Data = JSON.parse(request.responseText);
+    console.log(Article_Data);
+    AB_Renderer_Article_Render(Article_Data);
+}
+
 function Register_Identify_Committees(){
     if (Element_Attribute_Get("Register_Committee_Technical", "State") == "Active"){
         Committees.Technical = true;

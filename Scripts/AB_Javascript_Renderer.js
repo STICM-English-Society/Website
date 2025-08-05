@@ -35,6 +35,7 @@ function AB_Renderer_Article_Render(Data){
             var Element = document.createElement('span');
             Element.setAttribute('class', 'Element');
             Element.innerHTML = Element_InnerHTML;
+            Element.setAttribute("id", `Article_Section_Primary_${a}`);
             document.getElementById("Article_Content").appendChild(Element);
         }
         if (Content_Data.Type == "Secondary_Title"){
@@ -42,6 +43,17 @@ function AB_Renderer_Article_Render(Data){
                 <h2 class='Article_Content_Title'>
                     ${Content_Data.Content}
                 </h2>
+            `;
+            var Element = document.createElement('span');
+            Element.setAttribute('class', 'Element');
+            Element.innerHTML = Element_InnerHTML;
+            document.getElementById("Article_Content").appendChild(Element);
+        }
+        if (Content_Data.Type == "Tertiary_Title") {
+            Element_InnerHTML = `
+                <p class='Article_Content_Title'>
+                    <u>${Content_Data.Content}</u>
+                </p>
             `;
             var Element = document.createElement('span');
             Element.setAttribute('class', 'Element');

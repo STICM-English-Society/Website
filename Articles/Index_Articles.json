@@ -61,5 +61,14 @@
         "Link": "Articles/ES_Article_Renderer.html?article=EQ_EggMosaic",
         "Open_In_NewTab": false,
         "Thumbnail": "Assets/Images/Articles/ESA_EQ25/ESA_EQ25_3.png"
+    },
+    {
+        "Title": "English Society Registration for School Year 2025-26",
+        "Authors": "Elmer Felisilda",
+        "Category": "English Society events",
+        "Date_Published": "4 August 2025",
+        "Link": "ES_Register.html",
+        "Open_In_NewTab": false,
+        "Thumbnail": "Assets/Images/Link_Preview.png"
     }
 ]
