@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Path Converter</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			line-height: 1.6;
+			padding: 20px;
+		}
+
+		textarea {
+			width: 100%;
+			box-sizing: border-box;
+			padding: 8px;
+			margin-top: 5px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+
+		button {
+			padding: 10px 15px;
+			margin: 15px 0;
+			cursor: pointer;
+			background-color: #007bff;
+			color: white;
+			border: none;
+			border-radius: 4px;
+		}
+
+		button:hover {
+			background-color: #0056b3;
+		}
+
+		h3 {
+			margin-bottom: 5px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h2>Path Converter 🔁</h2>
+	<p>This tool converts Windows file paths into the specific format required by your photo album renderer.</p>
+
+	<h3>1. Paste Original File Paths Here:</h3>
+	<textarea id="inputPaths" rows="10"
+		placeholder="C:\Users\...\Assets\Images\Gallery\ESG_SF2025\Bughaw_1.png&#10;C:\Users\...\Assets\Images\Gallery\ESG_SF2025\Bughaw_2.png"></textarea>
+
+	<button onclick="convertPaths()">Convert Paths</button>
+
+	<h3>2. Copy Converted Paths From Here:</h3>
+	<textarea id="outputPaths" rows="10" readonly placeholder="Your results will appear here..."></textarea>
+
+	<script>
+		function convertPaths() {
+			// Get the full text from the input text area.
+			const inputText = document.getElementById('inputPaths').value;
+
+			// Split the text into an array of individual lines and filter out any empty ones.
+			const lines = inputText.split('\n').filter(line => line.trim() !== '');
+
+			// Process each line using the map function.
+			const convertedLines = lines.map(path => {
+				// 1. Find the word "Assets" and slice the string from that point onward.
+				let newPath = path.substring(path.indexOf('Assets'));
+
+				// 2. Replace all backslashes '\' with forward slashes '/'.
+				newPath = newPath.replace(/\\/g, '/');
+
+				// 3. Perform the specific replacements from your example.
+				// This changes the folder name from 'ESG_SF2025' to 'ESG_FS2024'.
+				newPath = newPath.replace('ESG_SF2025', 'ESG_SF2025');
+				newPath = newPath.replace('"', '');
+
+				// 4. Format the final string by duplicating the path with '%&' as a separator.
+				return `${newPath}%&${newPath}`;
+			});
+
+			// Join the array of converted lines back into a single string, separated by newlines.
+			const outputText = convertedLines.join('\n');
+
+			// Set the value of the output text area to the final result.
+			document.getElementById('outputPaths').value = outputText;
+		}
+	</script>
+
+</body>
+
+</html>
